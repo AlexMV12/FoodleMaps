@@ -1,0 +1,42 @@
+prefixes:
+  ex: "http://example.com/"
+  schema: "http://schema.org/"
+
+mappings:
+  restaurant:
+    sources:
+      - [ 'restaurant.csv~csv' ]
+    s: http://example.com/restaurant/$(restaurant_name)
+    po:
+      - [ a, schema:FoodEstablishment ]
+      - [ schema:name, $(restaurant_name) ]
+      - [ schema:address, $(address) ]
+      - p: schema:hasMenu
+        o:
+          - mapping: menu
+            condition:
+              function: equal
+              parameters:
+                - [ str1, $(restaurant_id), s ]
+                - [ str2, $(restaurant_id), o ]
+  menu:
+    sources:
+      - [ 'restaurant.csv~csv' ]
+    s: http://example.com/menu/$(restaurant_id)
+    po:
+      - [ a, schema:Menu ]
+      - p: schema:hasMenuItem
+        o:
+          - mapping: menuItems
+            condition:
+              function: equal
+              parameters:
+                - [ str1, $(restaurant_id), s]
+                - [ str2, $(restaurant_id), o]
+  menuItems:
+    sources:
+      - [ 'menus.csv~csv' ]
+    s: http://example.com/menuItem/$(item_id)
+    po:
+      - [ a, schema:MenuItem ]
+      - [ schema:name, $(menu_item_name) ]

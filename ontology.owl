@@ -526,7 +526,7 @@
         <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Mustard"/>
         <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Salt"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Recipe4 -->
@@ -541,7 +541,7 @@
         <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Salt"/>
         <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Tomato"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Recipe5 -->
@@ -555,7 +555,7 @@
         <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Savoyard"/>
         <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Sugar"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Salt -->
@@ -563,7 +563,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Salt">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Savoyard -->
@@ -571,7 +571,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Savoyard">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Spaghetti_gluten_free -->
@@ -579,7 +579,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Spaghetti_gluten_free">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Sugar -->
@@ -587,7 +587,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Sugar">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Tiramisu -->
@@ -596,7 +596,7 @@
         <rdf:type rdf:resource="http://schema.org/MenuItem"/>
         <FoodleMaps:hasRecipe rdf:resource="http://www.semanticweb.org/FoodleMaps#Recipe5"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Tomato -->
@@ -604,7 +604,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Tomato">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Trattoria_dell_orsa -->
@@ -615,7 +615,7 @@
         <FoodleMaps:hasName>Trattoria dell&apos;Orsa</FoodleMaps:hasName>
         <rdfs:label xml:lang="it">Trattoria dell&apos;orsa</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://schema.org/DiabeticDiet -->
