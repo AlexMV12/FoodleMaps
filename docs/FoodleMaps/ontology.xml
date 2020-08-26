@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/FoodleMaps"
+<rdf:RDF xmlns="http://www.semanticweb.org/FoodleMaps#"
      xml:base="http://www.semanticweb.org/FoodleMaps"
-     xmlns:dbo="http://dbpedia.org/ontology/#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -36,10 +35,12 @@ This makes the ontology useful to design an application to help users in finding
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://purl.org/dc/terms/abstract -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
     
@@ -47,11 +48,13 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://purl.org/dc/terms/creator -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 
     <!-- http://purl.org/dc/terms/description -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
@@ -59,11 +62,13 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://purl.org/dc/terms/license -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
     <!-- http://purl.org/vocab/vann/example -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/example"/>
     
@@ -71,17 +76,20 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
     
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
 
 
     <!-- http://schema.org/name -->
+
 
     <owl:AnnotationProperty rdf:about="http://schema.org/name"/>
     
@@ -95,10 +103,12 @@ This makes the ontology useful to design an application to help users in finding
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://schema.org/hasMenu -->
+
 
     <owl:ObjectProperty rdf:about="http://schema.org/hasMenu">
         <rdfs:domain>
@@ -126,6 +136,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- http://schema.org/hasMenuItem -->
+
 
     <owl:ObjectProperty rdf:about="http://schema.org/hasMenuItem">
         <rdfs:domain>
@@ -155,6 +166,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://schema.org/suitableForDiet -->
 
+
     <owl:ObjectProperty rdf:about="http://schema.org/suitableForDiet">
         <rdfs:domain rdf:resource="http://schema.org/Recipe"/>
         <rdfs:range>
@@ -176,6 +188,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#hasCharacteristic -->
 
+
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/FoodleMaps#hasCharacteristic">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://schema.org/MenuItem"/>
@@ -189,6 +202,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#hasIngredient -->
 
+
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/FoodleMaps#hasIngredient">
         <rdfs:domain rdf:resource="http://schema.org/Recipe"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
@@ -201,6 +215,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#hasRecipe -->
 
+
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/FoodleMaps#hasRecipe">
         <rdfs:domain rdf:resource="http://schema.org/MenuItem"/>
         <rdfs:range rdf:resource="http://schema.org/Recipe"/>
@@ -211,6 +226,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#requiresCharacteristic -->
+
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/FoodleMaps#requiresCharacteristic">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/FoodleMaps#User"/>
@@ -223,6 +239,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#requiresDiet -->
+
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/FoodleMaps#requiresDiet">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/FoodleMaps#User"/>
@@ -242,10 +259,12 @@ This makes the ontology useful to design an application to help users in finding
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#hasPreparationTime -->
+
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/FoodleMaps#hasPreparationTime">
         <rdfs:domain rdf:resource="http://schema.org/MenuItem"/>
@@ -265,10 +284,12 @@ This makes the ontology useful to design an application to help users in finding
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://dbpedia.org/ontology/Food -->
+
 
     <owl:Class rdf:about="http://dbpedia.org/ontology/Food">
         <rdfs:comment>Food is any eatable or drinkable substance that is normally consumed by humans.</rdfs:comment>
@@ -279,17 +300,20 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://schema.org/CreativeWork -->
 
+
     <owl:Class rdf:about="http://schema.org/CreativeWork"/>
     
 
 
     <!-- http://schema.org/Enumeration -->
 
+
     <owl:Class rdf:about="http://schema.org/Enumeration"/>
     
 
 
     <!-- http://schema.org/FoodEstablishment -->
+
 
     <owl:Class rdf:about="http://schema.org/FoodEstablishment">
         <rdfs:subClassOf rdf:resource="http://schema.org/LocalBusiness"/>
@@ -302,11 +326,13 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://schema.org/HowTo -->
 
+
     <owl:Class rdf:about="http://schema.org/HowTo"/>
     
 
 
     <!-- http://schema.org/Intangible -->
+
 
     <owl:Class rdf:about="http://schema.org/Intangible"/>
     
@@ -314,11 +340,13 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://schema.org/LocalBusiness -->
 
+
     <owl:Class rdf:about="http://schema.org/LocalBusiness"/>
     
 
 
     <!-- http://schema.org/Menu -->
+
 
     <owl:Class rdf:about="http://schema.org/Menu">
         <rdfs:subClassOf rdf:resource="http://schema.org/CreativeWork"/>
@@ -331,6 +359,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://schema.org/MenuItem -->
 
+
     <owl:Class rdf:about="http://schema.org/MenuItem">
         <rdfs:subClassOf rdf:resource="http://schema.org/Intangible"/>
         <rdfs:comment xml:lang="en">A food or drink item listed in a menu or menu section.</rdfs:comment>
@@ -342,11 +371,13 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://schema.org/MenuSection -->
 
+
     <owl:Class rdf:about="http://schema.org/MenuSection"/>
     
 
 
     <!-- http://schema.org/Recipe -->
+
 
     <owl:Class rdf:about="http://schema.org/Recipe">
         <rdfs:subClassOf rdf:resource="http://schema.org/HowTo"/>
@@ -359,6 +390,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://schema.org/RestrictedDiet -->
 
+
     <owl:Class rdf:about="http://schema.org/RestrictedDiet">
         <rdfs:subClassOf rdf:resource="http://schema.org/Enumeration"/>
         <rdfs:comment xml:lang="en">A diet restricted to certain foods or preparations for cultural, religious, health or lifestyle reasons.</rdfs:comment>
@@ -370,11 +402,13 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://schema.org/Role -->
 
+
     <owl:Class rdf:about="http://schema.org/Role"/>
     
 
 
     <!-- http://schema.org/Text -->
+
 
     <owl:Class rdf:about="http://schema.org/Text"/>
     
@@ -382,11 +416,13 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://schema.org/URL -->
 
+
     <owl:Class rdf:about="http://schema.org/URL"/>
     
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Characteristic -->
+
 
     <owl:Class rdf:about="http://www.semanticweb.org/FoodleMaps#Characteristic">
         <vann:example>Fresh, Heavy, Light, Spicy</vann:example>
@@ -398,6 +434,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Ingredient -->
 
+
     <owl:Class rdf:about="http://www.semanticweb.org/FoodleMaps#Ingredient">
         <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Food"/>
         <vann:example>Spaghetti, Tomato sauce, Basil</vann:example>
@@ -408,6 +445,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#User -->
+
 
     <owl:Class rdf:about="http://www.semanticweb.org/FoodleMaps#User">
         <rdfs:comment>User is the class which represents the requests of the application user in terms of wanted ingredients, wanted diet, etc.</rdfs:comment>
@@ -424,10 +462,12 @@ This makes the ontology useful to design an application to help users in finding
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://dbpedia.org/page/Carbonara -->
+
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Carbonara">
         <owl:sameAs rdf:resource="http://www.semanticweb.org/FoodleMaps#Pasta_alla_carbonara"/>
@@ -437,6 +477,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://dbpedia.org/page/Spaghetti -->
 
+
     <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Spaghetti">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
     </owl:NamedIndividual>
@@ -444,6 +485,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Bacon -->
+
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Bacon">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
@@ -453,6 +495,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Basil -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Basil">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
     </owl:NamedIndividual>
@@ -460,6 +503,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Black_pepper -->
+
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Black_pepper">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
@@ -469,6 +513,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Bovin_filet -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Bovin_filet">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
     </owl:NamedIndividual>
@@ -476,6 +521,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Brandy -->
+
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Brandy">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
@@ -485,6 +531,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Butter -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Butter">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
     </owl:NamedIndividual>
@@ -492,6 +539,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Caper -->
+
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Caper">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
@@ -501,6 +549,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Cocoa -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Cocoa">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
     </owl:NamedIndividual>
@@ -508,6 +557,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Codfish -->
+
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Codfish">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
@@ -517,6 +567,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Coffee -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Coffee">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
     </owl:NamedIndividual>
@@ -524,6 +575,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Egg -->
+
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Egg">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
@@ -533,16 +585,18 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Filetto_al_pepe_verde -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Filetto_al_pepe_verde">
         <rdf:type rdf:resource="http://schema.org/MenuItem"/>
-        <FoodleMaps:hasRecipe rdf:resource="http://www.semanticweb.org/FoodleMaps#Recipe3"/>
-        <FoodleMaps:hasPreparationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</FoodleMaps:hasPreparationTime>
+        <hasRecipe rdf:resource="http://www.semanticweb.org/FoodleMaps#Recipe3"/>
+        <hasPreparationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasPreparationTime>
         <rdfs:label>Filetto al pepe verde</rdfs:label>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Flour_type_00 -->
+
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Flour_type_00">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
@@ -552,6 +606,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Fresh -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Fresh">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Characteristic"/>
     </owl:NamedIndividual>
@@ -559,6 +614,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Garlic -->
+
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Garlic">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
@@ -568,6 +624,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Green_pepper -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Green_pepper">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
     </owl:NamedIndividual>
@@ -575,6 +632,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Heavy -->
+
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Heavy">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Characteristic"/>
@@ -584,6 +642,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Light -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Light">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Characteristic"/>
     </owl:NamedIndividual>
@@ -592,6 +651,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Mascarpone -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Mascarpone">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
     </owl:NamedIndividual>
@@ -599,6 +659,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Menu0 -->
+
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Menu0">
         <rdf:type rdf:resource="http://schema.org/Menu"/>
@@ -614,16 +675,18 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Merluzzo_alla_livornese -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Merluzzo_alla_livornese">
         <rdf:type rdf:resource="http://schema.org/MenuItem"/>
-        <FoodleMaps:hasCharacteristic rdf:resource="http://www.semanticweb.org/FoodleMaps#Light"/>
-        <FoodleMaps:hasRecipe rdf:resource="http://www.semanticweb.org/FoodleMaps#Recipe4"/>
+        <hasCharacteristic rdf:resource="http://www.semanticweb.org/FoodleMaps#Light"/>
+        <hasRecipe rdf:resource="http://www.semanticweb.org/FoodleMaps#Recipe4"/>
         <rdfs:label>Merluzzo alla livornese</rdfs:label>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Mustard -->
+
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Mustard">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
@@ -633,6 +696,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Olive -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Olive">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
     </owl:NamedIndividual>
@@ -640,6 +704,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Olive_oil -->
+
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Olive_oil">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
@@ -649,6 +714,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Onion -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Onion">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
     </owl:NamedIndividual>
@@ -656,6 +722,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Parsley -->
+
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Parsley">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
@@ -665,10 +732,11 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Pasta_al_pomodoro -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Pasta_al_pomodoro">
         <rdf:type rdf:resource="http://schema.org/MenuItem"/>
-        <FoodleMaps:hasRecipe rdf:resource="http://www.semanticweb.org/FoodleMaps#Recipe1"/>
-        <FoodleMaps:hasRecipe rdf:resource="http://www.semanticweb.org/FoodleMaps#Recipe2"/>
+        <hasRecipe rdf:resource="http://www.semanticweb.org/FoodleMaps#Recipe1"/>
+        <hasRecipe rdf:resource="http://www.semanticweb.org/FoodleMaps#Recipe2"/>
         <rdfs:label>Pasta al pomodoro</rdfs:label>
     </owl:NamedIndividual>
     
@@ -676,17 +744,19 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Pasta_alla_carbonara -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Pasta_alla_carbonara">
         <rdf:type rdf:resource="http://schema.org/MenuItem"/>
-        <FoodleMaps:hasCharacteristic rdf:resource="http://www.semanticweb.org/FoodleMaps#Heavy"/>
-        <FoodleMaps:hasRecipe rdf:resource="http://www.semanticweb.org/FoodleMaps#Recipe0"/>
-        <FoodleMaps:hasPreparationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</FoodleMaps:hasPreparationTime>
+        <hasCharacteristic rdf:resource="http://www.semanticweb.org/FoodleMaps#Heavy"/>
+        <hasRecipe rdf:resource="http://www.semanticweb.org/FoodleMaps#Recipe0"/>
+        <hasPreparationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</hasPreparationTime>
         <rdfs:label xml:lang="it">Pasta alla carbonara</rdfs:label>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Pecorino -->
+
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Pecorino">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
@@ -696,6 +766,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Pomodoro_sauce -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Pomodoro_sauce">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
     </owl:NamedIndividual>
@@ -704,13 +775,14 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Recipe0 -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Recipe0">
         <rdf:type rdf:resource="http://schema.org/Recipe"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://dbpedia.org/page/Spaghetti"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Bacon"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Black_pepper"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Egg"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Pecorino"/>
+        <hasIngredient rdf:resource="http://dbpedia.org/page/Spaghetti"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Bacon"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Black_pepper"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Egg"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Pecorino"/>
         <rdfs:label xml:lang="it">Recipe0</rdfs:label>
     </owl:NamedIndividual>
     
@@ -718,78 +790,84 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Recipe1 -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Recipe1">
         <rdf:type rdf:resource="http://schema.org/Recipe"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://dbpedia.org/page/Spaghetti"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Basil"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Garlic"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Olive_oil"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Pomodoro_sauce"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Salt"/>
+        <hasIngredient rdf:resource="http://dbpedia.org/page/Spaghetti"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Basil"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Garlic"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Olive_oil"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Pomodoro_sauce"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Salt"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Recipe2 -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Recipe2">
         <rdf:type rdf:resource="http://schema.org/Recipe"/>
         <schema:suitableForDiet rdf:resource="https://schema.org/GlutenFreeDiet"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Basil"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Garlic"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Olive_oil"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Pomodoro_sauce"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Salt"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Spaghetti_gluten_free"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Basil"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Garlic"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Olive_oil"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Pomodoro_sauce"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Salt"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Spaghetti_gluten_free"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Recipe3 -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Recipe3">
         <rdf:type rdf:resource="http://schema.org/Recipe"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Bovin_filet"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Brandy"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Butter"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Flour_type_00"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Green_pepper"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Mustard"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Salt"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Bovin_filet"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Brandy"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Butter"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Flour_type_00"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Green_pepper"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Mustard"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Salt"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Recipe4 -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Recipe4">
         <rdf:type rdf:resource="http://schema.org/Recipe"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Caper"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Codfish"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Garlic"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Olive"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Parsley"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Salt"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Tomato"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Caper"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Codfish"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Garlic"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Olive"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Parsley"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Salt"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Tomato"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Recipe5 -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Recipe5">
         <rdf:type rdf:resource="http://schema.org/Recipe"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Cocoa"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Coffee"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Egg"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Mascarpone"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Savoyard"/>
-        <FoodleMaps:hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Sugar"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Cocoa"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Coffee"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Egg"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Mascarpone"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Savoyard"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/FoodleMaps#Sugar"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Salt -->
+
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Salt">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
@@ -799,6 +877,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Savoyard -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Savoyard">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
     </owl:NamedIndividual>
@@ -806,6 +885,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Spaghetti_gluten_free -->
+
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Spaghetti_gluten_free">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
@@ -815,6 +895,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Sugar -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Sugar">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
     </owl:NamedIndividual>
@@ -823,15 +904,17 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- http://www.semanticweb.org/FoodleMaps#Tiramisu -->
 
+
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Tiramisu">
         <rdf:type rdf:resource="http://schema.org/MenuItem"/>
-        <FoodleMaps:hasRecipe rdf:resource="http://www.semanticweb.org/FoodleMaps#Recipe5"/>
-        <FoodleMaps:hasPreparationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</FoodleMaps:hasPreparationTime>
+        <hasRecipe rdf:resource="http://www.semanticweb.org/FoodleMaps#Recipe5"/>
+        <hasPreparationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasPreparationTime>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Tomato -->
+
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Tomato">
         <rdf:type rdf:resource="http://www.semanticweb.org/FoodleMaps#Ingredient"/>
@@ -840,6 +923,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- http://www.semanticweb.org/FoodleMaps#Trattoria_dell_orsa -->
+
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/FoodleMaps#Trattoria_dell_orsa">
         <rdf:type rdf:resource="http://schema.org/FoodEstablishment"/>
@@ -851,6 +935,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- https://schema.org/DiabeticDiet -->
 
+
     <owl:NamedIndividual rdf:about="https://schema.org/DiabeticDiet">
         <rdf:type rdf:resource="http://schema.org/RestrictedDiet"/>
     </owl:NamedIndividual>
@@ -858,6 +943,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- https://schema.org/GlutenFreeDiet -->
+
 
     <owl:NamedIndividual rdf:about="https://schema.org/GlutenFreeDiet">
         <rdf:type rdf:resource="http://schema.org/RestrictedDiet"/>
@@ -867,6 +953,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- https://schema.org/HalalDiet -->
 
+
     <owl:NamedIndividual rdf:about="https://schema.org/HalalDiet">
         <rdf:type rdf:resource="http://schema.org/RestrictedDiet"/>
     </owl:NamedIndividual>
@@ -874,6 +961,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- https://schema.org/HinduDiet -->
+
 
     <owl:NamedIndividual rdf:about="https://schema.org/HinduDiet">
         <rdf:type rdf:resource="http://schema.org/RestrictedDiet"/>
@@ -883,6 +971,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- https://schema.org/KosherDiet -->
 
+
     <owl:NamedIndividual rdf:about="https://schema.org/KosherDiet">
         <rdf:type rdf:resource="http://schema.org/RestrictedDiet"/>
     </owl:NamedIndividual>
@@ -890,6 +979,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- https://schema.org/LowCalorieDiet -->
+
 
     <owl:NamedIndividual rdf:about="https://schema.org/LowCalorieDiet">
         <rdf:type rdf:resource="http://schema.org/RestrictedDiet"/>
@@ -899,6 +989,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- https://schema.org/LowFatDiet -->
 
+
     <owl:NamedIndividual rdf:about="https://schema.org/LowFatDiet">
         <rdf:type rdf:resource="http://schema.org/RestrictedDiet"/>
     </owl:NamedIndividual>
@@ -906,6 +997,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- https://schema.org/LowLactoseDiet -->
+
 
     <owl:NamedIndividual rdf:about="https://schema.org/LowLactoseDiet">
         <rdf:type rdf:resource="http://schema.org/RestrictedDiet"/>
@@ -915,6 +1007,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- https://schema.org/LowSaltDiet -->
 
+
     <owl:NamedIndividual rdf:about="https://schema.org/LowSaltDiet">
         <rdf:type rdf:resource="http://schema.org/RestrictedDiet"/>
     </owl:NamedIndividual>
@@ -922,6 +1015,7 @@ This makes the ontology useful to design an application to help users in finding
 
 
     <!-- https://schema.org/VeganDiet -->
+
 
     <owl:NamedIndividual rdf:about="https://schema.org/VeganDiet">
         <rdf:type rdf:resource="http://schema.org/RestrictedDiet"/>
@@ -931,6 +1025,7 @@ This makes the ontology useful to design an application to help users in finding
 
     <!-- https://schema.org/VegetarianDiet -->
 
+
     <owl:NamedIndividual rdf:about="https://schema.org/VegetarianDiet">
         <rdf:type rdf:resource="http://schema.org/RestrictedDiet"/>
     </owl:NamedIndividual>
@@ -938,5 +1033,6 @@ This makes the ontology useful to design an application to help users in finding
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
 

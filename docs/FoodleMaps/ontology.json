@@ -1,0 +1,772 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://schema.org/FoodEstablishment"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://schema.org/MenuItem"
+    }, {
+      "@id" : "http://schema.org/Role"
+    }, {
+      "@id" : "http://schema.org/Text"
+    }, {
+      "@id" : "http://schema.org/URL"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://schema.org/RestrictedDiet"
+    }, {
+      "@id" : "http://schema.org/Role"
+    }, {
+      "@id" : "http://schema.org/Text"
+    }, {
+      "@id" : "http://schema.org/URL"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://schema.org/Menu"
+    }, {
+      "@id" : "http://schema.org/Role"
+    }, {
+      "@id" : "http://schema.org/Text"
+    }, {
+      "@id" : "http://schema.org/URL"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://schema.org/Menu"
+    }, {
+      "@id" : "http://schema.org/MenuSection"
+    } ]
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/Food",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Food is any eatable or drinkable substance that is normally consumed by humans."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Food"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/page/Carbonara",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Pasta_alla_carbonara"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/page/Spaghetti",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/example",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/CreativeWork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://schema.org/Enumeration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://schema.org/FoodEstablishment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A food-related business."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://schema.org/FoodEstablishment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "FoodEstablishment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/LocalBusiness"
+  } ]
+}, {
+  "@id" : "http://schema.org/HowTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://schema.org/Intangible",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://schema.org/LocalBusiness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://schema.org/Menu",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A structured representation of food or drink items available from a FoodEstablishment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://schema.org/Menu"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Menu"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/CreativeWork"
+  } ]
+}, {
+  "@id" : "http://schema.org/MenuItem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A food or drink item listed in a menu or menu section."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://schema.org/MenuItem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MenuItem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Intangible"
+  } ]
+}, {
+  "@id" : "http://schema.org/MenuSection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://schema.org/Recipe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via <a class=\"localLink\" href=\"http://schema.org/suitableForDiet\">suitableForDiet</a>. The <a class=\"localLink\" href=\"http://schema.org/keywords\">keywords</a> property can also be used to add more detail."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://schema.org/Recipe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Recipe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/HowTo"
+  } ]
+}, {
+  "@id" : "http://schema.org/RestrictedDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A diet restricted to certain foods or preparations for cultural, religious, health or lifestyle reasons."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://schema.org/RestrictedDiet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "RestrictedDiet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Enumeration"
+  } ]
+}, {
+  "@id" : "http://schema.org/Role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://schema.org/Text",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://schema.org/URL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://schema.org/hasMenu",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Either the actual menu as a structured representation, as text, or a URL of the menu."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://schema.org/hasMenu"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasMenu"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://schema.org/hasMenuItem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A food or drink item contained in a menu or menu section."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid8"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://schema.org/hasMenuItem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasMenuItem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "http://schema.org/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/suitableForDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates a dietary restriction or guideline for which this recipe or menu item is suitable, e.g. diabetic, halal etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Recipe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://schema.org/suitableForDiet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "suitableForDiet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "FoodleMaps provides a way to create restaurant entities, with a detailed description of dishes in the menu.\nDishes can be characterized by the used ingredients, but also by the preparation time, by some characteristic and others.\nThis makes the ontology useful to design an application to help users in finding restaurants according to their needs."
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "https://alexmv12.xyz/"
+  }, {
+    "@value" : "https://github.com/FrancescoAttorre"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "FoodleMaps is a an ontology designed to support an application which lets users find restaurant serving dishes with constraints on ingredients, diet, etc."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://www.gnu.org/licenses/gpl-3.0-standalone.html"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "foodlemaps"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://github.com/AlexMV12/FoodleMaps"
+  } ],
+  "http://schema.org/name" : [ {
+    "@value" : "FoodleMaps"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FoodleMaps"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Bacon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Basil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Black_pepper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Bovin_filet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Brandy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Butter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Caper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Characteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@value" : "Fresh, Heavy, Light, Spicy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An adjective characterizing the main aspect of a dish."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Characteristic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Cocoa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Codfish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Coffee",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Egg",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Filetto_al_pepe_verde",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
+  "http://www.semanticweb.org/FoodleMaps#hasPreparationTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "15"
+  } ],
+  "http://www.semanticweb.org/FoodleMaps#hasRecipe" : [ {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Filetto al pepe verde"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Flour_type_00",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Fresh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Characteristic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Garlic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Green_pepper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Heavy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Characteristic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Ingredient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@value" : "Spaghetti, Tomato sauce, Basil"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Every ingredient is a food which can be used to prepare dishes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ingredient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://dbpedia.org/ontology/Food"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Light",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Characteristic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Mascarpone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Menu0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Menu" ],
+  "http://schema.org/hasMenuItem" : [ {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Filetto_al_pepe_verde"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Merluzzo_alla_livornese"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Pasta_al_pomodoro"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Pasta_alla_carbonara"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Tiramisu"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Menu0"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Merluzzo_alla_livornese",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
+  "http://www.semanticweb.org/FoodleMaps#hasCharacteristic" : [ {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Light"
+  } ],
+  "http://www.semanticweb.org/FoodleMaps#hasRecipe" : [ {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Merluzzo alla livornese"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Mustard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Olive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Olive_oil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Onion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Parsley",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Pasta_al_pomodoro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
+  "http://www.semanticweb.org/FoodleMaps#hasRecipe" : [ {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe1"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pasta al pomodoro"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Pasta_alla_carbonara",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
+  "http://www.semanticweb.org/FoodleMaps#hasCharacteristic" : [ {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Heavy"
+  } ],
+  "http://www.semanticweb.org/FoodleMaps#hasPreparationTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "18"
+  } ],
+  "http://www.semanticweb.org/FoodleMaps#hasRecipe" : [ {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe0"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Pasta alla carbonara"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Pecorino",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Pomodoro_sauce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
+  "http://www.semanticweb.org/FoodleMaps#hasIngredient" : [ {
+    "@id" : "http://dbpedia.org/page/Spaghetti"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Bacon"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Black_pepper"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Egg"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Pecorino"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Recipe0"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
+  "http://www.semanticweb.org/FoodleMaps#hasIngredient" : [ {
+    "@id" : "http://dbpedia.org/page/Spaghetti"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Basil"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Garlic"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Olive_oil"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Pomodoro_sauce"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Salt"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
+  "http://schema.org/suitableForDiet" : [ {
+    "@id" : "https://schema.org/GlutenFreeDiet"
+  } ],
+  "http://www.semanticweb.org/FoodleMaps#hasIngredient" : [ {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Basil"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Garlic"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Olive_oil"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Pomodoro_sauce"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Salt"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Spaghetti_gluten_free"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
+  "http://www.semanticweb.org/FoodleMaps#hasIngredient" : [ {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Bovin_filet"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Brandy"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Butter"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Flour_type_00"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Green_pepper"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Mustard"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Salt"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
+  "http://www.semanticweb.org/FoodleMaps#hasIngredient" : [ {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Caper"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Codfish"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Garlic"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Olive"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Parsley"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Salt"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Tomato"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
+  "http://www.semanticweb.org/FoodleMaps#hasIngredient" : [ {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Cocoa"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Coffee"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Egg"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Mascarpone"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Savoyard"
+  }, {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Sugar"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Salt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Savoyard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Spaghetti_gluten_free",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Sugar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Tiramisu",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
+  "http://www.semanticweb.org/FoodleMaps#hasPreparationTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "10"
+  } ],
+  "http://www.semanticweb.org/FoodleMaps#hasRecipe" : [ {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe5"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Tomato",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#Trattoria_dell_orsa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/FoodEstablishment" ],
+  "http://schema.org/hasMenu" : [ {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Menu0"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Trattoria dell'orsa"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#User",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "User is the class which represents the requests of the application user in terms of wanted ingredients, wanted diet, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "User"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#hasCharacteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@value" : "Assigns \"Light\" to \"pasta al pomodoro\"."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Assigns one characteristic to a dish."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/MenuItem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasCharacteristic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Characteristic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#hasIngredient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@value" : "Associates \"Spaghetti\" ingredient to \"Pasta al pomodoro\"."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Associates an ingredient to a recipe."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Recipe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasIngredient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Ingredient"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#hasPreparationTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "10."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates how many minutes are needed to prepare and serve the dish. More precisely, is the time which should pass between the moment in which the order is made and the moment in which the dish is server."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/MenuItem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasPreparationTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#hasRecipe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Associates a Recipe to a MenuItem.MenuItems can have multiple recipes, to indicate different versions of the same dish."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/MenuItem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasRecipe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/Recipe"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#requiresCharacteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@value" : "The user wants a \"Heavy\" dish."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Used to express a constraint wanted by the user to a specific characteristic."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#User"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "requiresCharacteristic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#Characteristic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/FoodleMaps#requiresDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@value" : "Restricts dishes to VeganDiet."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Used to express a diet followed by the user; the returned dishes will have to be suitable for that diet."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/FoodleMaps#User"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "requiresDiet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/RestrictedDiet"
+  } ]
+}, {
+  "@id" : "https://schema.org/DiabeticDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
+}, {
+  "@id" : "https://schema.org/GlutenFreeDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
+}, {
+  "@id" : "https://schema.org/HalalDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
+}, {
+  "@id" : "https://schema.org/HinduDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
+}, {
+  "@id" : "https://schema.org/KosherDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
+}, {
+  "@id" : "https://schema.org/LowCalorieDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
+}, {
+  "@id" : "https://schema.org/LowFatDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
+}, {
+  "@id" : "https://schema.org/LowLactoseDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
+}, {
+  "@id" : "https://schema.org/LowSaltDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
+}, {
+  "@id" : "https://schema.org/VeganDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
+}, {
+  "@id" : "https://schema.org/VegetarianDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
+} ]

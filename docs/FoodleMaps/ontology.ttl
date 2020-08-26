@@ -1,0 +1,626 @@
+@prefix : <http://www.semanticweb.org/FoodleMaps#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/FoodleMaps> .
+
+<http://www.semanticweb.org/FoodleMaps> rdf:type owl:Ontology ;
+                                         <http://purl.org/dc/terms/abstract> """FoodleMaps provides a way to create restaurant entities, with a detailed description of dishes in the menu.
+Dishes can be characterized by the used ingredients, but also by the preparation time, by some characteristic and others.
+This makes the ontology useful to design an application to help users in finding restaurants according to their needs.""" ;
+                                         <http://purl.org/dc/terms/creator> "https://alexmv12.xyz/" ,
+                                                                            "https://github.com/FrancescoAttorre" ;
+                                         <http://purl.org/dc/terms/description> "FoodleMaps is a an ontology designed to support an application which lets users find restaurant serving dishes with constraints on ingredients, diet, etc." ;
+                                         <http://purl.org/dc/terms/license> "https://www.gnu.org/licenses/gpl-3.0-standalone.html" ;
+                                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "foodlemaps" ;
+                                         <http://purl.org/vocab/vann/preferredNamespaceUri> "https://github.com/AlexMV12/FoodleMaps" ;
+                                         <http://schema.org/name> "FoodleMaps" ;
+                                         rdfs:label "FoodleMaps" ;
+                                         owl:versionInfo 1.0 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/example
+<http://purl.org/vocab/vann/example> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/name
+<http://schema.org/name> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://schema.org/hasMenu
+<http://schema.org/hasMenu> rdf:type owl:ObjectProperty ;
+                            rdfs:domain [ rdf:type owl:Class ;
+                                          owl:unionOf ( <http://schema.org/FoodEstablishment>
+                                                      )
+                                        ] ;
+                            rdfs:range [ rdf:type owl:Class ;
+                                         owl:unionOf ( <http://schema.org/Menu>
+                                                       <http://schema.org/Role>
+                                                       <http://schema.org/Text>
+                                                       <http://schema.org/URL>
+                                                     )
+                                       ] ;
+                            rdfs:comment "Either the actual menu as a structured representation, as text, or a URL of the menu."@en ;
+                            rdfs:isDefinedBy <https://schema.org/hasMenu> ;
+                            rdfs:label "hasMenu"@en .
+
+
+###  http://schema.org/hasMenuItem
+<http://schema.org/hasMenuItem> rdf:type owl:ObjectProperty ;
+                                rdfs:domain [ rdf:type owl:Class ;
+                                              owl:unionOf ( <http://schema.org/Menu>
+                                                            <http://schema.org/MenuSection>
+                                                          )
+                                            ] ;
+                                rdfs:range [ rdf:type owl:Class ;
+                                             owl:unionOf ( <http://schema.org/MenuItem>
+                                                           <http://schema.org/Role>
+                                                           <http://schema.org/Text>
+                                                           <http://schema.org/URL>
+                                                         )
+                                           ] ;
+                                rdfs:comment "A food or drink item contained in a menu or menu section."@en ;
+                                rdfs:isDefinedBy <https://schema.org/hasMenuItem> ;
+                                rdfs:label "hasMenuItem"@en .
+
+
+###  http://schema.org/suitableForDiet
+<http://schema.org/suitableForDiet> rdf:type owl:ObjectProperty ;
+                                    rdfs:domain <http://schema.org/Recipe> ;
+                                    rdfs:range [ rdf:type owl:Class ;
+                                                 owl:unionOf ( <http://schema.org/RestrictedDiet>
+                                                               <http://schema.org/Role>
+                                                               <http://schema.org/Text>
+                                                               <http://schema.org/URL>
+                                                             )
+                                               ] ;
+                                    rdfs:comment "Indicates a dietary restriction or guideline for which this recipe or menu item is suitable, e.g. diabetic, halal etc."@en ;
+                                    rdfs:isDefinedBy <https://schema.org/suitableForDiet> ;
+                                    rdfs:label "suitableForDiet"@en .
+
+
+###  http://www.semanticweb.org/FoodleMaps#hasCharacteristic
+:hasCharacteristic rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain <http://schema.org/MenuItem> ;
+                   rdfs:range :Characteristic ;
+                   <http://purl.org/vocab/vann/example> "Assigns \"Light\" to \"pasta al pomodoro\"." ;
+                   rdfs:comment "Assigns one characteristic to a dish." ;
+                   rdfs:label "hasCharacteristic" .
+
+
+###  http://www.semanticweb.org/FoodleMaps#hasIngredient
+:hasIngredient rdf:type owl:ObjectProperty ;
+               rdfs:domain <http://schema.org/Recipe> ;
+               rdfs:range :Ingredient ;
+               <http://purl.org/vocab/vann/example> "Associates \"Spaghetti\" ingredient to \"Pasta al pomodoro\"." ;
+               rdfs:comment "Associates an ingredient to a recipe." ;
+               rdfs:label "hasIngredient" .
+
+
+###  http://www.semanticweb.org/FoodleMaps#hasRecipe
+:hasRecipe rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://schema.org/MenuItem> ;
+           rdfs:range <http://schema.org/Recipe> ;
+           rdfs:comment "Associates a Recipe to a MenuItem.MenuItems can have multiple recipes, to indicate different versions of the same dish." ;
+           rdfs:label "hasRecipe" .
+
+
+###  http://www.semanticweb.org/FoodleMaps#requiresCharacteristic
+:requiresCharacteristic rdf:type owl:ObjectProperty ;
+                        rdfs:domain :User ;
+                        rdfs:range :Characteristic ;
+                        <http://purl.org/vocab/vann/example> "The user wants a \"Heavy\" dish." ;
+                        rdfs:comment "Used to express a constraint wanted by the user to a specific characteristic." ;
+                        rdfs:label "requiresCharacteristic" .
+
+
+###  http://www.semanticweb.org/FoodleMaps#requiresDiet
+:requiresDiet rdf:type owl:ObjectProperty ;
+              rdfs:domain :User ;
+              rdfs:range <http://schema.org/RestrictedDiet> ;
+              <http://purl.org/vocab/vann/example> "Restricts dishes to VeganDiet." ;
+              rdfs:comment "Used to express a diet followed by the user; the returned dishes will have to be suitable for that diet." ;
+              rdfs:label "requiresDiet" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/FoodleMaps#hasPreparationTime
+:hasPreparationTime rdf:type owl:DatatypeProperty ;
+                    rdfs:domain <http://schema.org/MenuItem> ;
+                    rdfs:range xsd:int ;
+                    <http://purl.org/vocab/vann/example> 10. ;
+                    rdfs:comment "Indicates how many minutes are needed to prepare and serve the dish. More precisely, is the time which should pass between the moment in which the order is made and the moment in which the dish is server." ;
+                    rdfs:label "hasPreparationTime" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/ontology/Food
+<http://dbpedia.org/ontology/Food> rdf:type owl:Class ;
+                                   rdfs:comment "Food is any eatable or drinkable substance that is normally consumed by humans." ;
+                                   rdfs:label "Food" .
+
+
+###  http://schema.org/CreativeWork
+<http://schema.org/CreativeWork> rdf:type owl:Class .
+
+
+###  http://schema.org/Enumeration
+<http://schema.org/Enumeration> rdf:type owl:Class .
+
+
+###  http://schema.org/FoodEstablishment
+<http://schema.org/FoodEstablishment> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://schema.org/LocalBusiness> ;
+                                      rdfs:comment "A food-related business."@en ;
+                                      rdfs:isDefinedBy <https://schema.org/FoodEstablishment> ;
+                                      rdfs:label "FoodEstablishment"@en .
+
+
+###  http://schema.org/HowTo
+<http://schema.org/HowTo> rdf:type owl:Class .
+
+
+###  http://schema.org/Intangible
+<http://schema.org/Intangible> rdf:type owl:Class .
+
+
+###  http://schema.org/LocalBusiness
+<http://schema.org/LocalBusiness> rdf:type owl:Class .
+
+
+###  http://schema.org/Menu
+<http://schema.org/Menu> rdf:type owl:Class ;
+                         rdfs:subClassOf <http://schema.org/CreativeWork> ;
+                         rdfs:comment "A structured representation of food or drink items available from a FoodEstablishment."@en ;
+                         rdfs:isDefinedBy <https://schema.org/Menu> ;
+                         rdfs:label "Menu"@en .
+
+
+###  http://schema.org/MenuItem
+<http://schema.org/MenuItem> rdf:type owl:Class ;
+                             rdfs:subClassOf <http://schema.org/Intangible> ;
+                             rdfs:comment "A food or drink item listed in a menu or menu section."@en ;
+                             rdfs:isDefinedBy <https://schema.org/MenuItem> ;
+                             rdfs:label "MenuItem"@en .
+
+
+###  http://schema.org/MenuSection
+<http://schema.org/MenuSection> rdf:type owl:Class .
+
+
+###  http://schema.org/Recipe
+<http://schema.org/Recipe> rdf:type owl:Class ;
+                           rdfs:subClassOf <http://schema.org/HowTo> ;
+                           rdfs:comment "A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via <a class=\"localLink\" href=\"http://schema.org/suitableForDiet\">suitableForDiet</a>. The <a class=\"localLink\" href=\"http://schema.org/keywords\">keywords</a> property can also be used to add more detail."@en ;
+                           rdfs:isDefinedBy <https://schema.org/Recipe> ;
+                           rdfs:label "Recipe"@en .
+
+
+###  http://schema.org/RestrictedDiet
+<http://schema.org/RestrictedDiet> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://schema.org/Enumeration> ;
+                                   rdfs:comment "A diet restricted to certain foods or preparations for cultural, religious, health or lifestyle reasons."@en ;
+                                   rdfs:isDefinedBy <https://schema.org/RestrictedDiet> ;
+                                   rdfs:label "RestrictedDiet"@en .
+
+
+###  http://schema.org/Role
+<http://schema.org/Role> rdf:type owl:Class .
+
+
+###  http://schema.org/Text
+<http://schema.org/Text> rdf:type owl:Class .
+
+
+###  http://schema.org/URL
+<http://schema.org/URL> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Characteristic
+:Characteristic rdf:type owl:Class ;
+                <http://purl.org/vocab/vann/example> "Fresh, Heavy, Light, Spicy" ;
+                rdfs:comment "An adjective characterizing the main aspect of a dish." ;
+                rdfs:label "Characteristic" .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Ingredient
+:Ingredient rdf:type owl:Class ;
+            rdfs:subClassOf <http://dbpedia.org/ontology/Food> ;
+            <http://purl.org/vocab/vann/example> "Spaghetti, Tomato sauce, Basil" ;
+            rdfs:comment "Every ingredient is a food which can be used to prepare dishes." ;
+            rdfs:label "Ingredient" .
+
+
+###  http://www.semanticweb.org/FoodleMaps#User
+:User rdf:type owl:Class ;
+      rdfs:comment "User is the class which represents the requests of the application user in terms of wanted ingredients, wanted diet, etc." ;
+      rdfs:label "User" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://dbpedia.org/page/Carbonara
+<http://dbpedia.org/page/Carbonara> rdf:type owl:NamedIndividual ;
+                                    owl:sameAs :Pasta_alla_carbonara .
+
+
+###  http://dbpedia.org/page/Spaghetti
+<http://dbpedia.org/page/Spaghetti> rdf:type owl:NamedIndividual ,
+                                             :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Bacon
+:Bacon rdf:type owl:NamedIndividual ,
+                :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Basil
+:Basil rdf:type owl:NamedIndividual ,
+                :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Black_pepper
+:Black_pepper rdf:type owl:NamedIndividual ,
+                       :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Bovin_filet
+:Bovin_filet rdf:type owl:NamedIndividual ,
+                      :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Brandy
+:Brandy rdf:type owl:NamedIndividual ,
+                 :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Butter
+:Butter rdf:type owl:NamedIndividual ,
+                 :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Caper
+:Caper rdf:type owl:NamedIndividual ,
+                :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Cocoa
+:Cocoa rdf:type owl:NamedIndividual ,
+                :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Codfish
+:Codfish rdf:type owl:NamedIndividual ,
+                  :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Coffee
+:Coffee rdf:type owl:NamedIndividual ,
+                 :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Egg
+:Egg rdf:type owl:NamedIndividual ,
+              :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Filetto_al_pepe_verde
+:Filetto_al_pepe_verde rdf:type owl:NamedIndividual ,
+                                <http://schema.org/MenuItem> ;
+                       :hasRecipe :Recipe3 ;
+                       :hasPreparationTime 15 ;
+                       rdfs:label "Filetto al pepe verde" .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Flour_type_00
+:Flour_type_00 rdf:type owl:NamedIndividual ,
+                        :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Fresh
+:Fresh rdf:type owl:NamedIndividual ,
+                :Characteristic .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Garlic
+:Garlic rdf:type owl:NamedIndividual ,
+                 :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Green_pepper
+:Green_pepper rdf:type owl:NamedIndividual ,
+                       :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Heavy
+:Heavy rdf:type owl:NamedIndividual ,
+                :Characteristic .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Light
+:Light rdf:type owl:NamedIndividual ,
+                :Characteristic .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Mascarpone
+:Mascarpone rdf:type owl:NamedIndividual ,
+                     :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Menu0
+:Menu0 rdf:type owl:NamedIndividual ,
+                <http://schema.org/Menu> ;
+       <http://schema.org/hasMenuItem> :Filetto_al_pepe_verde ,
+                                       :Merluzzo_alla_livornese ,
+                                       :Pasta_al_pomodoro ,
+                                       :Pasta_alla_carbonara ,
+                                       :Tiramisu ;
+       rdfs:label "Menu0"@it .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Merluzzo_alla_livornese
+:Merluzzo_alla_livornese rdf:type owl:NamedIndividual ,
+                                  <http://schema.org/MenuItem> ;
+                         :hasCharacteristic :Light ;
+                         :hasRecipe :Recipe4 ;
+                         rdfs:label "Merluzzo alla livornese" .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Mustard
+:Mustard rdf:type owl:NamedIndividual ,
+                  :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Olive
+:Olive rdf:type owl:NamedIndividual ,
+                :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Olive_oil
+:Olive_oil rdf:type owl:NamedIndividual ,
+                    :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Onion
+:Onion rdf:type owl:NamedIndividual ,
+                :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Parsley
+:Parsley rdf:type owl:NamedIndividual ,
+                  :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Pasta_al_pomodoro
+:Pasta_al_pomodoro rdf:type owl:NamedIndividual ,
+                            <http://schema.org/MenuItem> ;
+                   :hasRecipe :Recipe1 ,
+                              :Recipe2 ;
+                   rdfs:label "Pasta al pomodoro" .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Pasta_alla_carbonara
+:Pasta_alla_carbonara rdf:type owl:NamedIndividual ,
+                               <http://schema.org/MenuItem> ;
+                      :hasCharacteristic :Heavy ;
+                      :hasRecipe :Recipe0 ;
+                      :hasPreparationTime 18 ;
+                      rdfs:label "Pasta alla carbonara"@it .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Pecorino
+:Pecorino rdf:type owl:NamedIndividual ,
+                   :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Pomodoro_sauce
+:Pomodoro_sauce rdf:type owl:NamedIndividual ,
+                         :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Recipe0
+:Recipe0 rdf:type owl:NamedIndividual ,
+                  <http://schema.org/Recipe> ;
+         :hasIngredient <http://dbpedia.org/page/Spaghetti> ,
+                        :Bacon ,
+                        :Black_pepper ,
+                        :Egg ,
+                        :Pecorino ;
+         rdfs:label "Recipe0"@it .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Recipe1
+:Recipe1 rdf:type owl:NamedIndividual ,
+                  <http://schema.org/Recipe> ;
+         :hasIngredient <http://dbpedia.org/page/Spaghetti> ,
+                        :Basil ,
+                        :Garlic ,
+                        :Olive_oil ,
+                        :Pomodoro_sauce ,
+                        :Salt .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Recipe2
+:Recipe2 rdf:type owl:NamedIndividual ,
+                  <http://schema.org/Recipe> ;
+         <http://schema.org/suitableForDiet> <https://schema.org/GlutenFreeDiet> ;
+         :hasIngredient :Basil ,
+                        :Garlic ,
+                        :Olive_oil ,
+                        :Pomodoro_sauce ,
+                        :Salt ,
+                        :Spaghetti_gluten_free .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Recipe3
+:Recipe3 rdf:type owl:NamedIndividual ,
+                  <http://schema.org/Recipe> ;
+         :hasIngredient :Bovin_filet ,
+                        :Brandy ,
+                        :Butter ,
+                        :Flour_type_00 ,
+                        :Green_pepper ,
+                        :Mustard ,
+                        :Salt .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Recipe4
+:Recipe4 rdf:type owl:NamedIndividual ,
+                  <http://schema.org/Recipe> ;
+         :hasIngredient :Caper ,
+                        :Codfish ,
+                        :Garlic ,
+                        :Olive ,
+                        :Parsley ,
+                        :Salt ,
+                        :Tomato .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Recipe5
+:Recipe5 rdf:type owl:NamedIndividual ,
+                  <http://schema.org/Recipe> ;
+         :hasIngredient :Cocoa ,
+                        :Coffee ,
+                        :Egg ,
+                        :Mascarpone ,
+                        :Savoyard ,
+                        :Sugar .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Salt
+:Salt rdf:type owl:NamedIndividual ,
+               :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Savoyard
+:Savoyard rdf:type owl:NamedIndividual ,
+                   :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Spaghetti_gluten_free
+:Spaghetti_gluten_free rdf:type owl:NamedIndividual ,
+                                :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Sugar
+:Sugar rdf:type owl:NamedIndividual ,
+                :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Tiramisu
+:Tiramisu rdf:type owl:NamedIndividual ,
+                   <http://schema.org/MenuItem> ;
+          :hasRecipe :Recipe5 ;
+          :hasPreparationTime 10 .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Tomato
+:Tomato rdf:type owl:NamedIndividual ,
+                 :Ingredient .
+
+
+###  http://www.semanticweb.org/FoodleMaps#Trattoria_dell_orsa
+:Trattoria_dell_orsa rdf:type owl:NamedIndividual ,
+                              <http://schema.org/FoodEstablishment> ;
+                     <http://schema.org/hasMenu> :Menu0 ;
+                     rdfs:label "Trattoria dell'orsa"@it .
+
+
+###  https://schema.org/DiabeticDiet
+<https://schema.org/DiabeticDiet> rdf:type owl:NamedIndividual ,
+                                           <http://schema.org/RestrictedDiet> .
+
+
+###  https://schema.org/GlutenFreeDiet
+<https://schema.org/GlutenFreeDiet> rdf:type owl:NamedIndividual ,
+                                             <http://schema.org/RestrictedDiet> .
+
+
+###  https://schema.org/HalalDiet
+<https://schema.org/HalalDiet> rdf:type owl:NamedIndividual ,
+                                        <http://schema.org/RestrictedDiet> .
+
+
+###  https://schema.org/HinduDiet
+<https://schema.org/HinduDiet> rdf:type owl:NamedIndividual ,
+                                        <http://schema.org/RestrictedDiet> .
+
+
+###  https://schema.org/KosherDiet
+<https://schema.org/KosherDiet> rdf:type owl:NamedIndividual ,
+                                         <http://schema.org/RestrictedDiet> .
+
+
+###  https://schema.org/LowCalorieDiet
+<https://schema.org/LowCalorieDiet> rdf:type owl:NamedIndividual ,
+                                             <http://schema.org/RestrictedDiet> .
+
+
+###  https://schema.org/LowFatDiet
+<https://schema.org/LowFatDiet> rdf:type owl:NamedIndividual ,
+                                         <http://schema.org/RestrictedDiet> .
+
+
+###  https://schema.org/LowLactoseDiet
+<https://schema.org/LowLactoseDiet> rdf:type owl:NamedIndividual ,
+                                             <http://schema.org/RestrictedDiet> .
+
+
+###  https://schema.org/LowSaltDiet
+<https://schema.org/LowSaltDiet> rdf:type owl:NamedIndividual ,
+                                          <http://schema.org/RestrictedDiet> .
+
+
+###  https://schema.org/VeganDiet
+<https://schema.org/VeganDiet> rdf:type owl:NamedIndividual ,
+                                        <http://schema.org/RestrictedDiet> .
+
+
+###  https://schema.org/VegetarianDiet
+<https://schema.org/VegetarianDiet> rdf:type owl:NamedIndividual ,
+                                             <http://schema.org/RestrictedDiet> .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
