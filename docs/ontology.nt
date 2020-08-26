@@ -1,14 +1,14 @@
-<http://www.semanticweb.org/FoodleMaps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://www.semanticweb.org/FoodleMaps> <http://purl.org/dc/terms/abstract> "FoodleMaps provides a way to create restaurant entities, with a detailed description of dishes in the menu.\nDishes can be characterized by the used ingredients, but also by the preparation time, by some characteristic and others.\nThis makes the ontology useful to design an application to help users in finding restaurants according to their needs." .
-<http://www.semanticweb.org/FoodleMaps> <http://purl.org/dc/terms/creator> "https://alexmv12.xyz/" .
-<http://www.semanticweb.org/FoodleMaps> <http://purl.org/dc/terms/creator> "https://github.com/FrancescoAttorre" .
-<http://www.semanticweb.org/FoodleMaps> <http://purl.org/dc/terms/description> "FoodleMaps is a an ontology designed to support an application which lets users find restaurant serving dishes with constraints on ingredients, diet, etc." .
-<http://www.semanticweb.org/FoodleMaps> <http://purl.org/dc/terms/license> "https://www.gnu.org/licenses/gpl-3.0-standalone.html" .
-<http://www.semanticweb.org/FoodleMaps> <http://purl.org/vocab/vann/preferredNamespacePrefix> "foodlemaps" .
-<http://www.semanticweb.org/FoodleMaps> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://github.com/AlexMV12/FoodleMaps" .
-<http://www.semanticweb.org/FoodleMaps> <http://schema.org/name> "FoodleMaps" .
-<http://www.semanticweb.org/FoodleMaps> <http://www.w3.org/2000/01/rdf-schema#label> "FoodleMaps" .
-<http://www.semanticweb.org/FoodleMaps> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://alexmv12.github.io/FoodleMaps/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://alexmv12.github.io/FoodleMaps/> <http://purl.org/dc/terms/abstract> "FoodleMaps provides a way to create restaurant entities, with a detailed description of dishes in the menu.\nDishes can be characterized by the used ingredients, but also by the preparation time, by some characteristic and others.\nThis makes the ontology useful to design an application to help users in finding restaurants according to their needs." .
+<https://alexmv12.github.io/FoodleMaps/> <http://purl.org/dc/terms/creator> "https://alexmv12.xyz/" .
+<https://alexmv12.github.io/FoodleMaps/> <http://purl.org/dc/terms/creator> "https://github.com/FrancescoAttorre" .
+<https://alexmv12.github.io/FoodleMaps/> <http://purl.org/dc/terms/description> "FoodleMaps is a an ontology designed to support an application which lets users find restaurant serving dishes with constraints on ingredients, diet, etc." .
+<https://alexmv12.github.io/FoodleMaps/> <http://purl.org/dc/terms/license> "https://www.gnu.org/licenses/gpl-3.0-standalone.html" .
+<https://alexmv12.github.io/FoodleMaps/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "foodlemaps" .
+<https://alexmv12.github.io/FoodleMaps/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://github.com/AlexMV12/FoodleMaps" .
+<https://alexmv12.github.io/FoodleMaps/> <http://schema.org/name> "FoodleMaps" .
+<https://alexmv12.github.io/FoodleMaps/> <http://www.w3.org/2000/01/rdf-schema#label> "FoodleMaps" .
+<https://alexmv12.github.io/FoodleMaps/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # 
 # #################################################################
@@ -130,45 +130,45 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://schema.org/suitableForDiet> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/suitableForDiet> .
 <http://schema.org/suitableForDiet> <http://www.w3.org/2000/01/rdf-schema#label> "suitableForDiet"@en .
 # 
-# http://www.semanticweb.org/FoodleMaps#hasCharacteristic
-<http://www.semanticweb.org/FoodleMaps#hasCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/FoodleMaps#hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<http://www.semanticweb.org/FoodleMaps#hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/MenuItem> .
-<http://www.semanticweb.org/FoodleMaps#hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/FoodleMaps#Characteristic> .
-<http://www.semanticweb.org/FoodleMaps#hasCharacteristic> <http://purl.org/vocab/vann/example> "Assigns \"Light\" to \"pasta al pomodoro\"." .
-<http://www.semanticweb.org/FoodleMaps#hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#comment> "Assigns one characteristic to a dish." .
-<http://www.semanticweb.org/FoodleMaps#hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#label> "hasCharacteristic" .
+# https://alexmv12.github.io/FoodleMaps/#hasCharacteristic
+<https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/MenuItem> .
+<https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexmv12.github.io/FoodleMaps/#Characteristic> .
+<https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <http://purl.org/vocab/vann/example> "Assigns \"Light\" to \"pasta al pomodoro\"." .
+<https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#comment> "Assigns one characteristic to a dish." .
+<https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#label> "hasCharacteristic" .
 # 
-# http://www.semanticweb.org/FoodleMaps#hasIngredient
-<http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Recipe> .
-<http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
-<http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://purl.org/vocab/vann/example> "Associates \"Spaghetti\" ingredient to \"Pasta al pomodoro\"." .
-<http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates an ingredient to a recipe." .
-<http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.w3.org/2000/01/rdf-schema#label> "hasIngredient" .
+# https://alexmv12.github.io/FoodleMaps/#hasIngredient
+<https://alexmv12.github.io/FoodleMaps/#hasIngredient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexmv12.github.io/FoodleMaps/#hasIngredient> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#hasIngredient> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+<https://alexmv12.github.io/FoodleMaps/#hasIngredient> <http://purl.org/vocab/vann/example> "Associates \"Spaghetti\" ingredient to \"Pasta al pomodoro\"." .
+<https://alexmv12.github.io/FoodleMaps/#hasIngredient> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates an ingredient to a recipe." .
+<https://alexmv12.github.io/FoodleMaps/#hasIngredient> <http://www.w3.org/2000/01/rdf-schema#label> "hasIngredient" .
 # 
-# http://www.semanticweb.org/FoodleMaps#hasRecipe
-<http://www.semanticweb.org/FoodleMaps#hasRecipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/FoodleMaps#hasRecipe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/MenuItem> .
-<http://www.semanticweb.org/FoodleMaps#hasRecipe> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Recipe> .
-<http://www.semanticweb.org/FoodleMaps#hasRecipe> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Recipe to a MenuItem.MenuItems can have multiple recipes, to indicate different versions of the same dish." .
-<http://www.semanticweb.org/FoodleMaps#hasRecipe> <http://www.w3.org/2000/01/rdf-schema#label> "hasRecipe" .
+# https://alexmv12.github.io/FoodleMaps/#hasRecipe
+<https://alexmv12.github.io/FoodleMaps/#hasRecipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexmv12.github.io/FoodleMaps/#hasRecipe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/MenuItem> .
+<https://alexmv12.github.io/FoodleMaps/#hasRecipe> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#hasRecipe> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Recipe to a MenuItem.MenuItems can have multiple recipes, to indicate different versions of the same dish." .
+<https://alexmv12.github.io/FoodleMaps/#hasRecipe> <http://www.w3.org/2000/01/rdf-schema#label> "hasRecipe" .
 # 
-# http://www.semanticweb.org/FoodleMaps#requiresCharacteristic
-<http://www.semanticweb.org/FoodleMaps#requiresCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/FoodleMaps#requiresCharacteristic> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/FoodleMaps#User> .
-<http://www.semanticweb.org/FoodleMaps#requiresCharacteristic> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/FoodleMaps#Characteristic> .
-<http://www.semanticweb.org/FoodleMaps#requiresCharacteristic> <http://purl.org/vocab/vann/example> "The user wants a \"Heavy\" dish." .
-<http://www.semanticweb.org/FoodleMaps#requiresCharacteristic> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to express a constraint wanted by the user to a specific characteristic." .
-<http://www.semanticweb.org/FoodleMaps#requiresCharacteristic> <http://www.w3.org/2000/01/rdf-schema#label> "requiresCharacteristic" .
+# https://alexmv12.github.io/FoodleMaps/#requiresCharacteristic
+<https://alexmv12.github.io/FoodleMaps/#requiresCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexmv12.github.io/FoodleMaps/#requiresCharacteristic> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexmv12.github.io/FoodleMaps/#User> .
+<https://alexmv12.github.io/FoodleMaps/#requiresCharacteristic> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexmv12.github.io/FoodleMaps/#Characteristic> .
+<https://alexmv12.github.io/FoodleMaps/#requiresCharacteristic> <http://purl.org/vocab/vann/example> "The user wants a \"Heavy\" dish." .
+<https://alexmv12.github.io/FoodleMaps/#requiresCharacteristic> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to express a constraint wanted by the user to a specific characteristic." .
+<https://alexmv12.github.io/FoodleMaps/#requiresCharacteristic> <http://www.w3.org/2000/01/rdf-schema#label> "requiresCharacteristic" .
 # 
-# http://www.semanticweb.org/FoodleMaps#requiresDiet
-<http://www.semanticweb.org/FoodleMaps#requiresDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/FoodleMaps#requiresDiet> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/FoodleMaps#User> .
-<http://www.semanticweb.org/FoodleMaps#requiresDiet> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/RestrictedDiet> .
-<http://www.semanticweb.org/FoodleMaps#requiresDiet> <http://purl.org/vocab/vann/example> "Restricts dishes to VeganDiet." .
-<http://www.semanticweb.org/FoodleMaps#requiresDiet> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to express a diet followed by the user; the returned dishes will have to be suitable for that diet." .
-<http://www.semanticweb.org/FoodleMaps#requiresDiet> <http://www.w3.org/2000/01/rdf-schema#label> "requiresDiet" .
+# https://alexmv12.github.io/FoodleMaps/#requiresDiet
+<https://alexmv12.github.io/FoodleMaps/#requiresDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexmv12.github.io/FoodleMaps/#requiresDiet> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexmv12.github.io/FoodleMaps/#User> .
+<https://alexmv12.github.io/FoodleMaps/#requiresDiet> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/RestrictedDiet> .
+<https://alexmv12.github.io/FoodleMaps/#requiresDiet> <http://purl.org/vocab/vann/example> "Restricts dishes to VeganDiet." .
+<https://alexmv12.github.io/FoodleMaps/#requiresDiet> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to express a diet followed by the user; the returned dishes will have to be suitable for that diet." .
+<https://alexmv12.github.io/FoodleMaps/#requiresDiet> <http://www.w3.org/2000/01/rdf-schema#label> "requiresDiet" .
 # 
 # 
 # 
@@ -179,13 +179,13 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # #################################################################
 # 
 # 
-# http://www.semanticweb.org/FoodleMaps#hasPreparationTime
-<http://www.semanticweb.org/FoodleMaps#hasPreparationTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.semanticweb.org/FoodleMaps#hasPreparationTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/MenuItem> .
-<http://www.semanticweb.org/FoodleMaps#hasPreparationTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
-<http://www.semanticweb.org/FoodleMaps#hasPreparationTime> <http://purl.org/vocab/vann/example> "10."^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<http://www.semanticweb.org/FoodleMaps#hasPreparationTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates how many minutes are needed to prepare and serve the dish. More precisely, is the time which should pass between the moment in which the order is made and the moment in which the dish is server." .
-<http://www.semanticweb.org/FoodleMaps#hasPreparationTime> <http://www.w3.org/2000/01/rdf-schema#label> "hasPreparationTime" .
+# https://alexmv12.github.io/FoodleMaps/#hasPreparationTime
+<https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/MenuItem> .
+<https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> <http://purl.org/vocab/vann/example> "10."^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates how many minutes are needed to prepare and serve the dish. More precisely, is the time which should pass between the moment in which the order is made and the moment in which the dish is server." .
+<https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> <http://www.w3.org/2000/01/rdf-schema#label> "hasPreparationTime" .
 # 
 # 
 # 
@@ -263,23 +263,23 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://schema.org/URL
 <http://schema.org/URL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Characteristic
-<http://www.semanticweb.org/FoodleMaps#Characteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/FoodleMaps#Characteristic> <http://purl.org/vocab/vann/example> "Fresh, Heavy, Light, Spicy" .
-<http://www.semanticweb.org/FoodleMaps#Characteristic> <http://www.w3.org/2000/01/rdf-schema#comment> "An adjective characterizing the main aspect of a dish." .
-<http://www.semanticweb.org/FoodleMaps#Characteristic> <http://www.w3.org/2000/01/rdf-schema#label> "Characteristic" .
+# https://alexmv12.github.io/FoodleMaps/#Characteristic
+<https://alexmv12.github.io/FoodleMaps/#Characteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://alexmv12.github.io/FoodleMaps/#Characteristic> <http://purl.org/vocab/vann/example> "Fresh, Heavy, Light, Spicy" .
+<https://alexmv12.github.io/FoodleMaps/#Characteristic> <http://www.w3.org/2000/01/rdf-schema#comment> "An adjective characterizing the main aspect of a dish." .
+<https://alexmv12.github.io/FoodleMaps/#Characteristic> <http://www.w3.org/2000/01/rdf-schema#label> "Characteristic" .
 # 
-# http://www.semanticweb.org/FoodleMaps#Ingredient
-<http://www.semanticweb.org/FoodleMaps#Ingredient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/FoodleMaps#Ingredient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Food> .
-<http://www.semanticweb.org/FoodleMaps#Ingredient> <http://purl.org/vocab/vann/example> "Spaghetti, Tomato sauce, Basil" .
-<http://www.semanticweb.org/FoodleMaps#Ingredient> <http://www.w3.org/2000/01/rdf-schema#comment> "Every ingredient is a food which can be used to prepare dishes." .
-<http://www.semanticweb.org/FoodleMaps#Ingredient> <http://www.w3.org/2000/01/rdf-schema#label> "Ingredient" .
+# https://alexmv12.github.io/FoodleMaps/#Ingredient
+<https://alexmv12.github.io/FoodleMaps/#Ingredient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://alexmv12.github.io/FoodleMaps/#Ingredient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Food> .
+<https://alexmv12.github.io/FoodleMaps/#Ingredient> <http://purl.org/vocab/vann/example> "Spaghetti, Tomato sauce, Basil" .
+<https://alexmv12.github.io/FoodleMaps/#Ingredient> <http://www.w3.org/2000/01/rdf-schema#comment> "Every ingredient is a food which can be used to prepare dishes." .
+<https://alexmv12.github.io/FoodleMaps/#Ingredient> <http://www.w3.org/2000/01/rdf-schema#label> "Ingredient" .
 # 
-# http://www.semanticweb.org/FoodleMaps#User
-<http://www.semanticweb.org/FoodleMaps#User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/FoodleMaps#User> <http://www.w3.org/2000/01/rdf-schema#comment> "User is the class which represents the requests of the application user in terms of wanted ingredients, wanted diet, etc." .
-<http://www.semanticweb.org/FoodleMaps#User> <http://www.w3.org/2000/01/rdf-schema#label> "User" .
+# https://alexmv12.github.io/FoodleMaps/#User
+<https://alexmv12.github.io/FoodleMaps/#User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://alexmv12.github.io/FoodleMaps/#User> <http://www.w3.org/2000/01/rdf-schema#comment> "User is the class which represents the requests of the application user in terms of wanted ingredients, wanted diet, etc." .
+<https://alexmv12.github.io/FoodleMaps/#User> <http://www.w3.org/2000/01/rdf-schema#label> "User" .
 # 
 # 
 # 
@@ -292,245 +292,245 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://dbpedia.org/page/Carbonara
 <http://dbpedia.org/page/Carbonara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://dbpedia.org/page/Carbonara> <http://www.w3.org/2002/07/owl#sameAs> <http://www.semanticweb.org/FoodleMaps#Pasta_alla_carbonara> .
+<http://dbpedia.org/page/Carbonara> <http://www.w3.org/2002/07/owl#sameAs> <https://alexmv12.github.io/FoodleMaps/#Pasta_alla_carbonara> .
 # 
 # http://dbpedia.org/page/Spaghetti
 <http://dbpedia.org/page/Spaghetti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://dbpedia.org/page/Spaghetti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+<http://dbpedia.org/page/Spaghetti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Bacon
-<http://www.semanticweb.org/FoodleMaps#Bacon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Bacon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Bacon
+<https://alexmv12.github.io/FoodleMaps/#Bacon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Bacon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Basil
-<http://www.semanticweb.org/FoodleMaps#Basil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Basil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Basil
+<https://alexmv12.github.io/FoodleMaps/#Basil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Basil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Black_pepper
-<http://www.semanticweb.org/FoodleMaps#Black_pepper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Black_pepper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Black_pepper
+<https://alexmv12.github.io/FoodleMaps/#Black_pepper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Black_pepper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Bovin_filet
-<http://www.semanticweb.org/FoodleMaps#Bovin_filet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Bovin_filet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Bovin_filet
+<https://alexmv12.github.io/FoodleMaps/#Bovin_filet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Bovin_filet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Brandy
-<http://www.semanticweb.org/FoodleMaps#Brandy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Brandy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Brandy
+<https://alexmv12.github.io/FoodleMaps/#Brandy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Brandy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Butter
-<http://www.semanticweb.org/FoodleMaps#Butter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Butter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Butter
+<https://alexmv12.github.io/FoodleMaps/#Butter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Butter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Caper
-<http://www.semanticweb.org/FoodleMaps#Caper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Caper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Caper
+<https://alexmv12.github.io/FoodleMaps/#Caper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Caper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Cocoa
-<http://www.semanticweb.org/FoodleMaps#Cocoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Cocoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Cocoa
+<https://alexmv12.github.io/FoodleMaps/#Cocoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Cocoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Codfish
-<http://www.semanticweb.org/FoodleMaps#Codfish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Codfish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Codfish
+<https://alexmv12.github.io/FoodleMaps/#Codfish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Codfish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Coffee
-<http://www.semanticweb.org/FoodleMaps#Coffee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Coffee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Coffee
+<https://alexmv12.github.io/FoodleMaps/#Coffee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Coffee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Egg
-<http://www.semanticweb.org/FoodleMaps#Egg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Egg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Egg
+<https://alexmv12.github.io/FoodleMaps/#Egg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Egg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Filetto_al_pepe_verde
-<http://www.semanticweb.org/FoodleMaps#Filetto_al_pepe_verde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Filetto_al_pepe_verde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
-<http://www.semanticweb.org/FoodleMaps#Filetto_al_pepe_verde> <http://www.semanticweb.org/FoodleMaps#hasRecipe> <http://www.semanticweb.org/FoodleMaps#Recipe3> .
-<http://www.semanticweb.org/FoodleMaps#Filetto_al_pepe_verde> <http://www.semanticweb.org/FoodleMaps#hasPreparationTime> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://www.semanticweb.org/FoodleMaps#Filetto_al_pepe_verde> <http://www.w3.org/2000/01/rdf-schema#label> "Filetto al pepe verde" .
+# https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde
+<https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
+<https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe3> .
+<https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde> <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde> <http://www.w3.org/2000/01/rdf-schema#label> "Filetto al pepe verde" .
 # 
-# http://www.semanticweb.org/FoodleMaps#Flour_type_00
-<http://www.semanticweb.org/FoodleMaps#Flour_type_00> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Flour_type_00> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Flour_type_00
+<https://alexmv12.github.io/FoodleMaps/#Flour_type_00> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Flour_type_00> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Fresh
-<http://www.semanticweb.org/FoodleMaps#Fresh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Fresh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Characteristic> .
+# https://alexmv12.github.io/FoodleMaps/#Fresh
+<https://alexmv12.github.io/FoodleMaps/#Fresh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Fresh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Characteristic> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Garlic
-<http://www.semanticweb.org/FoodleMaps#Garlic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Garlic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Garlic
+<https://alexmv12.github.io/FoodleMaps/#Garlic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Garlic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Green_pepper
-<http://www.semanticweb.org/FoodleMaps#Green_pepper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Green_pepper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Green_pepper
+<https://alexmv12.github.io/FoodleMaps/#Green_pepper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Green_pepper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Heavy
-<http://www.semanticweb.org/FoodleMaps#Heavy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Heavy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Characteristic> .
+# https://alexmv12.github.io/FoodleMaps/#Heavy
+<https://alexmv12.github.io/FoodleMaps/#Heavy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Heavy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Characteristic> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Light
-<http://www.semanticweb.org/FoodleMaps#Light> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Light> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Characteristic> .
+# https://alexmv12.github.io/FoodleMaps/#Light
+<https://alexmv12.github.io/FoodleMaps/#Light> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Light> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Characteristic> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Mascarpone
-<http://www.semanticweb.org/FoodleMaps#Mascarpone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Mascarpone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Mascarpone
+<https://alexmv12.github.io/FoodleMaps/#Mascarpone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Mascarpone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Menu0
-<http://www.semanticweb.org/FoodleMaps#Menu0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Menu0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu> .
-<http://www.semanticweb.org/FoodleMaps#Menu0> <http://schema.org/hasMenuItem> <http://www.semanticweb.org/FoodleMaps#Filetto_al_pepe_verde> .
-<http://www.semanticweb.org/FoodleMaps#Menu0> <http://schema.org/hasMenuItem> <http://www.semanticweb.org/FoodleMaps#Merluzzo_alla_livornese> .
-<http://www.semanticweb.org/FoodleMaps#Menu0> <http://schema.org/hasMenuItem> <http://www.semanticweb.org/FoodleMaps#Pasta_al_pomodoro> .
-<http://www.semanticweb.org/FoodleMaps#Menu0> <http://schema.org/hasMenuItem> <http://www.semanticweb.org/FoodleMaps#Pasta_alla_carbonara> .
-<http://www.semanticweb.org/FoodleMaps#Menu0> <http://schema.org/hasMenuItem> <http://www.semanticweb.org/FoodleMaps#Tiramisu> .
-<http://www.semanticweb.org/FoodleMaps#Menu0> <http://www.w3.org/2000/01/rdf-schema#label> "Menu0"@it .
+# https://alexmv12.github.io/FoodleMaps/#Menu0
+<https://alexmv12.github.io/FoodleMaps/#Menu0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Menu0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu> .
+<https://alexmv12.github.io/FoodleMaps/#Menu0> <http://schema.org/hasMenuItem> <https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde> .
+<https://alexmv12.github.io/FoodleMaps/#Menu0> <http://schema.org/hasMenuItem> <https://alexmv12.github.io/FoodleMaps/#Merluzzo_alla_livornese> .
+<https://alexmv12.github.io/FoodleMaps/#Menu0> <http://schema.org/hasMenuItem> <https://alexmv12.github.io/FoodleMaps/#Pasta_al_pomodoro> .
+<https://alexmv12.github.io/FoodleMaps/#Menu0> <http://schema.org/hasMenuItem> <https://alexmv12.github.io/FoodleMaps/#Pasta_alla_carbonara> .
+<https://alexmv12.github.io/FoodleMaps/#Menu0> <http://schema.org/hasMenuItem> <https://alexmv12.github.io/FoodleMaps/#Tiramisu> .
+<https://alexmv12.github.io/FoodleMaps/#Menu0> <http://www.w3.org/2000/01/rdf-schema#label> "Menu0"@it .
 # 
-# http://www.semanticweb.org/FoodleMaps#Merluzzo_alla_livornese
-<http://www.semanticweb.org/FoodleMaps#Merluzzo_alla_livornese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Merluzzo_alla_livornese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
-<http://www.semanticweb.org/FoodleMaps#Merluzzo_alla_livornese> <http://www.semanticweb.org/FoodleMaps#hasCharacteristic> <http://www.semanticweb.org/FoodleMaps#Light> .
-<http://www.semanticweb.org/FoodleMaps#Merluzzo_alla_livornese> <http://www.semanticweb.org/FoodleMaps#hasRecipe> <http://www.semanticweb.org/FoodleMaps#Recipe4> .
-<http://www.semanticweb.org/FoodleMaps#Merluzzo_alla_livornese> <http://www.w3.org/2000/01/rdf-schema#label> "Merluzzo alla livornese" .
+# https://alexmv12.github.io/FoodleMaps/#Merluzzo_alla_livornese
+<https://alexmv12.github.io/FoodleMaps/#Merluzzo_alla_livornese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Merluzzo_alla_livornese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
+<https://alexmv12.github.io/FoodleMaps/#Merluzzo_alla_livornese> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Light> .
+<https://alexmv12.github.io/FoodleMaps/#Merluzzo_alla_livornese> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe4> .
+<https://alexmv12.github.io/FoodleMaps/#Merluzzo_alla_livornese> <http://www.w3.org/2000/01/rdf-schema#label> "Merluzzo alla livornese" .
 # 
-# http://www.semanticweb.org/FoodleMaps#Mustard
-<http://www.semanticweb.org/FoodleMaps#Mustard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Mustard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Mustard
+<https://alexmv12.github.io/FoodleMaps/#Mustard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Mustard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Olive
-<http://www.semanticweb.org/FoodleMaps#Olive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Olive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Olive
+<https://alexmv12.github.io/FoodleMaps/#Olive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Olive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Olive_oil
-<http://www.semanticweb.org/FoodleMaps#Olive_oil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Olive_oil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Olive_oil
+<https://alexmv12.github.io/FoodleMaps/#Olive_oil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Olive_oil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Onion
-<http://www.semanticweb.org/FoodleMaps#Onion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Onion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Onion
+<https://alexmv12.github.io/FoodleMaps/#Onion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Onion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Parsley
-<http://www.semanticweb.org/FoodleMaps#Parsley> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Parsley> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Parsley
+<https://alexmv12.github.io/FoodleMaps/#Parsley> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Parsley> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Pasta_al_pomodoro
-<http://www.semanticweb.org/FoodleMaps#Pasta_al_pomodoro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Pasta_al_pomodoro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
-<http://www.semanticweb.org/FoodleMaps#Pasta_al_pomodoro> <http://www.semanticweb.org/FoodleMaps#hasRecipe> <http://www.semanticweb.org/FoodleMaps#Recipe1> .
-<http://www.semanticweb.org/FoodleMaps#Pasta_al_pomodoro> <http://www.semanticweb.org/FoodleMaps#hasRecipe> <http://www.semanticweb.org/FoodleMaps#Recipe2> .
-<http://www.semanticweb.org/FoodleMaps#Pasta_al_pomodoro> <http://www.w3.org/2000/01/rdf-schema#label> "Pasta al pomodoro" .
+# https://alexmv12.github.io/FoodleMaps/#Pasta_al_pomodoro
+<https://alexmv12.github.io/FoodleMaps/#Pasta_al_pomodoro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Pasta_al_pomodoro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
+<https://alexmv12.github.io/FoodleMaps/#Pasta_al_pomodoro> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe1> .
+<https://alexmv12.github.io/FoodleMaps/#Pasta_al_pomodoro> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe2> .
+<https://alexmv12.github.io/FoodleMaps/#Pasta_al_pomodoro> <http://www.w3.org/2000/01/rdf-schema#label> "Pasta al pomodoro" .
 # 
-# http://www.semanticweb.org/FoodleMaps#Pasta_alla_carbonara
-<http://www.semanticweb.org/FoodleMaps#Pasta_alla_carbonara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Pasta_alla_carbonara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
-<http://www.semanticweb.org/FoodleMaps#Pasta_alla_carbonara> <http://www.semanticweb.org/FoodleMaps#hasCharacteristic> <http://www.semanticweb.org/FoodleMaps#Heavy> .
-<http://www.semanticweb.org/FoodleMaps#Pasta_alla_carbonara> <http://www.semanticweb.org/FoodleMaps#hasRecipe> <http://www.semanticweb.org/FoodleMaps#Recipe0> .
-<http://www.semanticweb.org/FoodleMaps#Pasta_alla_carbonara> <http://www.semanticweb.org/FoodleMaps#hasPreparationTime> "18"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://www.semanticweb.org/FoodleMaps#Pasta_alla_carbonara> <http://www.w3.org/2000/01/rdf-schema#label> "Pasta alla carbonara"@it .
+# https://alexmv12.github.io/FoodleMaps/#Pasta_alla_carbonara
+<https://alexmv12.github.io/FoodleMaps/#Pasta_alla_carbonara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Pasta_alla_carbonara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
+<https://alexmv12.github.io/FoodleMaps/#Pasta_alla_carbonara> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Heavy> .
+<https://alexmv12.github.io/FoodleMaps/#Pasta_alla_carbonara> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe0> .
+<https://alexmv12.github.io/FoodleMaps/#Pasta_alla_carbonara> <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "18"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://alexmv12.github.io/FoodleMaps/#Pasta_alla_carbonara> <http://www.w3.org/2000/01/rdf-schema#label> "Pasta alla carbonara"@it .
 # 
-# http://www.semanticweb.org/FoodleMaps#Pecorino
-<http://www.semanticweb.org/FoodleMaps#Pecorino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Pecorino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Pecorino
+<https://alexmv12.github.io/FoodleMaps/#Pecorino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Pecorino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Pomodoro_sauce
-<http://www.semanticweb.org/FoodleMaps#Pomodoro_sauce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Pomodoro_sauce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce
+<https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Recipe0
-<http://www.semanticweb.org/FoodleMaps#Recipe0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Recipe0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
-<http://www.semanticweb.org/FoodleMaps#Recipe0> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://dbpedia.org/page/Spaghetti> .
-<http://www.semanticweb.org/FoodleMaps#Recipe0> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Bacon> .
-<http://www.semanticweb.org/FoodleMaps#Recipe0> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Black_pepper> .
-<http://www.semanticweb.org/FoodleMaps#Recipe0> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Egg> .
-<http://www.semanticweb.org/FoodleMaps#Recipe0> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Pecorino> .
-<http://www.semanticweb.org/FoodleMaps#Recipe0> <http://www.w3.org/2000/01/rdf-schema#label> "Recipe0"@it .
+# https://alexmv12.github.io/FoodleMaps/#Recipe0
+<https://alexmv12.github.io/FoodleMaps/#Recipe0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe0> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <http://dbpedia.org/page/Spaghetti> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe0> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Bacon> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe0> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Black_pepper> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe0> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Egg> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe0> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Pecorino> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe0> <http://www.w3.org/2000/01/rdf-schema#label> "Recipe0"@it .
 # 
-# http://www.semanticweb.org/FoodleMaps#Recipe1
-<http://www.semanticweb.org/FoodleMaps#Recipe1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Recipe1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
-<http://www.semanticweb.org/FoodleMaps#Recipe1> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://dbpedia.org/page/Spaghetti> .
-<http://www.semanticweb.org/FoodleMaps#Recipe1> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Basil> .
-<http://www.semanticweb.org/FoodleMaps#Recipe1> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Garlic> .
-<http://www.semanticweb.org/FoodleMaps#Recipe1> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Olive_oil> .
-<http://www.semanticweb.org/FoodleMaps#Recipe1> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Pomodoro_sauce> .
-<http://www.semanticweb.org/FoodleMaps#Recipe1> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Salt> .
+# https://alexmv12.github.io/FoodleMaps/#Recipe1
+<https://alexmv12.github.io/FoodleMaps/#Recipe1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe1> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <http://dbpedia.org/page/Spaghetti> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe1> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Basil> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe1> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Garlic> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe1> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Olive_oil> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe1> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe1> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Salt> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Recipe2
-<http://www.semanticweb.org/FoodleMaps#Recipe2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Recipe2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
-<http://www.semanticweb.org/FoodleMaps#Recipe2> <http://schema.org/suitableForDiet> <https://schema.org/GlutenFreeDiet> .
-<http://www.semanticweb.org/FoodleMaps#Recipe2> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Basil> .
-<http://www.semanticweb.org/FoodleMaps#Recipe2> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Garlic> .
-<http://www.semanticweb.org/FoodleMaps#Recipe2> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Olive_oil> .
-<http://www.semanticweb.org/FoodleMaps#Recipe2> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Pomodoro_sauce> .
-<http://www.semanticweb.org/FoodleMaps#Recipe2> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Salt> .
-<http://www.semanticweb.org/FoodleMaps#Recipe2> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Spaghetti_gluten_free> .
+# https://alexmv12.github.io/FoodleMaps/#Recipe2
+<https://alexmv12.github.io/FoodleMaps/#Recipe2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe2> <http://schema.org/suitableForDiet> <https://schema.org/GlutenFreeDiet> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe2> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Basil> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe2> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Garlic> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe2> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Olive_oil> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe2> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe2> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Salt> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe2> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Spaghetti_gluten_free> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Recipe3
-<http://www.semanticweb.org/FoodleMaps#Recipe3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Recipe3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
-<http://www.semanticweb.org/FoodleMaps#Recipe3> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Bovin_filet> .
-<http://www.semanticweb.org/FoodleMaps#Recipe3> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Brandy> .
-<http://www.semanticweb.org/FoodleMaps#Recipe3> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Butter> .
-<http://www.semanticweb.org/FoodleMaps#Recipe3> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Flour_type_00> .
-<http://www.semanticweb.org/FoodleMaps#Recipe3> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Green_pepper> .
-<http://www.semanticweb.org/FoodleMaps#Recipe3> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Mustard> .
-<http://www.semanticweb.org/FoodleMaps#Recipe3> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Salt> .
+# https://alexmv12.github.io/FoodleMaps/#Recipe3
+<https://alexmv12.github.io/FoodleMaps/#Recipe3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe3> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Bovin_filet> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe3> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Brandy> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe3> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Butter> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe3> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Flour_type_00> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe3> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Green_pepper> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe3> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Mustard> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe3> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Salt> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Recipe4
-<http://www.semanticweb.org/FoodleMaps#Recipe4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Recipe4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
-<http://www.semanticweb.org/FoodleMaps#Recipe4> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Caper> .
-<http://www.semanticweb.org/FoodleMaps#Recipe4> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Codfish> .
-<http://www.semanticweb.org/FoodleMaps#Recipe4> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Garlic> .
-<http://www.semanticweb.org/FoodleMaps#Recipe4> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Olive> .
-<http://www.semanticweb.org/FoodleMaps#Recipe4> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Parsley> .
-<http://www.semanticweb.org/FoodleMaps#Recipe4> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Salt> .
-<http://www.semanticweb.org/FoodleMaps#Recipe4> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Tomato> .
+# https://alexmv12.github.io/FoodleMaps/#Recipe4
+<https://alexmv12.github.io/FoodleMaps/#Recipe4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe4> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Caper> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe4> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Codfish> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe4> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Garlic> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe4> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Olive> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe4> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Parsley> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe4> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Salt> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe4> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Tomato> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Recipe5
-<http://www.semanticweb.org/FoodleMaps#Recipe5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Recipe5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
-<http://www.semanticweb.org/FoodleMaps#Recipe5> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Cocoa> .
-<http://www.semanticweb.org/FoodleMaps#Recipe5> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Coffee> .
-<http://www.semanticweb.org/FoodleMaps#Recipe5> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Egg> .
-<http://www.semanticweb.org/FoodleMaps#Recipe5> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Mascarpone> .
-<http://www.semanticweb.org/FoodleMaps#Recipe5> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Savoyard> .
-<http://www.semanticweb.org/FoodleMaps#Recipe5> <http://www.semanticweb.org/FoodleMaps#hasIngredient> <http://www.semanticweb.org/FoodleMaps#Sugar> .
+# https://alexmv12.github.io/FoodleMaps/#Recipe5
+<https://alexmv12.github.io/FoodleMaps/#Recipe5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe5> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Cocoa> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe5> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Coffee> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe5> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Egg> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe5> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Mascarpone> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe5> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Savoyard> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe5> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Sugar> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Salt
-<http://www.semanticweb.org/FoodleMaps#Salt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Salt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Salt
+<https://alexmv12.github.io/FoodleMaps/#Salt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Salt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Savoyard
-<http://www.semanticweb.org/FoodleMaps#Savoyard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Savoyard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Savoyard
+<https://alexmv12.github.io/FoodleMaps/#Savoyard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Savoyard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Spaghetti_gluten_free
-<http://www.semanticweb.org/FoodleMaps#Spaghetti_gluten_free> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Spaghetti_gluten_free> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Spaghetti_gluten_free
+<https://alexmv12.github.io/FoodleMaps/#Spaghetti_gluten_free> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Spaghetti_gluten_free> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Sugar
-<http://www.semanticweb.org/FoodleMaps#Sugar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Sugar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Sugar
+<https://alexmv12.github.io/FoodleMaps/#Sugar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Sugar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Tiramisu
-<http://www.semanticweb.org/FoodleMaps#Tiramisu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Tiramisu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
-<http://www.semanticweb.org/FoodleMaps#Tiramisu> <http://www.semanticweb.org/FoodleMaps#hasRecipe> <http://www.semanticweb.org/FoodleMaps#Recipe5> .
-<http://www.semanticweb.org/FoodleMaps#Tiramisu> <http://www.semanticweb.org/FoodleMaps#hasPreparationTime> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# https://alexmv12.github.io/FoodleMaps/#Tiramisu
+<https://alexmv12.github.io/FoodleMaps/#Tiramisu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Tiramisu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
+<https://alexmv12.github.io/FoodleMaps/#Tiramisu> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe5> .
+<https://alexmv12.github.io/FoodleMaps/#Tiramisu> <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Tomato
-<http://www.semanticweb.org/FoodleMaps#Tomato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Tomato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/FoodleMaps#Ingredient> .
+# https://alexmv12.github.io/FoodleMaps/#Tomato
+<https://alexmv12.github.io/FoodleMaps/#Tomato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Tomato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# http://www.semanticweb.org/FoodleMaps#Trattoria_dell_orsa
-<http://www.semanticweb.org/FoodleMaps#Trattoria_dell_orsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/FoodleMaps#Trattoria_dell_orsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment> .
-<http://www.semanticweb.org/FoodleMaps#Trattoria_dell_orsa> <http://schema.org/hasMenu> <http://www.semanticweb.org/FoodleMaps#Menu0> .
-<http://www.semanticweb.org/FoodleMaps#Trattoria_dell_orsa> <http://www.w3.org/2000/01/rdf-schema#label> "Trattoria dell'orsa"@it .
+# https://alexmv12.github.io/FoodleMaps/#Trattoria_dell_orsa
+<https://alexmv12.github.io/FoodleMaps/#Trattoria_dell_orsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Trattoria_dell_orsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment> .
+<https://alexmv12.github.io/FoodleMaps/#Trattoria_dell_orsa> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Menu0> .
+<https://alexmv12.github.io/FoodleMaps/#Trattoria_dell_orsa> <http://www.w3.org/2000/01/rdf-schema#label> "Trattoria dell'orsa"@it .
 # 
 # https://schema.org/DiabeticDiet
 <https://schema.org/DiabeticDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

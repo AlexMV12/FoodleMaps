@@ -71,11 +71,11 @@
   "@id" : "http://dbpedia.org/page/Carbonara",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Pasta_alla_carbonara"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Pasta_alla_carbonara"
   } ]
 }, {
   "@id" : "http://dbpedia.org/page/Spaghetti",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
   "@id" : "http://purl.org/dc/terms/abstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -273,7 +273,7 @@
     "@id" : "_:genid16"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/abstract" : [ {
     "@value" : "FoodleMaps provides a way to create restaurant entities, with a detailed description of dishes in the menu.\nDishes can be characterized by the used ingredients, but also by the preparation time, by some characteristic and others.\nThis makes the ontology useful to design an application to help users in finding restaurants according to their needs."
@@ -306,28 +306,28 @@
     "@value" : "1.0"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Bacon",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Bacon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Basil",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Basil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Black_pepper",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Black_pepper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Bovin_filet",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Bovin_filet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Brandy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Brandy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Butter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Butter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Caper",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Caper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Characteristic",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Characteristic",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/vocab/vann/example" : [ {
     "@value" : "Fresh, Heavy, Light, Spicy"
@@ -339,47 +339,47 @@
     "@value" : "Characteristic"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Cocoa",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Cocoa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Codfish",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Codfish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Coffee",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Coffee",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Egg",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Egg",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Filetto_al_pepe_verde",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
-  "http://www.semanticweb.org/FoodleMaps#hasPreparationTime" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Filetto al pepe verde"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasPreparationTime" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "15"
   } ],
-  "http://www.semanticweb.org/FoodleMaps#hasRecipe" : [ {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe3"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Filetto al pepe verde"
+  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe3"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Flour_type_00",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Flour_type_00",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Fresh",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Characteristic" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Fresh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Characteristic" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Garlic",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Garlic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Green_pepper",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Green_pepper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Heavy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Characteristic" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Heavy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Characteristic" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Ingredient",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Ingredient",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/vocab/vann/example" : [ {
     "@value" : "Spaghetti, Tomato sauce, Basil"
@@ -394,232 +394,232 @@
     "@id" : "http://dbpedia.org/ontology/Food"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Light",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Characteristic" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Light",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Characteristic" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Mascarpone",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Mascarpone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Menu0",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Menu0",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Menu" ],
   "http://schema.org/hasMenuItem" : [ {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Filetto_al_pepe_verde"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Merluzzo_alla_livornese"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Merluzzo_alla_livornese"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Pasta_al_pomodoro"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Pasta_al_pomodoro"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Pasta_alla_carbonara"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Pasta_alla_carbonara"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Tiramisu"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Tiramisu"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
     "@value" : "Menu0"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Merluzzo_alla_livornese",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Merluzzo_alla_livornese",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
-  "http://www.semanticweb.org/FoodleMaps#hasCharacteristic" : [ {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Light"
-  } ],
-  "http://www.semanticweb.org/FoodleMaps#hasRecipe" : [ {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe4"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Merluzzo alla livornese"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Light"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe4"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Mustard",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Mustard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Olive",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Olive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Olive_oil",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Olive_oil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Onion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Onion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Parsley",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Parsley",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Pasta_al_pomodoro",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Pasta_al_pomodoro",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
-  "http://www.semanticweb.org/FoodleMaps#hasRecipe" : [ {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe1"
-  }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe2"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Pasta al pomodoro"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe1"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe2"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Pasta_alla_carbonara",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Pasta_alla_carbonara",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
-  "http://www.semanticweb.org/FoodleMaps#hasCharacteristic" : [ {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Heavy"
-  } ],
-  "http://www.semanticweb.org/FoodleMaps#hasPreparationTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "18"
-  } ],
-  "http://www.semanticweb.org/FoodleMaps#hasRecipe" : [ {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe0"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
     "@value" : "Pasta alla carbonara"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Heavy"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasPreparationTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "18"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe0"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Pecorino",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Pecorino",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Pomodoro_sauce",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe0",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe0",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
-  "http://www.semanticweb.org/FoodleMaps#hasIngredient" : [ {
-    "@id" : "http://dbpedia.org/page/Spaghetti"
-  }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Bacon"
-  }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Black_pepper"
-  }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Egg"
-  }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Pecorino"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
     "@value" : "Recipe0"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
-  "http://www.semanticweb.org/FoodleMaps#hasIngredient" : [ {
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
     "@id" : "http://dbpedia.org/page/Spaghetti"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Basil"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Bacon"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Garlic"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Black_pepper"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Olive_oil"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Egg"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Pomodoro_sauce"
-  }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Salt"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Pecorino"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe2",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
+  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
+    "@id" : "http://dbpedia.org/page/Spaghetti"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Basil"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Garlic"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Olive_oil"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Salt"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
   "http://schema.org/suitableForDiet" : [ {
     "@id" : "https://schema.org/GlutenFreeDiet"
   } ],
-  "http://www.semanticweb.org/FoodleMaps#hasIngredient" : [ {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Basil"
+  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Basil"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Garlic"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Garlic"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Olive_oil"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Olive_oil"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Pomodoro_sauce"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Salt"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Salt"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Spaghetti_gluten_free"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Spaghetti_gluten_free"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe3",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe3",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
-  "http://www.semanticweb.org/FoodleMaps#hasIngredient" : [ {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Bovin_filet"
+  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Bovin_filet"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Brandy"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Brandy"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Butter"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Butter"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Flour_type_00"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Flour_type_00"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Green_pepper"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Green_pepper"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Mustard"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Mustard"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Salt"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Salt"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe4",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe4",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
-  "http://www.semanticweb.org/FoodleMaps#hasIngredient" : [ {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Caper"
+  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Caper"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Codfish"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Codfish"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Garlic"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Garlic"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Olive"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Olive"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Parsley"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Parsley"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Salt"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Salt"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Tomato"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Tomato"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe5",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe5",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
-  "http://www.semanticweb.org/FoodleMaps#hasIngredient" : [ {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Cocoa"
+  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Cocoa"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Coffee"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Coffee"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Egg"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Egg"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Mascarpone"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Mascarpone"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Savoyard"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Savoyard"
   }, {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Sugar"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Sugar"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Salt",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Salt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Savoyard",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Savoyard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Spaghetti_gluten_free",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Spaghetti_gluten_free",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Sugar",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Sugar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Tiramisu",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Tiramisu",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
-  "http://www.semanticweb.org/FoodleMaps#hasPreparationTime" : [ {
+  "https://alexmv12.github.io/FoodleMaps/#hasPreparationTime" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "10"
   } ],
-  "http://www.semanticweb.org/FoodleMaps#hasRecipe" : [ {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Recipe5"
+  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe5"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Tomato",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/FoodleMaps#Ingredient" ]
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Tomato",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#Trattoria_dell_orsa",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Trattoria_dell_orsa",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/FoodEstablishment" ],
   "http://schema.org/hasMenu" : [ {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Menu0"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Menu0"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
     "@value" : "Trattoria dell'orsa"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#User",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#User",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "User is the class which represents the requests of the application user in terms of wanted ingredients, wanted diet, etc."
@@ -628,7 +628,7 @@
     "@value" : "User"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#hasCharacteristic",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/vocab/vann/example" : [ {
     "@value" : "Assigns \"Light\" to \"pasta al pomodoro\"."
@@ -643,13 +643,13 @@
     "@value" : "hasCharacteristic"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Characteristic"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Characteristic"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#hasIngredient",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#hasIngredient",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/vocab/vann/example" : [ {
     "@value" : "Associates \"Spaghetti\" ingredient to \"Pasta al pomodoro\"."
@@ -664,10 +664,10 @@
     "@value" : "hasIngredient"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Ingredient"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Ingredient"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#hasPreparationTime",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#hasPreparationTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/vocab/vann/example" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
@@ -686,7 +686,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#hasRecipe",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#hasRecipe",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Associates a Recipe to a MenuItem.MenuItems can have multiple recipes, to indicate different versions of the same dish."
@@ -701,7 +701,7 @@
     "@id" : "http://schema.org/Recipe"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#requiresCharacteristic",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#requiresCharacteristic",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/vocab/vann/example" : [ {
     "@value" : "The user wants a \"Heavy\" dish."
@@ -710,16 +710,16 @@
     "@value" : "Used to express a constraint wanted by the user to a specific characteristic."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#User"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#User"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "requiresCharacteristic"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#Characteristic"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Characteristic"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/FoodleMaps#requiresDiet",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#requiresDiet",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/vocab/vann/example" : [ {
     "@value" : "Restricts dishes to VeganDiet."
@@ -728,7 +728,7 @@
     "@value" : "Used to express a diet followed by the user; the returned dishes will have to be suitable for that diet."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/FoodleMaps#User"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#User"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "requiresDiet"

@@ -2,8 +2,8 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "it", "undefined" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://dbpedia.org/ontology", "http://www.semanticweb.org/FoodleMaps" ],
-    "iri" : "http://www.semanticweb.org/FoodleMaps",
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://dbpedia.org/ontology", "https://alexmv12.github.io/FoodleMaps/" ],
+    "iri" : "https://alexmv12.github.io/FoodleMaps/",
     "version" : "1.0",
     "author" : [ "https://alexmv12.xyz/", "https://github.com/FrancescoAttorre" ],
     "description" : {
@@ -67,76 +67,76 @@
     "id" : "0",
     "type" : "owl:Class"
   }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:unionOf"
+  }, {
     "id" : "4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "5",
     "type" : "owl:unionOf"
-  }, {
-    "id" : "7",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "9",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "12",
-    "type" : "owl:Class"
-  }, {
-    "id" : "13",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "16",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "21",
-    "type" : "owl:Class"
-  }, {
-    "id" : "20",
-    "type" : "owl:Class"
-  }, {
-    "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "11",
-    "type" : "owl:Class"
   }, {
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "31",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "32",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "23",
-    "type" : "owl:Class"
-  }, {
-    "id" : "25",
-    "type" : "owl:Class"
-  }, {
     "id" : "8",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "10",
     "type" : "owl:Class"
   }, {
-    "id" : "34",
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "17",
     "type" : "owl:Class"
   }, {
-    "id" : "35",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
     "id" : "3",
     "type" : "owl:Class"
   }, {
+    "id" : "27",
+    "type" : "owl:unionOf"
+  }, {
     "id" : "28",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "30",
     "type" : "owl:Class"
   }, {
     "id" : "19",
     "type" : "owl:Class"
   }, {
-    "id" : "2",
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -156,17 +156,17 @@
       "IRI-based" : "MenuSection"
     },
     "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "instances" : 0,
+    "union" : [ "3", "1" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "2"
+  }, {
+    "instances" : 0,
+    "union" : [ "0", "5", "6", "7" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "4"
-  }, {
-    "instances" : 0,
-    "union" : [ "6", "4" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "5"
-  }, {
-    "instances" : 0,
-    "union" : [ "0", "8", "9", "2" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "7"
   }, {
     "iri" : "http://schema.org/Role",
     "baseIri" : "http://schema.org",
@@ -175,12 +175,12 @@
       "IRI-based" : "Role"
     },
     "attributes" : [ "external" ],
-    "id" : "9"
+    "id" : "6"
   }, {
     "instances" : 0,
-    "union" : [ "11", "0", "8", "9" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "10"
+    "union" : [ "9", "0", "5", "6" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "8"
   }, {
     "iri" : "http://schema.org/HowTo",
     "baseIri" : "http://schema.org",
@@ -188,62 +188,23 @@
     "label" : {
       "IRI-based" : "HowTo"
     },
-    "subClasses" : [ "3" ],
+    "subClasses" : [ "11" ],
     "attributes" : [ "external" ],
-    "id" : "12"
+    "id" : "10"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#int",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "13",
+    "id" : "12",
     "label" : {
       "IRI-based" : "int"
     }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "16",
+    "id" : "13",
     "label" : {
       "undefined" : "Thing"
     }
-  }, {
-    "iri" : "http://www.semanticweb.org/FoodleMaps#Characteristic",
-    "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-    "instances" : 0,
-    "annotations" : {
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "Fresh, Heavy, Light, Spicy",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Characteristic",
-      "undefined" : "Characteristic"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Light",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Light"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Heavy",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Heavy"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Fresh",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Fresh"
-      }
-    } ],
-    "comment" : {
-      "undefined" : "An adjective characterizing the main aspect of a dish."
-    },
-    "id" : "21"
   }, {
     "iri" : "http://schema.org/LocalBusiness",
     "baseIri" : "http://schema.org",
@@ -251,21 +212,9 @@
     "label" : {
       "IRI-based" : "LocalBusiness"
     },
-    "subClasses" : [ "19" ],
+    "subClasses" : [ "16" ],
     "attributes" : [ "external" ],
-    "id" : "20"
-  }, {
-    "iri" : "http://www.semanticweb.org/FoodleMaps#User",
-    "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "User",
-      "undefined" : "User"
-    },
-    "comment" : {
-      "undefined" : "User is the class which represents the requests of the application user in terms of wanted ingredients, wanted diet, etc."
-    },
-    "id" : "15"
+    "id" : "17"
   }, {
     "iri" : "http://schema.org/RestrictedDiet",
     "baseIri" : "http://schema.org",
@@ -283,12 +232,6 @@
       "en" : "RestrictedDiet"
     },
     "individuals" : [ {
-      "iri" : "https://schema.org/VeganDiet",
-      "baseIri" : "https://schema.org",
-      "labels" : {
-        "IRI-based" : "VeganDiet"
-      }
-    }, {
       "iri" : "https://schema.org/LowCalorieDiet",
       "baseIri" : "https://schema.org",
       "labels" : {
@@ -301,16 +244,22 @@
         "IRI-based" : "GlutenFreeDiet"
       }
     }, {
-      "iri" : "https://schema.org/LowSaltDiet",
+      "iri" : "https://schema.org/VeganDiet",
       "baseIri" : "https://schema.org",
       "labels" : {
-        "IRI-based" : "LowSaltDiet"
+        "IRI-based" : "VeganDiet"
       }
     }, {
       "iri" : "https://schema.org/VegetarianDiet",
       "baseIri" : "https://schema.org",
       "labels" : {
         "IRI-based" : "VegetarianDiet"
+      }
+    }, {
+      "iri" : "https://schema.org/LowSaltDiet",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "LowSaltDiet"
       }
     }, {
       "iri" : "https://schema.org/LowLactoseDiet",
@@ -325,16 +274,16 @@
         "IRI-based" : "HalalDiet"
       }
     }, {
-      "iri" : "https://schema.org/LowFatDiet",
-      "baseIri" : "https://schema.org",
-      "labels" : {
-        "IRI-based" : "LowFatDiet"
-      }
-    }, {
       "iri" : "https://schema.org/DiabeticDiet",
       "baseIri" : "https://schema.org",
       "labels" : {
         "IRI-based" : "DiabeticDiet"
+      }
+    }, {
+      "iri" : "https://schema.org/LowFatDiet",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "LowFatDiet"
       }
     }, {
       "iri" : "https://schema.org/KosherDiet",
@@ -353,8 +302,8 @@
       "en" : "A diet restricted to certain foods or preparations for cultural, religious, health or lifestyle reasons."
     },
     "attributes" : [ "external" ],
-    "id" : "11",
-    "superClasses" : [ "25" ]
+    "id" : "9",
+    "superClasses" : [ "23" ]
   }, {
     "iri" : "http://schema.org/Menu",
     "baseIri" : "http://schema.org",
@@ -372,8 +321,8 @@
       "en" : "Menu"
     },
     "individuals" : [ {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Menu0",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Menu0",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Menu0",
         "it" : "Menu0"
@@ -383,64 +332,21 @@
       "en" : "A structured representation of food or drink items available from a FoodEstablishment."
     },
     "attributes" : [ "external" ],
-    "id" : "6",
-    "superClasses" : [ "28" ]
+    "id" : "3",
+    "superClasses" : [ "24" ]
   }, {
     "instances" : 0,
-    "union" : [ "19" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "31"
+    "union" : [ "16" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "27"
   }, {
     "instances" : 0,
-    "union" : [ "0", "8", "6", "9" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "32"
+    "union" : [ "0", "5", "3", "6" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "28"
   }, {
-    "iri" : "http://schema.org/Intangible",
-    "baseIri" : "http://schema.org",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Intangible"
-    },
-    "subClasses" : [ "2" ],
-    "attributes" : [ "external" ],
-    "id" : "23"
-  }, {
-    "iri" : "http://schema.org/Enumeration",
-    "baseIri" : "http://schema.org",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Enumeration"
-    },
-    "subClasses" : [ "11" ],
-    "attributes" : [ "external" ],
-    "id" : "25"
-  }, {
-    "iri" : "http://schema.org/URL",
-    "baseIri" : "http://schema.org",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "URL"
-    },
-    "attributes" : [ "external" ],
-    "id" : "8"
-  }, {
-    "iri" : "http://dbpedia.org/ontology/Food",
-    "baseIri" : "http://dbpedia.org/ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Food",
-      "undefined" : "Food"
-    },
-    "subClasses" : [ "35" ],
-    "comment" : {
-      "undefined" : "Food is any eatable or drinkable substance that is normally consumed by humans."
-    },
-    "attributes" : [ "external" ],
-    "id" : "34"
-  }, {
-    "iri" : "http://www.semanticweb.org/FoodleMaps#Ingredient",
-    "baseIri" : "http://www.semanticweb.org/FoodleMaps",
+    "iri" : "https://alexmv12.github.io/FoodleMaps/#Ingredient",
+    "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
     "instances" : 0,
     "annotations" : {
       "example" : [ {
@@ -455,118 +361,100 @@
       "undefined" : "Ingredient"
     },
     "individuals" : [ {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Mustard",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Spaghetti_gluten_free",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Mustard"
+        "IRI-based" : "Spaghetti_gluten_free"
       }
     }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Parsley",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Bovin_filet",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Parsley"
+        "IRI-based" : "Bovin_filet"
       }
     }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Garlic",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Garlic"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Codfish",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Codfish"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Sugar",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Sugar"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Salt",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Salt"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Flour_type_00",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Flour_type_00"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Pomodoro_sauce",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Pomodoro_sauce"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Onion",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Onion"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Cocoa",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Cocoa"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Caper",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Caper"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Coffee",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Coffee"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Tomato",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Tomato"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Brandy",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Brandy"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Black_pepper",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Black_pepper"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Olive",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Olive"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Mascarpone",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Mascarpone",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Mascarpone"
       }
     }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Bacon",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Bacon"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Savoyard",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Savoyard",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Savoyard"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Black_pepper",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Black_pepper"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Olive",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Olive"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Basil",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Basil"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Pecorino",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Pecorino"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Olive_oil",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Olive_oil"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Caper",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Caper"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Onion",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Onion"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Parsley",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Parsley"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Mustard",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Mustard"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Butter",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Butter"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Garlic",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Garlic"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Flour_type_00",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Flour_type_00"
       }
     }, {
       "iri" : "http://dbpedia.org/page/Spaghetti",
@@ -575,59 +463,120 @@
         "IRI-based" : "Spaghetti"
       }
     }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Bovin_filet",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Codfish",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Bovin_filet"
+        "IRI-based" : "Codfish"
       }
     }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Spaghetti_gluten_free",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Spaghetti_gluten_free"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Olive_oil",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Olive_oil"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Pecorino",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Pecorino"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Green_pepper",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Green_pepper"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Egg",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Egg",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Egg"
       }
     }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Butter",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Brandy",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Butter"
+        "IRI-based" : "Brandy"
       }
     }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Basil",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Green_pepper",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Basil"
+        "IRI-based" : "Green_pepper"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Coffee",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Coffee"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Cocoa",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Cocoa"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Sugar",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Sugar"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Tomato",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Tomato"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Pomodoro_sauce"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Salt",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Salt"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Bacon",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Bacon"
       }
     } ],
     "comment" : {
       "undefined" : "Every ingredient is a food which can be used to prepare dishes."
     },
-    "id" : "35",
-    "superClasses" : [ "34" ]
+    "id" : "30",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://schema.org/Intangible",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Intangible"
+    },
+    "subClasses" : [ "7" ],
+    "attributes" : [ "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://schema.org/Enumeration",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Enumeration"
+    },
+    "subClasses" : [ "9" ],
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://schema.org/URL",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "URL"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Food",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Food",
+      "undefined" : "Food"
+    },
+    "subClasses" : [ "30" ],
+    "comment" : {
+      "undefined" : "Food is any eatable or drinkable substance that is normally consumed by humans."
+    },
+    "attributes" : [ "external" ],
+    "id" : "31"
   }, {
     "iri" : "http://schema.org/Recipe",
     "baseIri" : "http://schema.org",
@@ -645,49 +594,49 @@
       "en" : "Recipe"
     },
     "individuals" : [ {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Recipe1",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Recipe1"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Recipe2",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Recipe2"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Recipe3",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Recipe3"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Recipe4",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe4",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Recipe4"
       }
     }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Recipe0",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe3",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Recipe3"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe5",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Recipe5"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe0",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Recipe0",
         "it" : "Recipe0"
       }
     }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Recipe5",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe2",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Recipe5"
+        "IRI-based" : "Recipe2"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe1",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Recipe1"
       }
     } ],
     "comment" : {
       "en" : "A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via <a class=\"localLink\" href=\"http://schema.org/suitableForDiet\">suitableForDiet</a>. The <a class=\"localLink\" href=\"http://schema.org/keywords\">keywords</a> property can also be used to add more detail."
     },
     "attributes" : [ "external" ],
-    "id" : "3",
-    "superClasses" : [ "12" ]
+    "id" : "11",
+    "superClasses" : [ "10" ]
   }, {
     "iri" : "http://schema.org/CreativeWork",
     "baseIri" : "http://schema.org",
@@ -695,9 +644,21 @@
     "label" : {
       "IRI-based" : "CreativeWork"
     },
-    "subClasses" : [ "6" ],
+    "subClasses" : [ "3" ],
     "attributes" : [ "external" ],
-    "id" : "28"
+    "id" : "24"
+  }, {
+    "iri" : "https://alexmv12.github.io/FoodleMaps/#User",
+    "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "User",
+      "undefined" : "User"
+    },
+    "comment" : {
+      "undefined" : "User is the class which represents the requests of the application user in terms of wanted ingredients, wanted diet, etc."
+    },
+    "id" : "22"
   }, {
     "iri" : "http://schema.org/FoodEstablishment",
     "baseIri" : "http://schema.org",
@@ -715,8 +676,8 @@
       "en" : "FoodEstablishment"
     },
     "individuals" : [ {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Trattoria_dell_orsa",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Trattoria_dell_orsa",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Trattoria_dell_orsa",
         "it" : "Trattoria dell'orsa"
@@ -726,8 +687,47 @@
       "en" : "A food-related business."
     },
     "attributes" : [ "external" ],
-    "id" : "19",
-    "superClasses" : [ "20" ]
+    "id" : "16",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://alexmv12.github.io/FoodleMaps/#Characteristic",
+    "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "Fresh, Heavy, Light, Spicy",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Characteristic",
+      "undefined" : "Characteristic"
+    },
+    "individuals" : [ {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Fresh",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Fresh"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Heavy",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Heavy"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Light",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Light"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "An adjective characterizing the main aspect of a dish."
+    },
+    "id" : "33"
   }, {
     "iri" : "http://schema.org/MenuItem",
     "baseIri" : "http://schema.org",
@@ -745,35 +745,35 @@
       "en" : "MenuItem"
     },
     "individuals" : [ {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Pasta_al_pomodoro",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Pasta_al_pomodoro",
-        "undefined" : "Pasta al pomodoro"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Pasta_alla_carbonara",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Pasta_alla_carbonara",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Pasta_alla_carbonara",
         "it" : "Pasta alla carbonara"
       }
     }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Tiramisu",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Tiramisu",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Tiramisu"
       }
     }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Merluzzo_alla_livornese",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Pasta_al_pomodoro",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Pasta_al_pomodoro",
+        "undefined" : "Pasta al pomodoro"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Merluzzo_alla_livornese",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Merluzzo_alla_livornese",
         "undefined" : "Merluzzo alla livornese"
       }
     }, {
-      "iri" : "http://www.semanticweb.org/FoodleMaps#Filetto_al_pepe_verde",
-      "baseIri" : "http://www.semanticweb.org/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Filetto_al_pepe_verde",
         "undefined" : "Filetto al pepe verde"
@@ -783,42 +783,42 @@
       "en" : "A food or drink item listed in a menu or menu section."
     },
     "attributes" : [ "external" ],
-    "id" : "2",
-    "superClasses" : [ "23" ]
+    "id" : "7",
+    "superClasses" : [ "19" ]
   } ],
   "property" : [ {
-    "id" : "1",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "14",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "17",
+    "id" : "15",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "18",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "22",
-    "type" : "rdfs:SubClassOf"
+    "id" : "20",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "24",
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
     "type" : "owl:objectProperty"
   }, {
     "id" : "26",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "27",
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "29",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "30",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "33",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "36",
     "type" : "owl:objectProperty"
@@ -836,60 +836,24 @@
     "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "http://www.semanticweb.org/FoodleMaps#hasRecipe",
-    "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-    "range" : "3",
-    "label" : {
-      "IRI-based" : "hasRecipe",
-      "undefined" : "hasRecipe"
-    },
-    "domain" : "2",
-    "comment" : {
-      "undefined" : "Associates a Recipe to a MenuItem.MenuItems can have multiple recipes, to indicate different versions of the same dish."
-    },
-    "attributes" : [ "object" ],
-    "id" : "1"
-  }, {
-    "iri" : "http://www.semanticweb.org/FoodleMaps#requiresDiet",
-    "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-    "range" : "11",
-    "annotations" : {
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "Restricts dishes to VeganDiet.",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "requiresDiet",
-      "undefined" : "requiresDiet"
-    },
-    "domain" : "15",
-    "comment" : {
-      "undefined" : "Used to express a diet followed by the user; the returned dishes will have to be suitable for that diet."
-    },
-    "attributes" : [ "object" ],
+    "range" : "10",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "14"
   }, {
-    "range" : "12",
-    "domain" : "3",
+    "range" : "17",
+    "domain" : "16",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "17"
+    "id" : "15"
   }, {
-    "range" : "20",
-    "domain" : "19",
+    "range" : "19",
+    "domain" : "7",
     "attributes" : [ "object", "anonymous" ],
     "id" : "18"
   }, {
-    "range" : "23",
-    "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "22"
-  }, {
     "iri" : "http://schema.org/hasMenuItem",
     "baseIri" : "http://schema.org",
-    "range" : "7",
+    "range" : "4",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -902,94 +866,63 @@
       "IRI-based" : "hasMenuItem",
       "en" : "hasMenuItem"
     },
-    "domain" : "5",
+    "domain" : "2",
     "comment" : {
       "en" : "A food or drink item contained in a menu or menu section."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "24"
+    "id" : "20"
   }, {
-    "iri" : "http://www.semanticweb.org/FoodleMaps#requiresCharacteristic",
-    "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-    "range" : "21",
+    "iri" : "https://alexmv12.github.io/FoodleMaps/#requiresDiet",
+    "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+    "range" : "9",
     "annotations" : {
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "The user wants a \"Heavy\" dish.",
+        "value" : "Restricts dishes to VeganDiet.",
         "type" : "label"
       } ]
     },
     "label" : {
-      "IRI-based" : "requiresCharacteristic",
-      "undefined" : "requiresCharacteristic"
+      "IRI-based" : "requiresDiet",
+      "undefined" : "requiresDiet"
     },
-    "domain" : "15",
+    "domain" : "22",
     "comment" : {
-      "undefined" : "Used to express a constraint wanted by the user to a specific characteristic."
+      "undefined" : "Used to express a diet followed by the user; the returned dishes will have to be suitable for that diet."
     },
     "attributes" : [ "object" ],
-    "id" : "26"
-  }, {
-    "iri" : "http://www.semanticweb.org/FoodleMaps#hasPreparationTime",
-    "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-    "range" : "13",
-    "annotations" : {
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "10.",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasPreparationTime",
-      "undefined" : "hasPreparationTime"
-    },
-    "domain" : "2",
-    "comment" : {
-      "undefined" : "Indicates how many minutes are needed to prepare and serve the dish. More precisely, is the time which should pass between the moment in which the order is made and the moment in which the dish is server."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "27"
+    "id" : "21"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "16",
+    "range" : "13",
     "label" : {
       "IRI-based" : "topObjectProperty"
     },
-    "domain" : "16",
-    "subproperty" : [ "30" ],
+    "domain" : "13",
+    "subproperty" : [ "26" ],
     "attributes" : [ "external", "object" ],
-    "id" : "29"
+    "id" : "25"
   }, {
-    "iri" : "http://www.semanticweb.org/FoodleMaps#hasCharacteristic",
-    "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-    "range" : "21",
-    "annotations" : {
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "Assigns \"Light\" to \"pasta al pomodoro\".",
-        "type" : "label"
-      } ]
-    },
+    "iri" : "https://alexmv12.github.io/FoodleMaps/#hasRecipe",
+    "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+    "range" : "11",
     "label" : {
-      "IRI-based" : "hasCharacteristic",
-      "undefined" : "hasCharacteristic"
+      "IRI-based" : "hasRecipe",
+      "undefined" : "hasRecipe"
     },
-    "superproperty" : [ "29" ],
-    "domain" : "2",
+    "domain" : "7",
     "comment" : {
-      "undefined" : "Assigns one characteristic to a dish."
+      "undefined" : "Associates a Recipe to a MenuItem.MenuItems can have multiple recipes, to indicate different versions of the same dish."
     },
     "attributes" : [ "object" ],
-    "id" : "30"
+    "id" : "29"
   }, {
     "iri" : "http://schema.org/suitableForDiet",
     "baseIri" : "http://schema.org",
-    "range" : "10",
+    "range" : "8",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1002,16 +935,39 @@
       "IRI-based" : "suitableForDiet",
       "en" : "suitableForDiet"
     },
-    "domain" : "3",
+    "domain" : "11",
     "comment" : {
       "en" : "Indicates a dietary restriction or guideline for which this recipe or menu item is suitable, e.g. diabetic, halal etc."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "33"
+    "id" : "32"
+  }, {
+    "iri" : "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic",
+    "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+    "range" : "33",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "Assigns \"Light\" to \"pasta al pomodoro\".",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCharacteristic",
+      "undefined" : "hasCharacteristic"
+    },
+    "superproperty" : [ "25" ],
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Assigns one characteristic to a dish."
+    },
+    "attributes" : [ "object" ],
+    "id" : "26"
   }, {
     "iri" : "http://schema.org/hasMenu",
     "baseIri" : "http://schema.org",
-    "range" : "32",
+    "range" : "28",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1024,16 +980,60 @@
       "IRI-based" : "hasMenu",
       "en" : "hasMenu"
     },
-    "domain" : "31",
+    "domain" : "27",
     "comment" : {
       "en" : "Either the actual menu as a structured representation, as text, or a URL of the menu."
     },
     "attributes" : [ "external", "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://alexmv12.github.io/FoodleMaps/#hasPreparationTime",
+    "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+    "range" : "12",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "10.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPreparationTime",
+      "undefined" : "hasPreparationTime"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Indicates how many minutes are needed to prepare and serve the dish. More precisely, is the time which should pass between the moment in which the order is made and the moment in which the dish is server."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://alexmv12.github.io/FoodleMaps/#requiresCharacteristic",
+    "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+    "range" : "33",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "The user wants a \"Heavy\" dish.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "requiresCharacteristic",
+      "undefined" : "requiresCharacteristic"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Used to express a constraint wanted by the user to a specific characteristic."
+    },
+    "attributes" : [ "object" ],
     "id" : "36"
   }, {
-    "iri" : "http://www.semanticweb.org/FoodleMaps#hasIngredient",
-    "baseIri" : "http://www.semanticweb.org/FoodleMaps",
-    "range" : "35",
+    "iri" : "https://alexmv12.github.io/FoodleMaps/#hasIngredient",
+    "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+    "range" : "30",
     "annotations" : {
       "example" : [ {
         "identifier" : "example",
@@ -1046,25 +1046,25 @@
       "IRI-based" : "hasIngredient",
       "undefined" : "hasIngredient"
     },
-    "domain" : "3",
+    "domain" : "11",
     "comment" : {
       "undefined" : "Associates an ingredient to a recipe."
     },
     "attributes" : [ "object" ],
     "id" : "37"
   }, {
-    "range" : "25",
-    "domain" : "11",
+    "range" : "23",
+    "domain" : "9",
     "attributes" : [ "object", "anonymous" ],
     "id" : "38"
   }, {
-    "range" : "28",
-    "domain" : "6",
+    "range" : "24",
+    "domain" : "3",
     "attributes" : [ "object", "anonymous" ],
     "id" : "39"
   }, {
-    "range" : "34",
-    "domain" : "35",
+    "range" : "31",
+    "domain" : "30",
     "attributes" : [ "object", "anonymous" ],
     "id" : "40"
   } ]
