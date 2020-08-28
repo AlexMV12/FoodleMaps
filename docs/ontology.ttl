@@ -15,7 +15,7 @@ This makes the ontology useful to design an application to help users in finding
                                           <http://purl.org/dc/terms/description> "FoodleMaps is a an ontology designed to support an application which lets users find restaurant serving dishes with constraints on ingredients, diet, etc." ;
                                           <http://purl.org/dc/terms/license> "https://www.gnu.org/licenses/gpl-3.0-standalone.html" ;
                                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "foodlemaps" ;
-                                          <http://purl.org/vocab/vann/preferredNamespaceUri> "https://github.com/AlexMV12/FoodleMaps" ;
+                                          <http://purl.org/vocab/vann/preferredNamespaceUri> "https://alexmv12.github.io/FoodleMaps/" ;
                                           <http://schema.org/name> "FoodleMaps" ;
                                           rdfs:label "FoodleMaps" ;
                                           owl:versionInfo 1.0 .
@@ -52,8 +52,20 @@ This makes the ontology useful to design an application to help users in finding
 <http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
+###  http://schema.org/address
+<http://schema.org/address> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/email
+<http://schema.org/email> rdf:type owl:AnnotationProperty .
+
+
 ###  http://schema.org/name
 <http://schema.org/name> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/telephone
+<http://schema.org/telephone> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -78,25 +90,6 @@ This makes the ontology useful to design an application to help users in finding
                             rdfs:label "hasMenu"@en .
 
 
-###  http://schema.org/hasMenuItem
-<http://schema.org/hasMenuItem> rdf:type owl:ObjectProperty ;
-                                rdfs:domain [ rdf:type owl:Class ;
-                                              owl:unionOf ( <http://schema.org/Menu>
-                                                            <http://schema.org/MenuSection>
-                                                          )
-                                            ] ;
-                                rdfs:range [ rdf:type owl:Class ;
-                                             owl:unionOf ( <http://schema.org/MenuItem>
-                                                           <http://schema.org/Role>
-                                                           <http://schema.org/Text>
-                                                           <http://schema.org/URL>
-                                                         )
-                                           ] ;
-                                rdfs:comment "A food or drink item contained in a menu or menu section."@en ;
-                                rdfs:isDefinedBy <https://schema.org/hasMenuItem> ;
-                                rdfs:label "hasMenuItem"@en .
-
-
 ###  http://schema.org/suitableForDiet
 <http://schema.org/suitableForDiet> rdf:type owl:ObjectProperty ;
                                     rdfs:domain <http://schema.org/Recipe> ;
@@ -110,6 +103,15 @@ This makes the ontology useful to design an application to help users in finding
                                     rdfs:comment "Indicates a dietary restriction or guideline for which this recipe or menu item is suitable, e.g. diabetic, halal etc."@en ;
                                     rdfs:isDefinedBy <https://schema.org/suitableForDiet> ;
                                     rdfs:label "suitableForDiet"@en .
+
+
+###  https://alexmv12.github.io/FoodleMaps/servesRecipe
+:servesRecipe rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain <http://schema.org/Menu> ;
+              rdfs:range <http://schema.org/Recipe> ;
+              rdfs:comment "Connects a Menu to some Recipes, served by that menu." ;
+              rdfs:label "servesRecipe" .
 
 
 ###  https://alexmv12.github.io/FoodleMaps/#hasCharacteristic
@@ -291,6 +293,527 @@ This makes the ontology useful to design an application to help users in finding
                                              <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 
 
+###  https://alexmv12.github.io/FoodleMaps/Alcoholic
+:Alcoholic rdf:type owl:NamedIndividual ,
+                    <https://alexmv12.github.io/FoodleMaps/#Characteristic> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Baba_al_rum
+:Baba_al_rum rdf:type owl:NamedIndividual ,
+                      <http://schema.org/MenuItem> ;
+             <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> :Alcoholic ,
+                                                                        :Tasty ;
+             <https://alexmv12.github.io/FoodleMaps/#hasRecipe> :Recipe17 ;
+             <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "3"^^xsd:int ;
+             rdfs:label "Baba al rum" .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Balsamic_vinegar
+:Balsamic_vinegar rdf:type owl:NamedIndividual ,
+                           <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Bread
+:Bread rdf:type owl:NamedIndividual ,
+                <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Breadcrumbs
+:Breadcrumbs rdf:type owl:NamedIndividual ,
+                      <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Bruschettone_gorgonzola_noci_e_salame
+:Bruschettone_gorgonzola_noci_e_salame rdf:type owl:NamedIndividual ,
+                                                <http://schema.org/MenuItem> ;
+                                       <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> :Tasty ,
+                                                                                                  <https://alexmv12.github.io/FoodleMaps/#Heavy> ;
+                                       <https://alexmv12.github.io/FoodleMaps/#hasRecipe> :Recipe10 ,
+                                                                                          :Recipe9 ;
+                                       <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "4"^^xsd:int ;
+                                       rdfs:label "Bruschetta" .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Buffalo_mozzarella
+:Buffalo_mozzarella rdf:type owl:NamedIndividual ,
+                             <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Caprese_di_bufala
+:Caprese_di_bufala rdf:type owl:NamedIndividual ,
+                            <http://schema.org/MenuItem> ;
+                   <https://alexmv12.github.io/FoodleMaps/#hasRecipe> :Recipe15 ;
+                   rdfs:label "Caprese di bufala" .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Carrot
+:Carrot rdf:type owl:NamedIndividual ,
+                 <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Celery
+:Celery rdf:type owl:NamedIndividual ,
+                 <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Clams
+:Clams rdf:type owl:NamedIndividual ,
+                <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Cotoletta_alla_bolognese
+:Cotoletta_alla_bolognese rdf:type owl:NamedIndividual ,
+                                   <http://schema.org/MenuItem> ;
+                          <https://alexmv12.github.io/FoodleMaps/#hasRecipe> :Recipe8 ;
+                          rdfs:label "Cotoletta alla bolognese" .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Duck_breast
+:Duck_breast rdf:type owl:NamedIndividual ,
+                      <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Egg_spaghetti
+:Egg_spaghetti rdf:type owl:NamedIndividual ,
+                        <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Fatty
+:Fatty rdf:type owl:NamedIndividual ,
+                <https://alexmv12.github.io/FoodleMaps/#Characteristic> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Feta
+:Feta rdf:type owl:NamedIndividual ,
+               <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Fig_jam
+:Fig_jam rdf:type owl:NamedIndividual ,
+                  <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Gorgonzola
+:Gorgonzola rdf:type owl:NamedIndividual ,
+                     <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Ground_beef
+:Ground_beef rdf:type owl:NamedIndividual ,
+                      <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Ground_pork
+:Ground_pork rdf:type owl:NamedIndividual ,
+                      <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Honey
+:Honey rdf:type owl:NamedIndividual ,
+                <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Insalata_greca
+:Insalata_greca rdf:type owl:NamedIndividual ,
+                         <http://schema.org/MenuItem> ;
+                <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Fresh> ,
+                                                                           <https://alexmv12.github.io/FoodleMaps/#Light> ;
+                <https://alexmv12.github.io/FoodleMaps/#hasRecipe> :Recipe11 ;
+                <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "5"^^xsd:int ;
+                rdfs:label "Insalata greca" .
+
+
+###  https://alexmv12.github.io/FoodleMaps/La_Cantinetta_caprese
+:La_Cantinetta_caprese rdf:type owl:NamedIndividual ,
+                                <http://schema.org/FoodEstablishment> ;
+                       <http://schema.org/hasMenu> :Menu3 ;
+                       <http://schema.org/address> "Via Maroggia 5, Bissone, Switzerland" ;
+                       <http://schema.org/email> "events@spaghettigastrogroup.com" ;
+                       <http://schema.org/telephone> "0041 (0)91 6497374" ;
+                       rdfs:label "Cantinetta caprese" .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Meat_broth
+:Meat_broth rdf:type owl:NamedIndividual ,
+                     <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Menu1
+:Menu1 rdf:type owl:NamedIndividual ,
+                <http://schema.org/Menu> ;
+       :servesRecipe :Recipe10 ,
+                     :Recipe11 ,
+                     :Recipe12 ,
+                     :Recipe9 .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Menu2
+:Menu2 rdf:type owl:NamedIndividual ,
+                <http://schema.org/Menu> ;
+       :servesRecipe <https://alexmv12.github.io/FoodleMaps/#Recipe0> ,
+                     <https://alexmv12.github.io/FoodleMaps/#Recipe3> ,
+                     <https://alexmv12.github.io/FoodleMaps/#Recipe4> ,
+                     <https://alexmv12.github.io/FoodleMaps/#Recipe5> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Menu3
+:Menu3 rdf:type owl:NamedIndividual ,
+                <http://schema.org/Menu> ;
+       :servesRecipe :Recipe14 ,
+                     :Recipe15 ,
+                     :Recipe16 ,
+                     :Recipe17 .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Mortadella
+:Mortadella rdf:type owl:NamedIndividual ,
+                     <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Mussels
+:Mussels rdf:type owl:NamedIndividual ,
+                  <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Nutmeg
+:Nutmeg rdf:type owl:NamedIndividual ,
+                 <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Octopus
+:Octopus rdf:type owl:NamedIndividual ,
+                  <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Oregano
+:Oregano rdf:type owl:NamedIndividual ,
+                  <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Parmigiano_reggiano
+:Parmigiano_reggiano rdf:type owl:NamedIndividual ,
+                              <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Pignatella
+:Pignatella rdf:type owl:NamedIndividual ,
+                     <http://schema.org/MenuItem> ;
+            <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Heavy> ;
+            <https://alexmv12.github.io/FoodleMaps/#hasRecipe> :Recipe16 ;
+            rdfs:label "Pignatella" .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Pork_loin
+:Pork_loin rdf:type owl:NamedIndividual ,
+                    <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Raw_ham
+:Raw_ham rdf:type owl:NamedIndividual ,
+                  <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Recipe10
+:Recipe10 rdf:type owl:NamedIndividual ,
+                   <http://schema.org/Recipe> ;
+          <https://alexmv12.github.io/FoodleMaps/#hasIngredient> :Bread ,
+                                                                 :Fig_jam ,
+                                                                 :Raw_ham ,
+                                                                 :Stracciatella .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Recipe11
+:Recipe11 rdf:type owl:NamedIndividual ,
+                   <http://schema.org/Recipe> ;
+          <http://schema.org/suitableForDiet> <https://schema.org/LowCalorieDiet> ,
+                                              <https://schema.org/VegetarianDiet> ;
+          <https://alexmv12.github.io/FoodleMaps/#hasIngredient> :Balsamic_vinegar ,
+                                                                 :Feta ,
+                                                                 :Oregano ,
+                                                                 :Salad ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Onion> ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Tomato> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Recipe12
+:Recipe12 rdf:type owl:NamedIndividual ,
+                   <http://schema.org/Recipe> ;
+          <http://schema.org/suitableForDiet> <https://schema.org/KosherDiet> ,
+                                              <https://schema.org/LowLactoseDiet> ;
+          <https://alexmv12.github.io/FoodleMaps/#hasIngredient> :Duck_breast ,
+                                                                 :Honey ,
+                                                                 :Rosemary ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Garlic> ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Onion> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Recipe13
+:Recipe13 rdf:type owl:NamedIndividual ,
+                   <http://schema.org/Recipe> ;
+          <https://alexmv12.github.io/FoodleMaps/#hasIngredient> :Carrot ,
+                                                                 :Egg_spaghetti ,
+                                                                 :Octopus ,
+                                                                 :White_wine ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Black_pepper> ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Garlic> ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Olive_oil> ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce> ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Salt> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Recipe14
+:Recipe14 rdf:type owl:NamedIndividual ,
+                   <http://schema.org/Recipe> ;
+          <http://schema.org/suitableForDiet> <https://schema.org/GlutenFreeDiet> ,
+                                              <https://schema.org/LowLactoseDiet> ;
+          <https://alexmv12.github.io/FoodleMaps/#hasIngredient> :Carrot ,
+                                                                 :Tuna ,
+                                                                 :Veil ,
+                                                                 :Water ,
+                                                                 :White_wine ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Black_pepper> ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Egg> ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Olive_oil> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Recipe15
+:Recipe15 rdf:type owl:NamedIndividual ,
+                   <http://schema.org/Recipe> ;
+          <https://alexmv12.github.io/FoodleMaps/#hasIngredient> :Buffalo_mozzarella ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Basil> ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Olive_oil> ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Salt> ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Tomato> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Recipe16
+:Recipe16 rdf:type owl:NamedIndividual ,
+                   <http://schema.org/Recipe> ;
+          <https://alexmv12.github.io/FoodleMaps/#hasIngredient> :Clams ,
+                                                                 :Mussels ,
+                                                                 :Shrimps ,
+                                                                 :Squids ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Black_pepper> ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Olive_oil> ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce> ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Salt> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Recipe17
+:Recipe17 rdf:type owl:NamedIndividual ,
+                   <http://schema.org/Recipe> ;
+          <http://schema.org/suitableForDiet> <https://schema.org/VegetarianDiet> ;
+          <https://alexmv12.github.io/FoodleMaps/#hasIngredient> :Rum ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Butter> ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Egg> ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Flour_type_00> ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Salt> ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Sugar> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Recipe18
+:Recipe18 rdf:type owl:NamedIndividual ,
+                   <http://schema.org/Recipe> ;
+          <https://alexmv12.github.io/FoodleMaps/#hasIngredient> :Gorgonzola ,
+                                                                 :Honey ,
+                                                                 :Rum ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Bovin_filet> ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Green_pepper> ,
+                                                                 <https://alexmv12.github.io/FoodleMaps/#Sugar> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Recipe6
+:Recipe6 rdf:type owl:NamedIndividual ,
+                  <http://schema.org/Recipe> ;
+         <https://alexmv12.github.io/FoodleMaps/#hasIngredient> :Carrot ,
+                                                                :Celery ,
+                                                                :Ground_beef ,
+                                                                :Ground_pork ,
+                                                                :Red_wine ,
+                                                                :Tagliatelle ,
+                                                                <https://alexmv12.github.io/FoodleMaps/#Black_pepper> ,
+                                                                <https://alexmv12.github.io/FoodleMaps/#Butter> ,
+                                                                <https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce> ,
+                                                                <https://alexmv12.github.io/FoodleMaps/#Salt> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Recipe7
+:Recipe7 rdf:type owl:NamedIndividual ,
+                  <http://schema.org/Recipe> ;
+         <https://alexmv12.github.io/FoodleMaps/#hasIngredient> :Mortadella ,
+                                                                :Nutmeg ,
+                                                                :Parmigiano_reggiano ,
+                                                                :Pork_loin ,
+                                                                :Raw_ham ,
+                                                                <https://alexmv12.github.io/FoodleMaps/#Black_pepper> ,
+                                                                <https://alexmv12.github.io/FoodleMaps/#Butter> ,
+                                                                <https://alexmv12.github.io/FoodleMaps/#Egg> ,
+                                                                <https://alexmv12.github.io/FoodleMaps/#Flour_type_00> ,
+                                                                <https://alexmv12.github.io/FoodleMaps/#Salt> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Recipe8
+:Recipe8 rdf:type owl:NamedIndividual ,
+                  <http://schema.org/Recipe> ;
+         <https://alexmv12.github.io/FoodleMaps/#hasIngredient> :Breadcrumbs ,
+                                                                :Meat_broth ,
+                                                                :Parmigiano_reggiano ,
+                                                                :Raw_ham ,
+                                                                :Veal ,
+                                                                <https://alexmv12.github.io/FoodleMaps/#Butter> ,
+                                                                <https://alexmv12.github.io/FoodleMaps/#Egg> ,
+                                                                <https://alexmv12.github.io/FoodleMaps/#Flour_type_00> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Recipe9
+:Recipe9 rdf:type owl:NamedIndividual ,
+                  <http://schema.org/Recipe> ;
+         <https://alexmv12.github.io/FoodleMaps/#hasIngredient> :Bread ,
+                                                                :Gorgonzola ,
+                                                                :Salami ,
+                                                                :Walnuts .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Red_wine
+:Red_wine rdf:type owl:NamedIndividual ,
+                   <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Rosemary
+:Rosemary rdf:type owl:NamedIndividual ,
+                   <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Rum
+:Rum rdf:type owl:NamedIndividual ,
+              <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Salad
+:Salad rdf:type owl:NamedIndividual ,
+                <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Salami
+:Salami rdf:type owl:NamedIndividual ,
+                 <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Salty
+:Salty rdf:type owl:NamedIndividual ,
+                <https://alexmv12.github.io/FoodleMaps/#Characteristic> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Shrimps
+:Shrimps rdf:type owl:NamedIndividual ,
+                  <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Spaghetti_al_polpo
+:Spaghetti_al_polpo rdf:type owl:NamedIndividual ,
+                             <http://schema.org/MenuItem> ;
+                    <https://alexmv12.github.io/FoodleMaps/#hasRecipe> :Recipe13 ;
+                    rdfs:label "Spaghetti al polpo" .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Squids
+:Squids rdf:type owl:NamedIndividual ,
+                 <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Stracciatella
+:Stracciatella rdf:type owl:NamedIndividual ,
+                        <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Tagliatelle
+:Tagliatelle rdf:type owl:NamedIndividual ,
+                      <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Tagliatelle_alla_bolognese
+:Tagliatelle_alla_bolognese rdf:type owl:NamedIndividual ,
+                                     <http://schema.org/MenuItem> ;
+                            <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> :Tasty ;
+                            <https://alexmv12.github.io/FoodleMaps/#hasRecipe> :Recipe6 ;
+                            <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "10"^^xsd:int ;
+                            rdfs:label "Tagliatelle alla bolognese" .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Tasty
+:Tasty rdf:type owl:NamedIndividual ,
+                <https://alexmv12.github.io/FoodleMaps/#Characteristic> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Tavernacolo
+:Tavernacolo rdf:type owl:NamedIndividual ,
+                      <http://schema.org/FoodEstablishment> ;
+             <http://schema.org/hasMenu> :Menu1 ;
+             <http://schema.org/address> "Via Bassini, 45, Milano, Italy" ;
+             rdfs:label "Tavernacolo Lambrate" .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Tortellini_in_brodo
+:Tortellini_in_brodo rdf:type owl:NamedIndividual ,
+                              <http://schema.org/MenuItem> ;
+                     <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> :Warm ;
+                     <https://alexmv12.github.io/FoodleMaps/#hasRecipe> :Recipe7 ;
+                     rdfs:label "Tortellini in brodo" .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Trattoria_Sole_Milano
+:Trattoria_Sole_Milano rdf:type owl:NamedIndividual ,
+                                <http://schema.org/FoodEstablishment> ;
+                       <http://schema.org/hasMenu> :Menu2 ;
+                       <http://schema.org/address> "Via Carlo Valvassori Peroni, 41, Milano, Italy" ;
+                       <http://schema.org/telephone> "02 236 4182" ;
+                       rdfs:label "Trattoria Sole Milano" .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Tuna
+:Tuna rdf:type owl:NamedIndividual ,
+               <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Veal
+:Veal rdf:type owl:NamedIndividual ,
+               <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Veil
+:Veil rdf:type owl:NamedIndividual ,
+               <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Vitello_tonnato
+:Vitello_tonnato rdf:type owl:NamedIndividual ,
+                          <http://schema.org/MenuItem> ;
+                 <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Fresh> ;
+                 <https://alexmv12.github.io/FoodleMaps/#hasRecipe> :Recipe14 ;
+                 <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "6"^^xsd:int ;
+                 rdfs:label "Vitello tonnato" .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Walnuts
+:Walnuts rdf:type owl:NamedIndividual ,
+                  <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Warm
+:Warm rdf:type owl:NamedIndividual ,
+               <https://alexmv12.github.io/FoodleMaps/#Characteristic> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Water
+:Water rdf:type owl:NamedIndividual ,
+                <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
+###  https://alexmv12.github.io/FoodleMaps/White_wine
+:White_wine rdf:type owl:NamedIndividual ,
+                     <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+
+
 ###  https://alexmv12.github.io/FoodleMaps/#Bacon
 <https://alexmv12.github.io/FoodleMaps/#Bacon> rdf:type owl:NamedIndividual ,
                                                         <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
@@ -349,7 +872,8 @@ This makes the ontology useful to design an application to help users in finding
 ###  https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde
 <https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde> rdf:type owl:NamedIndividual ,
                                                                         <http://schema.org/MenuItem> ;
-                                                               <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe3> ;
+                                                               <https://alexmv12.github.io/FoodleMaps/#hasRecipe> :Recipe18 ,
+                                                                                                                  <https://alexmv12.github.io/FoodleMaps/#Recipe3> ;
                                                                <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> 15 ;
                                                                rdfs:label "Filetto al pepe verde" .
 
@@ -392,11 +916,13 @@ This makes the ontology useful to design an application to help users in finding
 ###  https://alexmv12.github.io/FoodleMaps/#Menu0
 <https://alexmv12.github.io/FoodleMaps/#Menu0> rdf:type owl:NamedIndividual ,
                                                         <http://schema.org/Menu> ;
-                                               <http://schema.org/hasMenuItem> <https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde> ,
-                                                                               <https://alexmv12.github.io/FoodleMaps/#Merluzzo_alla_livornese> ,
-                                                                               <https://alexmv12.github.io/FoodleMaps/#Pasta_al_pomodoro> ,
-                                                                               <https://alexmv12.github.io/FoodleMaps/#Pasta_alla_carbonara> ,
-                                                                               <https://alexmv12.github.io/FoodleMaps/#Tiramisu> ;
+                                               :servesRecipe :Recipe13 ,
+                                                             :Recipe18 ,
+                                                             :Recipe6 ,
+                                                             :Recipe7 ,
+                                                             :Recipe8 ,
+                                                             <https://alexmv12.github.io/FoodleMaps/#Recipe1> ,
+                                                             <https://alexmv12.github.io/FoodleMaps/#Recipe2> ;
                                                rdfs:label "Menu0"@it .
 
 
@@ -552,8 +1078,10 @@ This makes the ontology useful to design an application to help users in finding
 ###  https://alexmv12.github.io/FoodleMaps/#Tiramisu
 <https://alexmv12.github.io/FoodleMaps/#Tiramisu> rdf:type owl:NamedIndividual ,
                                                            <http://schema.org/MenuItem> ;
+                                                  <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> :Fatty ;
                                                   <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe5> ;
-                                                  <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> 10 .
+                                                  <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> 10 ;
+                                                  rdfs:label "Tiramisu" .
 
 
 ###  https://alexmv12.github.io/FoodleMaps/#Tomato
@@ -565,7 +1093,19 @@ This makes the ontology useful to design an application to help users in finding
 <https://alexmv12.github.io/FoodleMaps/#Trattoria_dell_orsa> rdf:type owl:NamedIndividual ,
                                                                       <http://schema.org/FoodEstablishment> ;
                                                              <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Menu0> ;
-                                                             rdfs:label "Trattoria dell'orsa"@it .
+                                                             <http://schema.org/address> "Via Mentana, 1, 40126 Bologna, Italy" ;
+                                                             <http://schema.org/email> "info@osteriadellorsa.com" ;
+                                                             <http://schema.org/telephone> "051 231576" ;
+                                                             rdfs:label "Osteria dell'orsa"@it .
+
+
+###  https://alexmv12.github.io/FoodleMaps/Petto_d'anatra_affumicato
+<https://alexmv12.github.io/FoodleMaps/Petto_d'anatra_affumicato> rdf:type owl:NamedIndividual ,
+                                                                           <http://schema.org/MenuItem> ;
+                                                                  <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> :Salty ;
+                                                                  <https://alexmv12.github.io/FoodleMaps/#hasRecipe> :Recipe12 ;
+                                                                  <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "10"^^xsd:int ;
+                                                                  rdfs:label "Petto d'anatra affumicato" .
 
 
 ###  https://schema.org/DiabeticDiet

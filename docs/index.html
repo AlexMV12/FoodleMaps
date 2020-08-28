@@ -8,7 +8,7 @@
 <!-- SCHEMA.ORG METADATA -->
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://alexmv12.github.io/FoodleMaps/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://alexmv12.github.io/FoodleMaps/","name":"FoodleMaps", "headline":"FoodleMaps provides a way to create restaurant entities, with a detailed description of dishes in the menu.
 Dishes can be characterized by the used ingredients, but also by the preparation time, by some characteristic and others.
-This makes the ontology useful to design an application to help users in finding restaurants according to their needs.", "datePublished":"Wed Aug 26 16:06:04 CEST 2020", "version":"1.0", "license":"https://www.gnu.org/licenses/gpl-3.0-standalone.html", "author":[{"@type":"Person","name":"https://alexmv12.xyz/","url":"https://alexmv12.xyz/"},{"@type":"Person","name":"https://github.com/FrancescoAttorre","url":"https://github.com/FrancescoAttorre"}]}</script>
+This makes the ontology useful to design an application to help users in finding restaurants according to their needs.", "datePublished":"Fri Aug 28 11:43:43 CEST 2020", "version":"1.0", "license":"https://www.gnu.org/licenses/gpl-3.0-standalone.html", "author":[{"@type":"Person","name":"https://alexmv12.xyz/","url":"https://alexmv12.xyz/"},{"@type":"Person","name":"https://github.com/FrancescoAttorre","url":"https://github.com/FrancescoAttorre"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -132,9 +132,6 @@ This ontology has the following classes and properties.</span>
       <a href="#http://schema.org/hasMenu" title="http://schema.org/hasMenu">hasMenu</a>
    </li>
    <li>
-      <a href="#http://schema.org/hasMenuItem" title="http://schema.org/hasMenuItem">hasMenuItem</a>
-   </li>
-   <li>
       <a href="#hasRecipe" title="https://alexmv12.github.io/FoodleMaps/#hasRecipe">hasRecipe</a>
    </li>
    <li>
@@ -144,6 +141,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#requiresDiet"
          title="https://alexmv12.github.io/FoodleMaps/#requiresDiet">requiresDiet</a>
+   </li>
+   <li>
+      <a href="#servesRecipe"
+         title="https://alexmv12.github.io/FoodleMaps/servesRecipe">servesRecipe</a>
    </li>
    <li>
       <a href="#http://schema.org/suitableForDiet" title="http://schema.org/suitableForDiet">suitableForDiet</a>
@@ -228,9 +229,14 @@ This section provides details for each class and property defined by FoodleMaps.
          </dd>
          <dt>has members</dt>
          <dd>
-            <a href="#Fresh" title="https://alexmv12.github.io/FoodleMaps/#Fresh">fresh</a>
+            <a href="#Alcoholic" title="https://alexmv12.github.io/FoodleMaps/Alcoholic">alcoholic</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Fatty" title="https://alexmv12.github.io/FoodleMaps/Fatty">fatty</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Fresh" title="https://alexmv12.github.io/FoodleMaps/#Fresh">fresh</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Heavy" title="https://alexmv12.github.io/FoodleMaps/#Heavy">heavy</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Light" title="https://alexmv12.github.io/FoodleMaps/#Light">light</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Salty" title="https://alexmv12.github.io/FoodleMaps/Salty">salty</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Tasty" title="https://alexmv12.github.io/FoodleMaps/Tasty">tasty</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Warm" title="https://alexmv12.github.io/FoodleMaps/Warm">warm</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -278,8 +284,14 @@ This section provides details for each class and property defined by FoodleMaps.
          </dd>
          <dt>has members</dt>
          <dd>
-            <a href="#Trattoria_dell_orsa"
-               title="https://alexmv12.github.io/FoodleMaps/#Trattoria_dell_orsa">Trattoria dell'orsa</a>
+            <a href="#La_Cantinetta_caprese"
+               title="https://alexmv12.github.io/FoodleMaps/La_Cantinetta_caprese">Cantinetta caprese</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Trattoria_dell_orsa"
+               title="https://alexmv12.github.io/FoodleMaps/#Trattoria_dell_orsa">Osteria dell'orsa</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Tavernacolo"
+               title="https://alexmv12.github.io/FoodleMaps/Tavernacolo">Tavernacolo Lambrate</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Trattoria_Sole_Milano"
+               title="https://alexmv12.github.io/FoodleMaps/Trattoria_Sole_Milano">Trattoria Sole Milano</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -315,40 +327,91 @@ This section provides details for each class and property defined by FoodleMaps.
          <dt>has members</dt>
          <dd>
             <a href="#Bacon" title="https://alexmv12.github.io/FoodleMaps/#Bacon">bacon</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Balsamic_vinegar"
+               title="https://alexmv12.github.io/FoodleMaps/Balsamic_vinegar">balsamic vinegar</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Basil" title="https://alexmv12.github.io/FoodleMaps/#Basil">basil</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Black_pepper"
                title="https://alexmv12.github.io/FoodleMaps/#Black_pepper">black pepper</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Bovin_filet"
                title="https://alexmv12.github.io/FoodleMaps/#Bovin_filet">bovin filet</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Brandy" title="https://alexmv12.github.io/FoodleMaps/#Brandy">brandy</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Bread" title="https://alexmv12.github.io/FoodleMaps/Bread">bread</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Breadcrumbs"
+               title="https://alexmv12.github.io/FoodleMaps/Breadcrumbs">breadcrumbs</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Buffalo_mozzarella"
+               title="https://alexmv12.github.io/FoodleMaps/Buffalo_mozzarella">buffalo mozzarella</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Butter" title="https://alexmv12.github.io/FoodleMaps/#Butter">butter</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Caper" title="https://alexmv12.github.io/FoodleMaps/#Caper">caper</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Carrot" title="https://alexmv12.github.io/FoodleMaps/Carrot">carrot</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Celery" title="https://alexmv12.github.io/FoodleMaps/Celery">celery</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Clams" title="https://alexmv12.github.io/FoodleMaps/Clams">clams</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Cocoa" title="https://alexmv12.github.io/FoodleMaps/#Cocoa">cocoa</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Codfish" title="https://alexmv12.github.io/FoodleMaps/#Codfish">codfish</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Coffee" title="https://alexmv12.github.io/FoodleMaps/#Coffee">coffee</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Duck_breast"
+               title="https://alexmv12.github.io/FoodleMaps/Duck_breast">duck breast</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Egg" title="https://alexmv12.github.io/FoodleMaps/#Egg">egg</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Egg_spaghetti"
+               title="https://alexmv12.github.io/FoodleMaps/Egg_spaghetti">egg spaghetti</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Feta" title="https://alexmv12.github.io/FoodleMaps/Feta">feta</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Fig_jam" title="https://alexmv12.github.io/FoodleMaps/Fig_jam">fig jam</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Flour_type_00"
                title="https://alexmv12.github.io/FoodleMaps/#Flour_type_00">flour type 00</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Garlic" title="https://alexmv12.github.io/FoodleMaps/#Garlic">garlic</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Gorgonzola" title="https://alexmv12.github.io/FoodleMaps/Gorgonzola">gorgonzola</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Green_pepper"
                title="https://alexmv12.github.io/FoodleMaps/#Green_pepper">green pepper</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Ground_beef"
+               title="https://alexmv12.github.io/FoodleMaps/Ground_beef">ground beef</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Ground_pork"
+               title="https://alexmv12.github.io/FoodleMaps/Ground_pork">ground pork</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Honey" title="https://alexmv12.github.io/FoodleMaps/Honey">honey</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Mascarpone"
                title="https://alexmv12.github.io/FoodleMaps/#Mascarpone">mascarpone</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Meat_broth" title="https://alexmv12.github.io/FoodleMaps/Meat_broth">meat broth</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Mortadella" title="https://alexmv12.github.io/FoodleMaps/Mortadella">mortadella</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Mussels" title="https://alexmv12.github.io/FoodleMaps/Mussels">mussels</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Mustard" title="https://alexmv12.github.io/FoodleMaps/#Mustard">mustard</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Nutmeg" title="https://alexmv12.github.io/FoodleMaps/Nutmeg">nutmeg</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Octopus" title="https://alexmv12.github.io/FoodleMaps/Octopus">octopus</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Olive" title="https://alexmv12.github.io/FoodleMaps/#Olive">olive</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Olive_oil" title="https://alexmv12.github.io/FoodleMaps/#Olive_oil">olive oil</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Olive_oil"
+               title="https://alexmv12.github.io/FoodleMaps/#Olive_oil">olive oil</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Onion" title="https://alexmv12.github.io/FoodleMaps/#Onion">onion</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Oregano" title="https://alexmv12.github.io/FoodleMaps/Oregano">oregano</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Parmigiano_reggiano"
+               title="https://alexmv12.github.io/FoodleMaps/Parmigiano_reggiano">parmigiano reggiano</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Parsley" title="https://alexmv12.github.io/FoodleMaps/#Parsley">parsley</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Pecorino" title="https://alexmv12.github.io/FoodleMaps/#Pecorino">pecorino</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Pomodoro_sauce"
                title="https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce">pomodoro sauce</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Pork_loin" title="https://alexmv12.github.io/FoodleMaps/Pork_loin">pork loin</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Raw_ham" title="https://alexmv12.github.io/FoodleMaps/Raw_ham">raw ham</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Red_wine" title="https://alexmv12.github.io/FoodleMaps/Red_wine">red wine</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Rosemary" title="https://alexmv12.github.io/FoodleMaps/Rosemary">rosemary</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Rum" title="https://alexmv12.github.io/FoodleMaps/Rum">rum</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Salad" title="https://alexmv12.github.io/FoodleMaps/Salad">salad</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Salami" title="https://alexmv12.github.io/FoodleMaps/Salami">salami</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Salt" title="https://alexmv12.github.io/FoodleMaps/#Salt">salt</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Savoyard" title="https://alexmv12.github.io/FoodleMaps/#Savoyard">savoyard</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Shrimps" title="https://alexmv12.github.io/FoodleMaps/Shrimps">shrimps</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://dbpedia.org/page/Spaghetti" title="http://dbpedia.org/page/Spaghetti">spaghetti</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Spaghetti_gluten_free"
                title="https://alexmv12.github.io/FoodleMaps/#Spaghetti_gluten_free">spaghetti gluten free</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Squids" title="https://alexmv12.github.io/FoodleMaps/Squids">squids</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Stracciatella"
+               title="https://alexmv12.github.io/FoodleMaps/Stracciatella">stracciatella</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Sugar" title="https://alexmv12.github.io/FoodleMaps/#Sugar">sugar</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Tagliatelle"
+               title="https://alexmv12.github.io/FoodleMaps/Tagliatelle">tagliatelle</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Tomato" title="https://alexmv12.github.io/FoodleMaps/#Tomato">tomato</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Tuna" title="https://alexmv12.github.io/FoodleMaps/Tuna">tuna</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Veal" title="https://alexmv12.github.io/FoodleMaps/Veal">veal</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Veil" title="https://alexmv12.github.io/FoodleMaps/Veil">veil</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Walnuts" title="https://alexmv12.github.io/FoodleMaps/Walnuts">walnuts</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Water" title="https://alexmv12.github.io/FoodleMaps/Water">water</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#White_wine"
+               title="https://alexmv12.github.io/FoodleMaps/White_wine">white wine</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -375,9 +438,18 @@ This section provides details for each class and property defined by FoodleMaps.
             <span class="dotted" title="http://schema.org/CreativeWork">creative work</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#servesRecipe"
+               title="https://alexmv12.github.io/FoodleMaps/servesRecipe">servesRecipe</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
          <dt>has members</dt>
          <dd>
             <a href="#Menu0" title="https://alexmv12.github.io/FoodleMaps/#Menu0">Menu0</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Menu1" title="https://alexmv12.github.io/FoodleMaps/Menu1">menu1</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Menu2" title="https://alexmv12.github.io/FoodleMaps/Menu2">menu2</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Menu3" title="https://alexmv12.github.io/FoodleMaps/Menu3">menu3</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -415,15 +487,36 @@ This section provides details for each class and property defined by FoodleMaps.
          </dd>
          <dt>has members</dt>
          <dd>
-            <a href="#Filetto_al_pepe_verde"
+            <a href="#Baba_al_rum"
+               title="https://alexmv12.github.io/FoodleMaps/Baba_al_rum">Baba al rum</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Bruschettone_gorgonzola_noci_e_salame"
+               title="https://alexmv12.github.io/FoodleMaps/Bruschettone_gorgonzola_noci_e_salame">Bruschetta</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Caprese_di_bufala"
+               title="https://alexmv12.github.io/FoodleMaps/Caprese_di_bufala">Caprese di bufala</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Cotoletta_alla_bolognese"
+               title="https://alexmv12.github.io/FoodleMaps/Cotoletta_alla_bolognese">Cotoletta alla bolognese</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Filetto_al_pepe_verde"
                title="https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde">Filetto al pepe verde</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Insalata_greca"
+               title="https://alexmv12.github.io/FoodleMaps/Insalata_greca">Insalata greca</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Merluzzo_alla_livornese"
                title="https://alexmv12.github.io/FoodleMaps/#Merluzzo_alla_livornese">Merluzzo alla livornese</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Pasta_al_pomodoro"
                title="https://alexmv12.github.io/FoodleMaps/#Pasta_al_pomodoro">Pasta al pomodoro</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Pasta_alla_carbonara"
                title="https://alexmv12.github.io/FoodleMaps/#Pasta_alla_carbonara">Pasta alla carbonara</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Tiramisu" title="https://alexmv12.github.io/FoodleMaps/#Tiramisu">tiramisu</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Petto_d'anatra_affumicato"
+               title="https://alexmv12.github.io/FoodleMaps/Petto_d'anatra_affumicato">Petto d'anatra affumicato</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Pignatella" title="https://alexmv12.github.io/FoodleMaps/Pignatella">Pignatella</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Spaghetti_al_polpo"
+               title="https://alexmv12.github.io/FoodleMaps/Spaghetti_al_polpo">Spaghetti al polpo</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Tagliatelle_alla_bolognese"
+               title="https://alexmv12.github.io/FoodleMaps/Tagliatelle_alla_bolognese">Tagliatelle alla bolognese</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Tiramisu" title="https://alexmv12.github.io/FoodleMaps/#Tiramisu">Tiramisu</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Tortellini_in_brodo"
+               title="https://alexmv12.github.io/FoodleMaps/Tortellini_in_brodo">Tortellini in brodo</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Vitello_tonnato"
+               title="https://alexmv12.github.io/FoodleMaps/Vitello_tonnato">Vitello tonnato</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -460,16 +553,31 @@ This section provides details for each class and property defined by FoodleMaps.
          <dt>is in range of</dt>
          <dd>
             <a href="#hasRecipe" title="https://alexmv12.github.io/FoodleMaps/#hasRecipe">hasRecipe</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#servesRecipe"
+               title="https://alexmv12.github.io/FoodleMaps/servesRecipe">servesRecipe</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>has members</dt>
          <dd>
             <a href="#Recipe0" title="https://alexmv12.github.io/FoodleMaps/#Recipe0">Recipe0</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Recipe1" title="https://alexmv12.github.io/FoodleMaps/#Recipe1">recipe1</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Recipe10" title="https://alexmv12.github.io/FoodleMaps/Recipe10">recipe10</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Recipe11" title="https://alexmv12.github.io/FoodleMaps/Recipe11">recipe11</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Recipe12" title="https://alexmv12.github.io/FoodleMaps/Recipe12">recipe12</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Recipe13" title="https://alexmv12.github.io/FoodleMaps/Recipe13">recipe13</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Recipe14" title="https://alexmv12.github.io/FoodleMaps/Recipe14">recipe14</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Recipe15" title="https://alexmv12.github.io/FoodleMaps/Recipe15">recipe15</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Recipe16" title="https://alexmv12.github.io/FoodleMaps/Recipe16">recipe16</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Recipe17" title="https://alexmv12.github.io/FoodleMaps/Recipe17">recipe17</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Recipe18" title="https://alexmv12.github.io/FoodleMaps/Recipe18">recipe18</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Recipe2" title="https://alexmv12.github.io/FoodleMaps/#Recipe2">recipe2</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Recipe3" title="https://alexmv12.github.io/FoodleMaps/#Recipe3">recipe3</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Recipe4" title="https://alexmv12.github.io/FoodleMaps/#Recipe4">recipe4</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Recipe5" title="https://alexmv12.github.io/FoodleMaps/#Recipe5">recipe5</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Recipe6" title="https://alexmv12.github.io/FoodleMaps/Recipe6">recipe6</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Recipe7" title="https://alexmv12.github.io/FoodleMaps/Recipe7">recipe7</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Recipe8" title="https://alexmv12.github.io/FoodleMaps/Recipe8">recipe8</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Recipe9" title="https://alexmv12.github.io/FoodleMaps/Recipe9">recipe9</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -555,9 +663,6 @@ This section provides details for each class and property defined by FoodleMaps.
          <a href="#http://schema.org/hasMenu" title="http://schema.org/hasMenu">hasMenu</a>
       </li>
       <li>
-         <a href="#http://schema.org/hasMenuItem" title="http://schema.org/hasMenuItem">hasMenuItem</a>
-      </li>
-      <li>
          <a href="#hasRecipe" title="https://alexmv12.github.io/FoodleMaps/#hasRecipe">hasRecipe</a>
       </li>
       <li>
@@ -567,6 +672,10 @@ This section provides details for each class and property defined by FoodleMaps.
       <li>
          <a href="#requiresDiet"
             title="https://alexmv12.github.io/FoodleMaps/#requiresDiet">requiresDiet</a>
+      </li>
+      <li>
+         <a href="#servesRecipe"
+            title="https://alexmv12.github.io/FoodleMaps/servesRecipe">servesRecipe</a>
       </li>
       <li>
          <a href="#http://schema.org/suitableForDiet" title="http://schema.org/suitableForDiet">suitableForDiet</a>
@@ -680,49 +789,6 @@ This section provides details for each class and property defined by FoodleMaps.
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://schema.org/hasMenuItem">
-      <h3>hasMenuItem<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://schema.org/hasMenuItem</p>
-      <div class="comment">
-         <span class="markdown">A food or drink item contained in a menu or menu section.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="https://schema.org/hasMenuItem">https://schema.org/hasMenuItem</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#http://schema.org/Menu" title="http://schema.org/Menu">Menu</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <span class="dotted" title="http://schema.org/MenuSection">menu section</span>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#http://schema.org/MenuItem" title="http://schema.org/MenuItem">MenuItem</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <span class="dotted" title="http://schema.org/Role">role</span>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <span class="dotted" title="http://schema.org/Text">text</span>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <span class="dotted" title="http://schema.org/URL">u r l</span>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="hasRecipe">
       <h3>hasRecipe<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -806,6 +872,35 @@ This section provides details for each class and property defined by FoodleMaps.
             <dt>has range</dt>
             <dd>
                <a href="#http://schema.org/RestrictedDiet" title="http://schema.org/RestrictedDiet">RestrictedDiet</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="servesRecipe">
+      <h3>servesRecipe<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://alexmv12.github.io/FoodleMaps/servesRecipe</p>
+      <div class="comment">
+         <span class="markdown">Connects a Menu to some Recipes, served by that menu.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://schema.org/Menu" title="http://schema.org/Menu">Menu</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://schema.org/Recipe" title="http://schema.org/Recipe">Recipe</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
