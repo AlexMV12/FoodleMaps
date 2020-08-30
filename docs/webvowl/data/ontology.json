@@ -2,7 +2,7 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "it", "undefined" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "https://alexmv12.github.io/FoodleMaps", "http://www.w3.org/2001/XMLSchema", "http://dbpedia.org/ontology", "https://alexmv12.github.io/FoodleMaps/" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://dbpedia.org/ontology", "https://alexmv12.github.io/FoodleMaps/" ],
     "iri" : "https://alexmv12.github.io/FoodleMaps/",
     "version" : "1.0",
     "author" : [ "https://alexmv12.xyz/", "https://github.com/FrancescoAttorre" ],
@@ -45,7 +45,7 @@
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
-        "value" : "https://alexmv12.github.io/FoodleMaps/",
+        "value" : "https://alexmv12.github.io/FoodleMaps/#",
         "type" : "label"
       } ],
       "versionInfo" : [ {
@@ -91,7 +91,7 @@
     "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "24",
+    "id" : "20",
     "type" : "owl:Class"
   }, {
     "id" : "29",
@@ -100,7 +100,7 @@
     "id" : "30",
     "type" : "owl:unionOf"
   }, {
-    "id" : "20",
+    "id" : "23",
     "type" : "owl:Class"
   }, {
     "id" : "16",
@@ -112,16 +112,16 @@
     "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "21",
+    "id" : "24",
     "type" : "owl:Class"
   }, {
     "id" : "9",
     "type" : "owl:Class"
   }, {
-    "id" : "25",
+    "id" : "27",
     "type" : "owl:Class"
   }, {
-    "id" : "23",
+    "id" : "26",
     "type" : "owl:Class"
   }, {
     "id" : "12",
@@ -207,7 +207,7 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://schema.org/RestrictedDiet",
+        "value" : "http://schema.org/RestrictedDiet",
         "type" : "iri"
       } ]
     },
@@ -216,70 +216,70 @@
       "en" : "RestrictedDiet"
     },
     "individuals" : [ {
-      "iri" : "https://schema.org/LowCalorieDiet",
-      "baseIri" : "https://schema.org",
-      "labels" : {
-        "IRI-based" : "LowCalorieDiet"
-      }
-    }, {
-      "iri" : "https://schema.org/GlutenFreeDiet",
-      "baseIri" : "https://schema.org",
-      "labels" : {
-        "IRI-based" : "GlutenFreeDiet"
-      }
-    }, {
-      "iri" : "https://schema.org/VeganDiet",
-      "baseIri" : "https://schema.org",
-      "labels" : {
-        "IRI-based" : "VeganDiet"
-      }
-    }, {
-      "iri" : "https://schema.org/LowSaltDiet",
-      "baseIri" : "https://schema.org",
-      "labels" : {
-        "IRI-based" : "LowSaltDiet"
-      }
-    }, {
-      "iri" : "https://schema.org/VegetarianDiet",
-      "baseIri" : "https://schema.org",
-      "labels" : {
-        "IRI-based" : "VegetarianDiet"
-      }
-    }, {
-      "iri" : "https://schema.org/LowLactoseDiet",
-      "baseIri" : "https://schema.org",
-      "labels" : {
-        "IRI-based" : "LowLactoseDiet"
-      }
-    }, {
-      "iri" : "https://schema.org/HalalDiet",
-      "baseIri" : "https://schema.org",
+      "iri" : "http://schema.org/HalalDiet",
+      "baseIri" : "http://schema.org",
       "labels" : {
         "IRI-based" : "HalalDiet"
       }
     }, {
-      "iri" : "https://schema.org/LowFatDiet",
-      "baseIri" : "https://schema.org",
+      "iri" : "http://schema.org/LowLactoseDiet",
+      "baseIri" : "http://schema.org",
       "labels" : {
-        "IRI-based" : "LowFatDiet"
+        "IRI-based" : "LowLactoseDiet"
       }
     }, {
-      "iri" : "https://schema.org/DiabeticDiet",
-      "baseIri" : "https://schema.org",
+      "iri" : "http://schema.org/DiabeticDiet",
+      "baseIri" : "http://schema.org",
       "labels" : {
         "IRI-based" : "DiabeticDiet"
       }
     }, {
-      "iri" : "https://schema.org/KosherDiet",
-      "baseIri" : "https://schema.org",
-      "labels" : {
-        "IRI-based" : "KosherDiet"
-      }
-    }, {
-      "iri" : "https://schema.org/HinduDiet",
-      "baseIri" : "https://schema.org",
+      "iri" : "http://schema.org/HinduDiet",
+      "baseIri" : "http://schema.org",
       "labels" : {
         "IRI-based" : "HinduDiet"
+      }
+    }, {
+      "iri" : "http://schema.org/VeganDiet",
+      "baseIri" : "http://schema.org",
+      "labels" : {
+        "IRI-based" : "VeganDiet"
+      }
+    }, {
+      "iri" : "http://schema.org/LowSaltDiet",
+      "baseIri" : "http://schema.org",
+      "labels" : {
+        "IRI-based" : "LowSaltDiet"
+      }
+    }, {
+      "iri" : "http://schema.org/VegetarianDiet",
+      "baseIri" : "http://schema.org",
+      "labels" : {
+        "IRI-based" : "VegetarianDiet"
+      }
+    }, {
+      "iri" : "http://schema.org/LowFatDiet",
+      "baseIri" : "http://schema.org",
+      "labels" : {
+        "IRI-based" : "LowFatDiet"
+      }
+    }, {
+      "iri" : "http://schema.org/GlutenFreeDiet",
+      "baseIri" : "http://schema.org",
+      "labels" : {
+        "IRI-based" : "GlutenFreeDiet"
+      }
+    }, {
+      "iri" : "http://schema.org/LowCalorieDiet",
+      "baseIri" : "http://schema.org",
+      "labels" : {
+        "IRI-based" : "LowCalorieDiet"
+      }
+    }, {
+      "iri" : "http://schema.org/KosherDiet",
+      "baseIri" : "http://schema.org",
+      "labels" : {
+        "IRI-based" : "KosherDiet"
       }
     } ],
     "comment" : {
@@ -296,7 +296,7 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://schema.org/Menu",
+        "value" : "http://schema.org/Menu",
         "type" : "iri"
       } ]
     },
@@ -305,14 +305,8 @@
       "en" : "Menu"
     },
     "individuals" : [ {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Menu2",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Menu2"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Menu1",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Menu1",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Menu1"
       }
@@ -324,18 +318,24 @@
         "it" : "Menu0"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Menu3",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Menu3",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Menu3"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Menu2",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Menu2"
       }
     } ],
     "comment" : {
       "en" : "A structured representation of food or drink items available from a FoodEstablishment."
     },
     "attributes" : [ "external" ],
-    "id" : "24",
-    "superClasses" : [ "25" ]
+    "id" : "20",
+    "superClasses" : [ "27" ]
   }, {
     "instances" : 0,
     "union" : [ "12" ],
@@ -343,7 +343,7 @@
     "id" : "29"
   }, {
     "instances" : 0,
-    "union" : [ "0", "4", "24", "5" ],
+    "union" : [ "0", "4", "20", "5" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "30"
   }, {
@@ -375,16 +375,16 @@
         "IRI-based" : "Bovin_filet"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/White_wine",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "White_wine"
-      }
-    }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Mascarpone",
       "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Mascarpone"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Water",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Water"
       }
     }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Savoyard",
@@ -393,28 +393,64 @@
         "IRI-based" : "Savoyard"
       }
     }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Bread",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Bread"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Nutmeg",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Nutmeg"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Honey",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Honey"
+      }
+    }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Black_pepper",
       "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Black_pepper"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Fig_jam",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Oregano",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Fig_jam"
+        "IRI-based" : "Oregano"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Ground_pork",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Rum",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Ground_pork"
+        "IRI-based" : "Rum"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Rosemary",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Ground_beef",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Rosemary"
+        "IRI-based" : "Ground_beef"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Feta",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Feta"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Tuna",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Tuna"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Meat_broth",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Meat_broth"
       }
     }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Pecorino",
@@ -423,34 +459,34 @@
         "IRI-based" : "Pecorino"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Egg_spaghetti",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Egg_spaghetti"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Breadcrumbs",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Breadcrumbs"
-      }
-    }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Caper",
       "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Caper"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Carrot",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Squids",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Carrot"
+        "IRI-based" : "Squids"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Clams",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Mussels",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Clams"
+        "IRI-based" : "Mussels"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Duck_breast",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Duck_breast"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Tagliatelle",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Tagliatelle"
       }
     }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Mustard",
@@ -465,28 +501,22 @@
         "IRI-based" : "Garlic"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Rum",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Rum"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Gorgonzola",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Gorgonzola"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Duck_breast",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Duck_breast"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/#Codfish",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Parmigiano_reggiano",
       "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Codfish"
+        "IRI-based" : "Parmigiano_reggiano"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Walnuts",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Walnuts"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Balsamic_vinegar",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Balsamic_vinegar"
       }
     }, {
       "iri" : "http://dbpedia.org/page/Spaghetti",
@@ -495,16 +525,22 @@
         "IRI-based" : "Spaghetti"
       }
     }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Codfish",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Codfish"
+      }
+    }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Brandy",
       "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Brandy"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Octopus",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Breadcrumbs",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Octopus"
+        "IRI-based" : "Breadcrumbs"
       }
     }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Green_pepper",
@@ -513,34 +549,40 @@
         "IRI-based" : "Green_pepper"
       }
     }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Buffalo_mozzarella",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Buffalo_mozzarella"
+      }
+    }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Coffee",
       "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Coffee"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Salami",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Salami"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Raw_ham",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Raw_ham"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Shrimps",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Shrimps"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/#Salt",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Red_wine",
       "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Salt"
+        "IRI-based" : "Red_wine"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Salad",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Salad"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Stracciatella",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Stracciatella"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Mortadella",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Mortadella"
       }
     }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Bacon",
@@ -549,46 +591,28 @@
         "IRI-based" : "Bacon"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Veal",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Veal"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Veil",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Veil"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Squids",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Squids"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Water",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Water"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Ground_beef",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Ground_beef"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/#Basil",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Salt",
       "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Basil"
+        "IRI-based" : "Salt"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Bread",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Celery",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Bread"
+        "IRI-based" : "Celery"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Clams",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Clams"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Carrot",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Carrot"
       }
     }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Olive",
@@ -597,22 +621,10 @@
         "IRI-based" : "Olive"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Meat_broth",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Basil",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Meat_broth"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Oregano",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Oregano"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Mussels",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Mussels"
+        "IRI-based" : "Basil"
       }
     }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Olive_oil",
@@ -621,28 +633,22 @@
         "IRI-based" : "Olive_oil"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Pork_loin",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Pork_loin",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Pork_loin"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Nutmeg",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Fig_jam",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Nutmeg"
+        "IRI-based" : "Fig_jam"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Honey",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#White_wine",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Honey"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Tuna",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Tuna"
+        "IRI-based" : "White_wine"
       }
     }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Onion",
@@ -669,40 +675,22 @@
         "IRI-based" : "Flour_type_00"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Celery",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Rosemary",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Celery"
+        "IRI-based" : "Rosemary"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Parmigiano_reggiano",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Veal",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Parmigiano_reggiano"
+        "IRI-based" : "Veal"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Walnuts",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Salami",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Walnuts"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Tagliatelle",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Tagliatelle"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Mortadella",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Mortadella"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Feta",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Feta"
+        "IRI-based" : "Salami"
       }
     }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Egg",
@@ -711,16 +699,40 @@
         "IRI-based" : "Egg"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Buffalo_mozzarella",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Gorgonzola",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Buffalo_mozzarella"
+        "IRI-based" : "Gorgonzola"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Ground_pork",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Ground_pork"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Egg_spaghetti",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Egg_spaghetti"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Veil",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Veil"
       }
     }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Cocoa",
       "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Cocoa"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Octopus",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Octopus"
       }
     }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Sugar",
@@ -735,41 +747,29 @@
         "IRI-based" : "Tomato"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Balsamic_vinegar",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Balsamic_vinegar"
-      }
-    }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce",
       "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Pomodoro_sauce"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Red_wine",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Raw_ham",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Red_wine"
+        "IRI-based" : "Raw_ham"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Stracciatella",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Shrimps",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Stracciatella"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Salad",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Salad"
+        "IRI-based" : "Shrimps"
       }
     } ],
     "comment" : {
       "undefined" : "Every ingredient is a food which can be used to prepare dishes."
     },
-    "id" : "20",
-    "superClasses" : [ "21" ]
+    "id" : "23",
+    "superClasses" : [ "24" ]
   }, {
     "iri" : "http://schema.org/Intangible",
     "baseIri" : "http://schema.org",
@@ -807,12 +807,12 @@
       "IRI-based" : "Food",
       "undefined" : "Food"
     },
-    "subClasses" : [ "20" ],
+    "subClasses" : [ "23" ],
     "comment" : {
       "undefined" : "Food is any eatable or drinkable substance that is normally consumed by humans."
     },
     "attributes" : [ "external" ],
-    "id" : "21"
+    "id" : "24"
   }, {
     "iri" : "http://schema.org/Recipe",
     "baseIri" : "http://schema.org",
@@ -821,7 +821,7 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://schema.org/Recipe",
+        "value" : "http://schema.org/Recipe",
         "type" : "iri"
       } ]
     },
@@ -830,70 +830,22 @@
       "en" : "Recipe"
     },
     "individuals" : [ {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Recipe6",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Recipe6"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Recipe7",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Recipe7"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Recipe8",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe8",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Recipe8"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Recipe9",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe7",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Recipe7"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe9",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Recipe9"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Recipe13",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Recipe13"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Recipe14",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Recipe14"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Recipe15",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Recipe15"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Recipe16",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Recipe16"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Recipe10",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Recipe10"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Recipe11",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Recipe11"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Recipe12",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Recipe12"
       }
     }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe4",
@@ -908,10 +860,22 @@
         "IRI-based" : "Recipe3"
       }
     }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe6",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Recipe6"
+      }
+    }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe5",
       "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Recipe5"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe11",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Recipe11"
       }
     }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe0",
@@ -921,16 +885,10 @@
         "it" : "Recipe0"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Recipe17",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe10",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Recipe17"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Recipe18",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Recipe18"
+        "IRI-based" : "Recipe10"
       }
     }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe2",
@@ -939,10 +897,52 @@
         "IRI-based" : "Recipe2"
       }
     }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe13",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Recipe13"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe12",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Recipe12"
+      }
+    }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe1",
       "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Recipe1"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe15",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Recipe15"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe14",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Recipe14"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe17",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Recipe17"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe16",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Recipe16"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Recipe18",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Recipe18"
       }
     } ],
     "comment" : {
@@ -958,9 +958,9 @@
     "label" : {
       "IRI-based" : "CreativeWork"
     },
-    "subClasses" : [ "24" ],
+    "subClasses" : [ "20" ],
     "attributes" : [ "external" ],
-    "id" : "25"
+    "id" : "27"
   }, {
     "iri" : "https://alexmv12.github.io/FoodleMaps/#User",
     "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
@@ -972,7 +972,7 @@
     "comment" : {
       "undefined" : "User is the class which represents the requests of the application user in terms of wanted ingredients, wanted diet, etc."
     },
-    "id" : "23"
+    "id" : "26"
   }, {
     "iri" : "http://schema.org/FoodEstablishment",
     "baseIri" : "http://schema.org",
@@ -981,7 +981,7 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://schema.org/FoodEstablishment",
+        "value" : "http://schema.org/FoodEstablishment",
         "type" : "iri"
       } ]
     },
@@ -990,21 +990,6 @@
       "en" : "FoodEstablishment"
     },
     "individuals" : [ {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Tavernacolo",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "annotations" : {
-        "address" : [ {
-          "identifier" : "address",
-          "language" : "undefined",
-          "value" : "Via Bassini, 45, Milano, Italy",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Tavernacolo",
-        "undefined" : "Tavernacolo Lambrate"
-      }
-    }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Trattoria_dell_orsa",
       "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "annotations" : {
@@ -1032,29 +1017,8 @@
         "it" : "Osteria dell'orsa"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Trattoria_Sole_Milano",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "annotations" : {
-        "address" : [ {
-          "identifier" : "address",
-          "language" : "undefined",
-          "value" : "Via Carlo Valvassori Peroni, 41, Milano, Italy",
-          "type" : "label"
-        } ],
-        "telephone" : [ {
-          "identifier" : "telephone",
-          "language" : "undefined",
-          "value" : "02 236 4182",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Trattoria_Sole_Milano",
-        "undefined" : "Trattoria Sole Milano"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/La_Cantinetta_caprese",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#La_Cantinetta_caprese",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "annotations" : {
         "address" : [ {
           "identifier" : "address",
@@ -1078,6 +1042,48 @@
       "labels" : {
         "IRI-based" : "La_Cantinetta_caprese",
         "undefined" : "Cantinetta caprese"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Trattoria_Sole_Milano",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "annotations" : {
+        "address" : [ {
+          "identifier" : "address",
+          "language" : "undefined",
+          "value" : "Via Carlo Valvassori Peroni, 41, Milano, Italy",
+          "type" : "label"
+        } ],
+        "telephone" : [ {
+          "identifier" : "telephone",
+          "language" : "undefined",
+          "value" : "02 236 4182",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Trattoria_Sole_Milano",
+        "undefined" : "Trattoria Sole Milano"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Tavernacolo",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "annotations" : {
+        "address" : [ {
+          "identifier" : "address",
+          "language" : "undefined",
+          "value" : "Via Bassini, 45, Milano, Italy",
+          "type" : "label"
+        } ],
+        "telephone" : [ {
+          "identifier" : "telephone",
+          "language" : "undefined",
+          "value" : "02 1234 4321",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Tavernacolo",
+        "undefined" : "Tavernacolo Lambrate"
       }
     } ],
     "comment" : {
@@ -1103,10 +1109,22 @@
       "undefined" : "Characteristic"
     },
     "individuals" : [ {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Fatty",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Alcoholic",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Fatty"
+        "IRI-based" : "Alcoholic"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Salty",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Salty"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Warm",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Warm"
       }
     }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Fresh",
@@ -1115,40 +1133,28 @@
         "IRI-based" : "Fresh"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Alcoholic",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Alcoholic"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Tasty",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Tasty"
-      }
-    }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Heavy",
       "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Heavy"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Warm",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Fatty",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Warm"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Salty",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Salty"
+        "IRI-based" : "Fatty"
       }
     }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Light",
       "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Light"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Tasty",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Tasty"
       }
     } ],
     "comment" : {
@@ -1163,7 +1169,7 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://schema.org/MenuItem",
+        "value" : "http://schema.org/MenuItem",
         "type" : "iri"
       } ]
     },
@@ -1172,11 +1178,18 @@
       "en" : "MenuItem"
     },
     "individuals" : [ {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Spaghetti_al_polpo",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Vitello_tonnato",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Spaghetti_al_polpo",
-        "undefined" : "Spaghetti al polpo"
+        "IRI-based" : "Vitello_tonnato",
+        "undefined" : "Vitello tonnato"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Tagliatelle_alla_bolognese",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Tagliatelle_alla_bolognese",
+        "undefined" : "Tagliatelle alla bolognese"
       }
     }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Pasta_alla_carbonara",
@@ -1186,11 +1199,25 @@
         "it" : "Pasta alla carbonara"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Insalata_greca",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Cotoletta_alla_bolognese",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Insalata_greca",
-        "undefined" : "Insalata greca"
+        "IRI-based" : "Cotoletta_alla_bolognese",
+        "undefined" : "Cotoletta alla bolognese"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Caprese_di_bufala",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Caprese_di_bufala",
+        "undefined" : "Caprese di bufala"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Bruschettone_gorgonzola_noci_e_salame",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Bruschettone_gorgonzola_noci_e_salame",
+        "undefined" : "Bruschetta"
       }
     }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Tiramisu",
@@ -1200,53 +1227,32 @@
         "undefined" : "Tiramisu"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Caprese_di_bufala",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Tortellini_in_brodo",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Caprese_di_bufala",
-        "undefined" : "Caprese di bufala"
+        "IRI-based" : "Tortellini_in_brodo",
+        "undefined" : "Tortellini in brodo"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Pignatella",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Pignatella",
-        "undefined" : "Pignatella"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Tagliatelle_alla_bolognese",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Tagliatelle_alla_bolognese",
-        "undefined" : "Tagliatelle alla bolognese"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Bruschettone_gorgonzola_noci_e_salame",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Bruschettone_gorgonzola_noci_e_salame",
-        "undefined" : "Bruschetta"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Baba_al_rum",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Baba_al_rum",
-        "undefined" : "Baba al rum"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Petto_d'anatra_affumicato",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Petto_d'anatra_affumicato",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Petto_d'anatra_affumicato",
         "undefined" : "Petto d'anatra affumicato"
       }
     }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Tortellini_in_brodo",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Pignatella",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
-        "IRI-based" : "Tortellini_in_brodo",
-        "undefined" : "Tortellini in brodo"
+        "IRI-based" : "Pignatella",
+        "undefined" : "Pignatella"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Insalata_greca",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Insalata_greca",
+        "undefined" : "Insalata greca"
       }
     }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Pasta_al_pomodoro",
@@ -1263,25 +1269,25 @@
         "undefined" : "Merluzzo alla livornese"
       }
     }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Baba_al_rum",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Baba_al_rum",
+        "undefined" : "Baba al rum"
+      }
+    }, {
+      "iri" : "https://alexmv12.github.io/FoodleMaps/#Spaghetti_al_polpo",
+      "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+      "labels" : {
+        "IRI-based" : "Spaghetti_al_polpo",
+        "undefined" : "Spaghetti al polpo"
+      }
+    }, {
       "iri" : "https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde",
       "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
       "labels" : {
         "IRI-based" : "Filetto_al_pepe_verde",
         "undefined" : "Filetto al pepe verde"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Cotoletta_alla_bolognese",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Cotoletta_alla_bolognese",
-        "undefined" : "Cotoletta alla bolognese"
-      }
-    }, {
-      "iri" : "https://alexmv12.github.io/FoodleMaps/Vitello_tonnato",
-      "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-      "labels" : {
-        "IRI-based" : "Vitello_tonnato",
-        "undefined" : "Vitello tonnato"
       }
     } ],
     "comment" : {
@@ -1305,12 +1311,15 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "19",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "22",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "26",
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
     "type" : "owl:objectProperty"
   }, {
     "id" : "31",
@@ -1327,9 +1336,6 @@
   }, {
     "id" : "35",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "27",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "36",
     "type" : "owl:objectProperty"
@@ -1361,10 +1367,25 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "17"
   }, {
-    "range" : "21",
+    "iri" : "https://alexmv12.github.io/FoodleMaps/#servesRecipe",
+    "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "servesRecipe",
+      "undefined" : "servesRecipe"
+    },
+    "superproperty" : [ "21" ],
     "domain" : "20",
-    "attributes" : [ "object", "anonymous" ],
+    "comment" : {
+      "undefined" : "Connects a Menu to some Recipes, served by that menu."
+    },
+    "attributes" : [ "object" ],
     "id" : "19"
+  }, {
+    "range" : "24",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
   }, {
     "iri" : "https://alexmv12.github.io/FoodleMaps/#requiresDiet",
     "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
@@ -1381,12 +1402,12 @@
       "IRI-based" : "requiresDiet",
       "undefined" : "requiresDiet"
     },
-    "domain" : "23",
+    "domain" : "26",
     "comment" : {
       "undefined" : "Used to express a diet followed by the user; the returned dishes will have to be suitable for that diet."
     },
     "attributes" : [ "object" ],
-    "id" : "22"
+    "id" : "25"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
@@ -1395,9 +1416,9 @@
       "IRI-based" : "topObjectProperty"
     },
     "domain" : "7",
-    "subproperty" : [ "27", "28" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "26"
+    "subproperty" : [ "28", "19" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "21"
   }, {
     "iri" : "https://alexmv12.github.io/FoodleMaps/#hasRecipe",
     "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
@@ -1420,7 +1441,7 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://schema.org/suitableForDiet",
+        "value" : "http://schema.org/suitableForDiet",
         "type" : "iri"
       } ]
     },
@@ -1432,7 +1453,7 @@
     "comment" : {
       "en" : "Indicates a dietary restriction or guideline for which this recipe or menu item is suitable, e.g. diabetic, halal etc."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "32"
   }, {
     "iri" : "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic",
@@ -1450,7 +1471,7 @@
       "IRI-based" : "hasCharacteristic",
       "undefined" : "hasCharacteristic"
     },
-    "superproperty" : [ "26" ],
+    "superproperty" : [ "21" ],
     "domain" : "15",
     "comment" : {
       "undefined" : "Assigns one characteristic to a dish."
@@ -1465,7 +1486,7 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://schema.org/hasMenu",
+        "value" : "http://schema.org/hasMenu",
         "type" : "iri"
       } ]
     },
@@ -1477,7 +1498,7 @@
     "comment" : {
       "en" : "Either the actual menu as a structured representation, as text, or a URL of the menu."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "34"
   }, {
     "iri" : "https://alexmv12.github.io/FoodleMaps/#hasPreparationTime",
@@ -1502,21 +1523,6 @@
     "attributes" : [ "datatype" ],
     "id" : "35"
   }, {
-    "iri" : "https://alexmv12.github.io/FoodleMaps/servesRecipe",
-    "baseIri" : "https://alexmv12.github.io/FoodleMaps",
-    "range" : "9",
-    "label" : {
-      "IRI-based" : "servesRecipe",
-      "undefined" : "servesRecipe"
-    },
-    "superproperty" : [ "26" ],
-    "domain" : "24",
-    "comment" : {
-      "undefined" : "Connects a Menu to some Recipes, served by that menu."
-    },
-    "attributes" : [ "object" ],
-    "id" : "27"
-  }, {
     "iri" : "https://alexmv12.github.io/FoodleMaps/#requiresCharacteristic",
     "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
     "range" : "33",
@@ -1532,7 +1538,7 @@
       "IRI-based" : "requiresCharacteristic",
       "undefined" : "requiresCharacteristic"
     },
-    "domain" : "23",
+    "domain" : "26",
     "comment" : {
       "undefined" : "Used to express a constraint wanted by the user to a specific characteristic."
     },
@@ -1541,7 +1547,7 @@
   }, {
     "iri" : "https://alexmv12.github.io/FoodleMaps/#hasIngredient",
     "baseIri" : "https://alexmv12.github.io/FoodleMaps/",
-    "range" : "20",
+    "range" : "23",
     "annotations" : {
       "example" : [ {
         "identifier" : "example",
@@ -1561,8 +1567,8 @@
     "attributes" : [ "object" ],
     "id" : "37"
   }, {
-    "range" : "25",
-    "domain" : "24",
+    "range" : "27",
+    "domain" : "20",
     "attributes" : [ "object", "anonymous" ],
     "id" : "38"
   } ]

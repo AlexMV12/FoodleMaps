@@ -77,6 +77,9 @@
   "@id" : "http://schema.org/CreativeWork",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "http://schema.org/DiabeticDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
+}, {
   "@id" : "http://schema.org/Enumeration",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -87,7 +90,7 @@
     "@value" : "A food-related business."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://schema.org/FoodEstablishment"
+    "@id" : "http://schema.org/FoodEstablishment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -97,14 +100,38 @@
     "@id" : "http://schema.org/LocalBusiness"
   } ]
 }, {
+  "@id" : "http://schema.org/GlutenFreeDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
+}, {
+  "@id" : "http://schema.org/HalalDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
+}, {
+  "@id" : "http://schema.org/HinduDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
+}, {
   "@id" : "http://schema.org/HowTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://schema.org/Intangible",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "http://schema.org/KosherDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
+}, {
   "@id" : "http://schema.org/LocalBusiness",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://schema.org/LowCalorieDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
+}, {
+  "@id" : "http://schema.org/LowFatDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
+}, {
+  "@id" : "http://schema.org/LowLactoseDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
+}, {
+  "@id" : "http://schema.org/LowSaltDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
 }, {
   "@id" : "http://schema.org/Menu",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -113,7 +140,7 @@
     "@value" : "A structured representation of food or drink items available from a FoodEstablishment."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://schema.org/Menu"
+    "@id" : "http://schema.org/Menu"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -130,7 +157,7 @@
     "@value" : "A food or drink item listed in a menu or menu section."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://schema.org/MenuItem"
+    "@id" : "http://schema.org/MenuItem"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -150,7 +177,7 @@
     "@value" : "A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via <a class=\"localLink\" href=\"http://schema.org/suitableForDiet\">suitableForDiet</a>. The <a class=\"localLink\" href=\"http://schema.org/keywords\">keywords</a> property can also be used to add more detail."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://schema.org/Recipe"
+    "@id" : "http://schema.org/Recipe"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -167,7 +194,7 @@
     "@value" : "A diet restricted to certain foods or preparations for cultural, religious, health or lifestyle reasons."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://schema.org/RestrictedDiet"
+    "@id" : "http://schema.org/RestrictedDiet"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -186,6 +213,12 @@
   "@id" : "http://schema.org/URL",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "http://schema.org/VeganDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
+}, {
+  "@id" : "http://schema.org/VegetarianDiet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
+}, {
   "@id" : "http://schema.org/address",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -202,7 +235,7 @@
     "@id" : "_:genid1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://schema.org/hasMenu"
+    "@id" : "http://schema.org/hasMenu"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -225,7 +258,7 @@
     "@id" : "http://schema.org/Recipe"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://schema.org/suitableForDiet"
+    "@id" : "http://schema.org/suitableForDiet"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -258,7 +291,7 @@
     "@value" : "foodlemaps"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@value" : "https://alexmv12.github.io/FoodleMaps/"
+    "@value" : "https://alexmv12.github.io/FoodleMaps/#"
   } ],
   "http://schema.org/name" : [ {
     "@value" : "FoodleMaps"
@@ -271,7 +304,31 @@
     "@value" : "1.0"
   } ]
 }, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Alcoholic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Characteristic" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Baba_al_rum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Baba al rum"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Alcoholic"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Tasty"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasPreparationTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "3"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe17"
+  } ]
+}, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Bacon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Balsamic_vinegar",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Basil",
@@ -286,10 +343,54 @@
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Brandy",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Bread",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Breadcrumbs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Bruschettone_gorgonzola_noci_e_salame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bruschetta"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Heavy"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Tasty"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasPreparationTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "4"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe10"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe9"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Buffalo_mozzarella",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Butter",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Caper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Caprese_di_bufala",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Caprese di bufala"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe15"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Carrot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Celery",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Characteristic",
@@ -304,6 +405,9 @@
     "@value" : "Characteristic"
   } ]
 }, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Clams",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Cocoa",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
@@ -313,7 +417,31 @@
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Coffee",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Cotoletta_alla_bolognese",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cotoletta alla bolognese"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe8"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Duck_breast",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Egg",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Egg_spaghetti",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Fatty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Characteristic" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Feta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Fig_jam",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde",
@@ -326,7 +454,7 @@
     "@value" : "15"
   } ],
   "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe18"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe18"
   }, {
     "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe3"
   } ]
@@ -340,11 +468,23 @@
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Garlic",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Gorgonzola",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Green_pepper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Ground_beef",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Ground_pork",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Heavy",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Characteristic" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Honey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Ingredient",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -361,10 +501,49 @@
     "@id" : "http://dbpedia.org/ontology/Food"
   } ]
 }, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Insalata_greca",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Insalata greca"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Fresh"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Light"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasPreparationTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "5"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe11"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#La_Cantinetta_caprese",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/FoodEstablishment" ],
+  "http://schema.org/address" : [ {
+    "@value" : "Via Maroggia 5, Bissone, Switzerland"
+  } ],
+  "http://schema.org/email" : [ {
+    "@value" : "events@spaghettigastrogroup.com"
+  } ],
+  "http://schema.org/hasMenu" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Menu3"
+  } ],
+  "http://schema.org/telephone" : [ {
+    "@value" : "0041 (0)91 6497374"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cantinetta caprese"
+  } ]
+}, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Light",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Characteristic" ]
 }, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Mascarpone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Meat_broth",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Menu0",
@@ -373,20 +552,56 @@
     "@language" : "it",
     "@value" : "Menu0"
   } ],
-  "https://alexmv12.github.io/FoodleMaps/servesRecipe" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe13"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe18"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe6"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe7"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe8"
-  }, {
+  "https://alexmv12.github.io/FoodleMaps/#servesRecipe" : [ {
     "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe1"
   }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe13"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe18"
+  }, {
     "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe2"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe6"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe7"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe8"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Menu1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Menu" ],
+  "https://alexmv12.github.io/FoodleMaps/#servesRecipe" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe10"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe11"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe12"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe9"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Menu2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Menu" ],
+  "https://alexmv12.github.io/FoodleMaps/#servesRecipe" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe0"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe3"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe4"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe5"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Menu3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Menu" ],
+  "https://alexmv12.github.io/FoodleMaps/#servesRecipe" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe14"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe15"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe16"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe17"
   } ]
 }, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Merluzzo_alla_livornese",
@@ -401,7 +616,19 @@
     "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe4"
   } ]
 }, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Mortadella",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Mussels",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Mustard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Nutmeg",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Octopus",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Olive",
@@ -411,6 +638,12 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Onion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Oregano",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Parmigiano_reggiano",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Parsley",
@@ -447,7 +680,41 @@
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Pecorino",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Petto_d'anatra_affumicato",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Petto d'anatra affumicato"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Salty"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasPreparationTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "10"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe12"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Pignatella",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pignatella"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Heavy"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe16"
+  } ]
+}, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Pork_loin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Raw_ham",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe0",
@@ -484,10 +751,178 @@
     "@id" : "https://alexmv12.github.io/FoodleMaps/#Salt"
   } ]
 }, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
+  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Bread"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Fig_jam"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Raw_ham"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Stracciatella"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
+  "http://schema.org/suitableForDiet" : [ {
+    "@id" : "http://schema.org/LowCalorieDiet"
+  }, {
+    "@id" : "http://schema.org/VegetarianDiet"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Balsamic_vinegar"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Feta"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Onion"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Oregano"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Salad"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Tomato"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
+  "http://schema.org/suitableForDiet" : [ {
+    "@id" : "http://schema.org/KosherDiet"
+  }, {
+    "@id" : "http://schema.org/LowLactoseDiet"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Duck_breast"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Garlic"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Honey"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Onion"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Rosemary"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
+  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Black_pepper"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Carrot"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Egg_spaghetti"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Garlic"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Octopus"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Olive_oil"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Salt"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#White_wine"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
+  "http://schema.org/suitableForDiet" : [ {
+    "@id" : "http://schema.org/GlutenFreeDiet"
+  }, {
+    "@id" : "http://schema.org/LowLactoseDiet"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Black_pepper"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Carrot"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Egg"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Olive_oil"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Tuna"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Veil"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Water"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#White_wine"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
+  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Basil"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Buffalo_mozzarella"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Olive_oil"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Salt"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Tomato"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
+  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Black_pepper"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Clams"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Mussels"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Olive_oil"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Salt"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Shrimps"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Squids"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
+  "http://schema.org/suitableForDiet" : [ {
+    "@id" : "http://schema.org/VegetarianDiet"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Butter"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Egg"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Flour_type_00"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Rum"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Salt"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Sugar"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
+  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Bovin_filet"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Gorgonzola"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Green_pepper"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Honey"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Rum"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Sugar"
+  } ]
+}, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
   "http://schema.org/suitableForDiet" : [ {
-    "@id" : "https://schema.org/GlutenFreeDiet"
+    "@id" : "http://schema.org/GlutenFreeDiet"
   } ],
   "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
     "@id" : "https://alexmv12.github.io/FoodleMaps/#Basil"
@@ -555,17 +990,170 @@
     "@id" : "https://alexmv12.github.io/FoodleMaps/#Sugar"
   } ]
 }, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
+  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Black_pepper"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Butter"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Carrot"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Celery"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Ground_beef"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Ground_pork"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Red_wine"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Salt"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Tagliatelle"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
+  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Black_pepper"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Butter"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Egg"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Flour_type_00"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Mortadella"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Nutmeg"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Parmigiano_reggiano"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Pork_loin"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Raw_ham"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Salt"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
+  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Breadcrumbs"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Butter"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Egg"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Flour_type_00"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Meat_broth"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Parmigiano_reggiano"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Raw_ham"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Veal"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
+  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Bread"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Gorgonzola"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Salami"
+  }, {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Walnuts"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Red_wine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Rosemary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Rum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Salad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Salami",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Salt",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Salty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Characteristic" ]
 }, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Savoyard",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Shrimps",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Spaghetti_al_polpo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Spaghetti al polpo"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe13"
+  } ]
+}, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Spaghetti_gluten_free",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Squids",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Stracciatella",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Sugar",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Tagliatelle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Tagliatelle_alla_bolognese",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tagliatelle alla bolognese"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Tasty"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasPreparationTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "10"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe6"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Tasty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Characteristic" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Tavernacolo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/FoodEstablishment" ],
+  "http://schema.org/address" : [ {
+    "@value" : "Via Bassini, 45, Milano, Italy"
+  } ],
+  "http://schema.org/hasMenu" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Menu1"
+  } ],
+  "http://schema.org/telephone" : [ {
+    "@value" : "02 1234 4321"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tavernacolo Lambrate"
+  } ]
 }, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Tiramisu",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
@@ -573,7 +1161,7 @@
     "@value" : "Tiramisu"
   } ],
   "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Fatty"
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Fatty"
   } ],
   "https://alexmv12.github.io/FoodleMaps/#hasPreparationTime" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -585,6 +1173,33 @@
 }, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Tomato",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Tortellini_in_brodo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tortellini in brodo"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Warm"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe7"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Trattoria_Sole_Milano",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/FoodEstablishment" ],
+  "http://schema.org/address" : [ {
+    "@value" : "Via Carlo Valvassori Peroni, 41, Milano, Italy"
+  } ],
+  "http://schema.org/hasMenu" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Menu2"
+  } ],
+  "http://schema.org/telephone" : [ {
+    "@value" : "02 236 4182"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Trattoria Sole Milano"
+  } ]
 }, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#Trattoria_dell_orsa",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/FoodEstablishment" ],
@@ -605,6 +1220,9 @@
     "@value" : "Osteria dell'orsa"
   } ]
 }, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Tuna",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#User",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -613,6 +1231,40 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "User"
   } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Veal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Veil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Vitello_tonnato",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Vitello tonnato"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Fresh"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasPreparationTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "6"
+  } ],
+  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
+    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe14"
+  } ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Walnuts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Warm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Characteristic" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#Water",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
+}, {
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#White_wine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
 }, {
   "@id" : "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -723,623 +1375,7 @@
     "@id" : "http://schema.org/RestrictedDiet"
   } ]
 }, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Alcoholic",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Characteristic" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Baba_al_rum",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Baba al rum"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Alcoholic"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Tasty"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasPreparationTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#int",
-    "@value" : "3"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe17"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Balsamic_vinegar",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Bread",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Breadcrumbs",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Bruschettone_gorgonzola_noci_e_salame",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Bruschetta"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Tasty"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Heavy"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasPreparationTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#int",
-    "@value" : "4"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe10"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe9"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Buffalo_mozzarella",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Caprese_di_bufala",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Caprese di bufala"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe15"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Carrot",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Celery",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Clams",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Cotoletta_alla_bolognese",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Cotoletta alla bolognese"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe8"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Duck_breast",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Egg_spaghetti",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Fatty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Characteristic" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Feta",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Fig_jam",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Gorgonzola",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Ground_beef",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Ground_pork",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Honey",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Insalata_greca",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Insalata greca"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Fresh"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Light"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasPreparationTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#int",
-    "@value" : "5"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe11"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/La_Cantinetta_caprese",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/FoodEstablishment" ],
-  "http://schema.org/address" : [ {
-    "@value" : "Via Maroggia 5, Bissone, Switzerland"
-  } ],
-  "http://schema.org/email" : [ {
-    "@value" : "events@spaghettigastrogroup.com"
-  } ],
-  "http://schema.org/hasMenu" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Menu3"
-  } ],
-  "http://schema.org/telephone" : [ {
-    "@value" : "0041 (0)91 6497374"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Cantinetta caprese"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Meat_broth",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Menu1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Menu" ],
-  "https://alexmv12.github.io/FoodleMaps/servesRecipe" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe10"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe11"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe12"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe9"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Menu2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Menu" ],
-  "https://alexmv12.github.io/FoodleMaps/servesRecipe" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe0"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe3"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe4"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Recipe5"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Menu3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Menu" ],
-  "https://alexmv12.github.io/FoodleMaps/servesRecipe" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe14"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe15"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe16"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe17"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Mortadella",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Mussels",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Nutmeg",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Octopus",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Oregano",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Parmigiano_reggiano",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Petto_d'anatra_affumicato",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Petto d'anatra affumicato"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Salty"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasPreparationTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#int",
-    "@value" : "10"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe12"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Pignatella",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Pignatella"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Heavy"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe16"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Pork_loin",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Raw_ham",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe10",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
-  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Bread"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Fig_jam"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Raw_ham"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Stracciatella"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe11",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
-  "http://schema.org/suitableForDiet" : [ {
-    "@id" : "https://schema.org/LowCalorieDiet"
-  }, {
-    "@id" : "https://schema.org/VegetarianDiet"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Balsamic_vinegar"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Feta"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Oregano"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Salad"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Onion"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Tomato"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe12",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
-  "http://schema.org/suitableForDiet" : [ {
-    "@id" : "https://schema.org/KosherDiet"
-  }, {
-    "@id" : "https://schema.org/LowLactoseDiet"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Duck_breast"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Honey"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Rosemary"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Garlic"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Onion"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe13",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
-  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Carrot"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Egg_spaghetti"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Octopus"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/White_wine"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Black_pepper"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Garlic"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Olive_oil"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Salt"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe14",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
-  "http://schema.org/suitableForDiet" : [ {
-    "@id" : "https://schema.org/GlutenFreeDiet"
-  }, {
-    "@id" : "https://schema.org/LowLactoseDiet"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Carrot"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Tuna"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Veil"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Water"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/White_wine"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Black_pepper"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Egg"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Olive_oil"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe15",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
-  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Buffalo_mozzarella"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Basil"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Olive_oil"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Salt"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Tomato"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe16",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
-  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Clams"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Mussels"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Shrimps"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Squids"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Black_pepper"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Olive_oil"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Salt"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe17",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
-  "http://schema.org/suitableForDiet" : [ {
-    "@id" : "https://schema.org/VegetarianDiet"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Rum"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Butter"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Egg"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Flour_type_00"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Salt"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Sugar"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe18",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
-  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Gorgonzola"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Honey"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Rum"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Bovin_filet"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Green_pepper"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Sugar"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe6",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
-  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Carrot"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Celery"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Ground_beef"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Ground_pork"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Red_wine"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Tagliatelle"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Black_pepper"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Butter"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Salt"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
-  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Mortadella"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Nutmeg"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Parmigiano_reggiano"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Pork_loin"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Raw_ham"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Black_pepper"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Butter"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Egg"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Flour_type_00"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Salt"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe8",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
-  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Breadcrumbs"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Meat_broth"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Parmigiano_reggiano"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Raw_ham"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Veal"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Butter"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Egg"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Flour_type_00"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe9",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Recipe" ],
-  "https://alexmv12.github.io/FoodleMaps/#hasIngredient" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Bread"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Gorgonzola"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Salami"
-  }, {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Walnuts"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Red_wine",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Rosemary",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Rum",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Salad",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Salami",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Salty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Characteristic" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Shrimps",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Spaghetti_al_polpo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Spaghetti al polpo"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe13"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Squids",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Stracciatella",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Tagliatelle",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Tagliatelle_alla_bolognese",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Tagliatelle alla bolognese"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Tasty"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasPreparationTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#int",
-    "@value" : "10"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe6"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Tasty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Characteristic" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Tavernacolo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/FoodEstablishment" ],
-  "http://schema.org/address" : [ {
-    "@value" : "Via Bassini, 45, Milano, Italy"
-  } ],
-  "http://schema.org/hasMenu" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Menu1"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Tavernacolo Lambrate"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Tortellini_in_brodo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Tortellini in brodo"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Warm"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe7"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Trattoria_Sole_Milano",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/FoodEstablishment" ],
-  "http://schema.org/address" : [ {
-    "@value" : "Via Carlo Valvassori Peroni, 41, Milano, Italy"
-  } ],
-  "http://schema.org/hasMenu" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Menu2"
-  } ],
-  "http://schema.org/telephone" : [ {
-    "@value" : "02 236 4182"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Trattoria Sole Milano"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Tuna",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Veal",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Veil",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Vitello_tonnato",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/MenuItem" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Vitello tonnato"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasCharacteristic" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/#Fresh"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasPreparationTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#int",
-    "@value" : "6"
-  } ],
-  "https://alexmv12.github.io/FoodleMaps/#hasRecipe" : [ {
-    "@id" : "https://alexmv12.github.io/FoodleMaps/Recipe14"
-  } ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Walnuts",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Warm",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Characteristic" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/Water",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/White_wine",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://alexmv12.github.io/FoodleMaps/#Ingredient" ]
-}, {
-  "@id" : "https://alexmv12.github.io/FoodleMaps/servesRecipe",
+  "@id" : "https://alexmv12.github.io/FoodleMaps/#servesRecipe",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Connects a Menu to some Recipes, served by that menu."
@@ -1356,37 +1392,4 @@
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
-}, {
-  "@id" : "https://schema.org/DiabeticDiet",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
-}, {
-  "@id" : "https://schema.org/GlutenFreeDiet",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
-}, {
-  "@id" : "https://schema.org/HalalDiet",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
-}, {
-  "@id" : "https://schema.org/HinduDiet",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
-}, {
-  "@id" : "https://schema.org/KosherDiet",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
-}, {
-  "@id" : "https://schema.org/LowCalorieDiet",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
-}, {
-  "@id" : "https://schema.org/LowFatDiet",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
-}, {
-  "@id" : "https://schema.org/LowLactoseDiet",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
-}, {
-  "@id" : "https://schema.org/LowSaltDiet",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
-}, {
-  "@id" : "https://schema.org/VeganDiet",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
-}, {
-  "@id" : "https://schema.org/VegetarianDiet",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/RestrictedDiet" ]
 } ]

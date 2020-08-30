@@ -5,7 +5,7 @@
 <https://alexmv12.github.io/FoodleMaps/> <http://purl.org/dc/terms/description> "FoodleMaps is a an ontology designed to support an application which lets users find restaurant serving dishes with constraints on ingredients, diet, etc." .
 <https://alexmv12.github.io/FoodleMaps/> <http://purl.org/dc/terms/license> "https://www.gnu.org/licenses/gpl-3.0-standalone.html" .
 <https://alexmv12.github.io/FoodleMaps/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "foodlemaps" .
-<https://alexmv12.github.io/FoodleMaps/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://alexmv12.github.io/FoodleMaps/" .
+<https://alexmv12.github.io/FoodleMaps/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://alexmv12.github.io/FoodleMaps/#" .
 <https://alexmv12.github.io/FoodleMaps/> <http://schema.org/name> "FoodleMaps" .
 <https://alexmv12.github.io/FoodleMaps/> <http://www.w3.org/2000/01/rdf-schema#label> "FoodleMaps" .
 <https://alexmv12.github.io/FoodleMaps/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
@@ -84,7 +84,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://schema.org/URL> .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <http://schema.org/hasMenu> <http://www.w3.org/2000/01/rdf-schema#comment> "Either the actual menu as a structured representation, as text, or a URL of the menu."@en .
-<http://schema.org/hasMenu> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/hasMenu> .
+<http://schema.org/hasMenu> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/hasMenu> .
 <http://schema.org/hasMenu> <http://www.w3.org/2000/01/rdf-schema#label> "hasMenu"@en .
 # 
 # http://schema.org/suitableForDiet
@@ -106,16 +106,8 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://schema.org/URL> .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <http://schema.org/suitableForDiet> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a dietary restriction or guideline for which this recipe or menu item is suitable, e.g. diabetic, halal etc."@en .
-<http://schema.org/suitableForDiet> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/suitableForDiet> .
+<http://schema.org/suitableForDiet> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/suitableForDiet> .
 <http://schema.org/suitableForDiet> <http://www.w3.org/2000/01/rdf-schema#label> "suitableForDiet"@en .
-# 
-# https://alexmv12.github.io/FoodleMaps/servesRecipe
-<https://alexmv12.github.io/FoodleMaps/servesRecipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://alexmv12.github.io/FoodleMaps/servesRecipe> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://alexmv12.github.io/FoodleMaps/servesRecipe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Menu> .
-<https://alexmv12.github.io/FoodleMaps/servesRecipe> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Recipe> .
-<https://alexmv12.github.io/FoodleMaps/servesRecipe> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a Menu to some Recipes, served by that menu." .
-<https://alexmv12.github.io/FoodleMaps/servesRecipe> <http://www.w3.org/2000/01/rdf-schema#label> "servesRecipe" .
 # 
 # https://alexmv12.github.io/FoodleMaps/#hasCharacteristic
 <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -156,6 +148,14 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://alexmv12.github.io/FoodleMaps/#requiresDiet> <http://purl.org/vocab/vann/example> "Restricts dishes to VeganDiet." .
 <https://alexmv12.github.io/FoodleMaps/#requiresDiet> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to express a diet followed by the user; the returned dishes will have to be suitable for that diet." .
 <https://alexmv12.github.io/FoodleMaps/#requiresDiet> <http://www.w3.org/2000/01/rdf-schema#label> "requiresDiet" .
+# 
+# https://alexmv12.github.io/FoodleMaps/#servesRecipe
+<https://alexmv12.github.io/FoodleMaps/#servesRecipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexmv12.github.io/FoodleMaps/#servesRecipe> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://alexmv12.github.io/FoodleMaps/#servesRecipe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Menu> .
+<https://alexmv12.github.io/FoodleMaps/#servesRecipe> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#servesRecipe> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a Menu to some Recipes, served by that menu." .
+<https://alexmv12.github.io/FoodleMaps/#servesRecipe> <http://www.w3.org/2000/01/rdf-schema#label> "servesRecipe" .
 # 
 # 
 # 
@@ -198,7 +198,7 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://schema.org/FoodEstablishment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://schema.org/FoodEstablishment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/LocalBusiness> .
 <http://schema.org/FoodEstablishment> <http://www.w3.org/2000/01/rdf-schema#comment> "A food-related business."@en .
-<http://schema.org/FoodEstablishment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/FoodEstablishment> .
+<http://schema.org/FoodEstablishment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/FoodEstablishment> .
 <http://schema.org/FoodEstablishment> <http://www.w3.org/2000/01/rdf-schema#label> "FoodEstablishment"@en .
 # 
 # http://schema.org/HowTo
@@ -214,14 +214,14 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://schema.org/Menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://schema.org/Menu> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/CreativeWork> .
 <http://schema.org/Menu> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured representation of food or drink items available from a FoodEstablishment."@en .
-<http://schema.org/Menu> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/Menu> .
+<http://schema.org/Menu> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/Menu> .
 <http://schema.org/Menu> <http://www.w3.org/2000/01/rdf-schema#label> "Menu"@en .
 # 
 # http://schema.org/MenuItem
 <http://schema.org/MenuItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://schema.org/MenuItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Intangible> .
 <http://schema.org/MenuItem> <http://www.w3.org/2000/01/rdf-schema#comment> "A food or drink item listed in a menu or menu section."@en .
-<http://schema.org/MenuItem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/MenuItem> .
+<http://schema.org/MenuItem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/MenuItem> .
 <http://schema.org/MenuItem> <http://www.w3.org/2000/01/rdf-schema#label> "MenuItem"@en .
 # 
 # http://schema.org/MenuSection
@@ -231,14 +231,14 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://schema.org/Recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://schema.org/Recipe> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/HowTo> .
 <http://schema.org/Recipe> <http://www.w3.org/2000/01/rdf-schema#comment> "A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via <a class=\"localLink\" href=\"http://schema.org/suitableForDiet\">suitableForDiet</a>. The <a class=\"localLink\" href=\"http://schema.org/keywords\">keywords</a> property can also be used to add more detail."@en .
-<http://schema.org/Recipe> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/Recipe> .
+<http://schema.org/Recipe> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/Recipe> .
 <http://schema.org/Recipe> <http://www.w3.org/2000/01/rdf-schema#label> "Recipe"@en .
 # 
 # http://schema.org/RestrictedDiet
 <http://schema.org/RestrictedDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://schema.org/RestrictedDiet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Enumeration> .
 <http://schema.org/RestrictedDiet> <http://www.w3.org/2000/01/rdf-schema#comment> "A diet restricted to certain foods or preparations for cultural, religious, health or lifestyle reasons."@en .
-<http://schema.org/RestrictedDiet> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/RestrictedDiet> .
+<http://schema.org/RestrictedDiet> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/RestrictedDiet> .
 <http://schema.org/RestrictedDiet> <http://www.w3.org/2000/01/rdf-schema#label> "RestrictedDiet"@en .
 # 
 # http://schema.org/Role
@@ -285,457 +285,70 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://dbpedia.org/page/Spaghetti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://dbpedia.org/page/Spaghetti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# https://alexmv12.github.io/FoodleMaps/Alcoholic
-<https://alexmv12.github.io/FoodleMaps/Alcoholic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Alcoholic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Characteristic> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Baba_al_rum
-<https://alexmv12.github.io/FoodleMaps/Baba_al_rum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Baba_al_rum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
-<https://alexmv12.github.io/FoodleMaps/Baba_al_rum> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/Alcoholic> .
-<https://alexmv12.github.io/FoodleMaps/Baba_al_rum> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/Tasty> .
-<https://alexmv12.github.io/FoodleMaps/Baba_al_rum> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe17> .
-<https://alexmv12.github.io/FoodleMaps/Baba_al_rum> <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "3"^^<http://www.w3.org/2001/XMLSchema#int> .
-<https://alexmv12.github.io/FoodleMaps/Baba_al_rum> <http://www.w3.org/2000/01/rdf-schema#label> "Baba al rum" .
-# 
-# https://alexmv12.github.io/FoodleMaps/Balsamic_vinegar
-<https://alexmv12.github.io/FoodleMaps/Balsamic_vinegar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Balsamic_vinegar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Bread
-<https://alexmv12.github.io/FoodleMaps/Bread> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Bread> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Breadcrumbs
-<https://alexmv12.github.io/FoodleMaps/Breadcrumbs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Breadcrumbs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Bruschettone_gorgonzola_noci_e_salame
-<https://alexmv12.github.io/FoodleMaps/Bruschettone_gorgonzola_noci_e_salame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Bruschettone_gorgonzola_noci_e_salame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
-<https://alexmv12.github.io/FoodleMaps/Bruschettone_gorgonzola_noci_e_salame> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/Tasty> .
-<https://alexmv12.github.io/FoodleMaps/Bruschettone_gorgonzola_noci_e_salame> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Heavy> .
-<https://alexmv12.github.io/FoodleMaps/Bruschettone_gorgonzola_noci_e_salame> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe10> .
-<https://alexmv12.github.io/FoodleMaps/Bruschettone_gorgonzola_noci_e_salame> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe9> .
-<https://alexmv12.github.io/FoodleMaps/Bruschettone_gorgonzola_noci_e_salame> <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "4"^^<http://www.w3.org/2001/XMLSchema#int> .
-<https://alexmv12.github.io/FoodleMaps/Bruschettone_gorgonzola_noci_e_salame> <http://www.w3.org/2000/01/rdf-schema#label> "Bruschetta" .
-# 
-# https://alexmv12.github.io/FoodleMaps/Buffalo_mozzarella
-<https://alexmv12.github.io/FoodleMaps/Buffalo_mozzarella> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Buffalo_mozzarella> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Caprese_di_bufala
-<https://alexmv12.github.io/FoodleMaps/Caprese_di_bufala> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Caprese_di_bufala> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
-<https://alexmv12.github.io/FoodleMaps/Caprese_di_bufala> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe15> .
-<https://alexmv12.github.io/FoodleMaps/Caprese_di_bufala> <http://www.w3.org/2000/01/rdf-schema#label> "Caprese di bufala" .
-# 
-# https://alexmv12.github.io/FoodleMaps/Carrot
-<https://alexmv12.github.io/FoodleMaps/Carrot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Carrot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Celery
-<https://alexmv12.github.io/FoodleMaps/Celery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Celery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Clams
-<https://alexmv12.github.io/FoodleMaps/Clams> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Clams> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Cotoletta_alla_bolognese
-<https://alexmv12.github.io/FoodleMaps/Cotoletta_alla_bolognese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Cotoletta_alla_bolognese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
-<https://alexmv12.github.io/FoodleMaps/Cotoletta_alla_bolognese> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe8> .
-<https://alexmv12.github.io/FoodleMaps/Cotoletta_alla_bolognese> <http://www.w3.org/2000/01/rdf-schema#label> "Cotoletta alla bolognese" .
-# 
-# https://alexmv12.github.io/FoodleMaps/Duck_breast
-<https://alexmv12.github.io/FoodleMaps/Duck_breast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Duck_breast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Egg_spaghetti
-<https://alexmv12.github.io/FoodleMaps/Egg_spaghetti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Egg_spaghetti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Fatty
-<https://alexmv12.github.io/FoodleMaps/Fatty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Fatty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Characteristic> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Feta
-<https://alexmv12.github.io/FoodleMaps/Feta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Feta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Fig_jam
-<https://alexmv12.github.io/FoodleMaps/Fig_jam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Fig_jam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Gorgonzola
-<https://alexmv12.github.io/FoodleMaps/Gorgonzola> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Gorgonzola> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Ground_beef
-<https://alexmv12.github.io/FoodleMaps/Ground_beef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Ground_beef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Ground_pork
-<https://alexmv12.github.io/FoodleMaps/Ground_pork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Ground_pork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Honey
-<https://alexmv12.github.io/FoodleMaps/Honey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Honey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Insalata_greca
-<https://alexmv12.github.io/FoodleMaps/Insalata_greca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Insalata_greca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
-<https://alexmv12.github.io/FoodleMaps/Insalata_greca> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Fresh> .
-<https://alexmv12.github.io/FoodleMaps/Insalata_greca> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Light> .
-<https://alexmv12.github.io/FoodleMaps/Insalata_greca> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe11> .
-<https://alexmv12.github.io/FoodleMaps/Insalata_greca> <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "5"^^<http://www.w3.org/2001/XMLSchema#int> .
-<https://alexmv12.github.io/FoodleMaps/Insalata_greca> <http://www.w3.org/2000/01/rdf-schema#label> "Insalata greca" .
-# 
-# https://alexmv12.github.io/FoodleMaps/La_Cantinetta_caprese
-<https://alexmv12.github.io/FoodleMaps/La_Cantinetta_caprese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/La_Cantinetta_caprese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment> .
-<https://alexmv12.github.io/FoodleMaps/La_Cantinetta_caprese> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/Menu3> .
-<https://alexmv12.github.io/FoodleMaps/La_Cantinetta_caprese> <http://schema.org/address> "Via Maroggia 5, Bissone, Switzerland" .
-<https://alexmv12.github.io/FoodleMaps/La_Cantinetta_caprese> <http://schema.org/email> "events@spaghettigastrogroup.com" .
-<https://alexmv12.github.io/FoodleMaps/La_Cantinetta_caprese> <http://schema.org/telephone> "0041 (0)91 6497374" .
-<https://alexmv12.github.io/FoodleMaps/La_Cantinetta_caprese> <http://www.w3.org/2000/01/rdf-schema#label> "Cantinetta caprese" .
-# 
-# https://alexmv12.github.io/FoodleMaps/Meat_broth
-<https://alexmv12.github.io/FoodleMaps/Meat_broth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Meat_broth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Menu1
-<https://alexmv12.github.io/FoodleMaps/Menu1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Menu1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu> .
-<https://alexmv12.github.io/FoodleMaps/Menu1> <https://alexmv12.github.io/FoodleMaps/servesRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe10> .
-<https://alexmv12.github.io/FoodleMaps/Menu1> <https://alexmv12.github.io/FoodleMaps/servesRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe11> .
-<https://alexmv12.github.io/FoodleMaps/Menu1> <https://alexmv12.github.io/FoodleMaps/servesRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe12> .
-<https://alexmv12.github.io/FoodleMaps/Menu1> <https://alexmv12.github.io/FoodleMaps/servesRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe9> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Menu2
-<https://alexmv12.github.io/FoodleMaps/Menu2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Menu2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu> .
-<https://alexmv12.github.io/FoodleMaps/Menu2> <https://alexmv12.github.io/FoodleMaps/servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe0> .
-<https://alexmv12.github.io/FoodleMaps/Menu2> <https://alexmv12.github.io/FoodleMaps/servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe3> .
-<https://alexmv12.github.io/FoodleMaps/Menu2> <https://alexmv12.github.io/FoodleMaps/servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe4> .
-<https://alexmv12.github.io/FoodleMaps/Menu2> <https://alexmv12.github.io/FoodleMaps/servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe5> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Menu3
-<https://alexmv12.github.io/FoodleMaps/Menu3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Menu3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu> .
-<https://alexmv12.github.io/FoodleMaps/Menu3> <https://alexmv12.github.io/FoodleMaps/servesRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe14> .
-<https://alexmv12.github.io/FoodleMaps/Menu3> <https://alexmv12.github.io/FoodleMaps/servesRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe15> .
-<https://alexmv12.github.io/FoodleMaps/Menu3> <https://alexmv12.github.io/FoodleMaps/servesRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe16> .
-<https://alexmv12.github.io/FoodleMaps/Menu3> <https://alexmv12.github.io/FoodleMaps/servesRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe17> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Mortadella
-<https://alexmv12.github.io/FoodleMaps/Mortadella> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Mortadella> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Mussels
-<https://alexmv12.github.io/FoodleMaps/Mussels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Mussels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Nutmeg
-<https://alexmv12.github.io/FoodleMaps/Nutmeg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Nutmeg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Octopus
-<https://alexmv12.github.io/FoodleMaps/Octopus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Octopus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Oregano
-<https://alexmv12.github.io/FoodleMaps/Oregano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Oregano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Parmigiano_reggiano
-<https://alexmv12.github.io/FoodleMaps/Parmigiano_reggiano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Parmigiano_reggiano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Pignatella
-<https://alexmv12.github.io/FoodleMaps/Pignatella> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Pignatella> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
-<https://alexmv12.github.io/FoodleMaps/Pignatella> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Heavy> .
-<https://alexmv12.github.io/FoodleMaps/Pignatella> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe16> .
-<https://alexmv12.github.io/FoodleMaps/Pignatella> <http://www.w3.org/2000/01/rdf-schema#label> "Pignatella" .
-# 
-# https://alexmv12.github.io/FoodleMaps/Pork_loin
-<https://alexmv12.github.io/FoodleMaps/Pork_loin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Pork_loin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Raw_ham
-<https://alexmv12.github.io/FoodleMaps/Raw_ham> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Raw_ham> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Recipe10
-<https://alexmv12.github.io/FoodleMaps/Recipe10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Recipe10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
-<https://alexmv12.github.io/FoodleMaps/Recipe10> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Bread> .
-<https://alexmv12.github.io/FoodleMaps/Recipe10> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Fig_jam> .
-<https://alexmv12.github.io/FoodleMaps/Recipe10> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Raw_ham> .
-<https://alexmv12.github.io/FoodleMaps/Recipe10> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Stracciatella> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Recipe11
-<https://alexmv12.github.io/FoodleMaps/Recipe11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Recipe11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
-<https://alexmv12.github.io/FoodleMaps/Recipe11> <http://schema.org/suitableForDiet> <https://schema.org/LowCalorieDiet> .
-<https://alexmv12.github.io/FoodleMaps/Recipe11> <http://schema.org/suitableForDiet> <https://schema.org/VegetarianDiet> .
-<https://alexmv12.github.io/FoodleMaps/Recipe11> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Balsamic_vinegar> .
-<https://alexmv12.github.io/FoodleMaps/Recipe11> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Feta> .
-<https://alexmv12.github.io/FoodleMaps/Recipe11> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Oregano> .
-<https://alexmv12.github.io/FoodleMaps/Recipe11> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Salad> .
-<https://alexmv12.github.io/FoodleMaps/Recipe11> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Onion> .
-<https://alexmv12.github.io/FoodleMaps/Recipe11> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Tomato> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Recipe12
-<https://alexmv12.github.io/FoodleMaps/Recipe12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Recipe12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
-<https://alexmv12.github.io/FoodleMaps/Recipe12> <http://schema.org/suitableForDiet> <https://schema.org/KosherDiet> .
-<https://alexmv12.github.io/FoodleMaps/Recipe12> <http://schema.org/suitableForDiet> <https://schema.org/LowLactoseDiet> .
-<https://alexmv12.github.io/FoodleMaps/Recipe12> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Duck_breast> .
-<https://alexmv12.github.io/FoodleMaps/Recipe12> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Honey> .
-<https://alexmv12.github.io/FoodleMaps/Recipe12> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Rosemary> .
-<https://alexmv12.github.io/FoodleMaps/Recipe12> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Garlic> .
-<https://alexmv12.github.io/FoodleMaps/Recipe12> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Onion> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Recipe13
-<https://alexmv12.github.io/FoodleMaps/Recipe13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Recipe13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
-<https://alexmv12.github.io/FoodleMaps/Recipe13> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Carrot> .
-<https://alexmv12.github.io/FoodleMaps/Recipe13> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Egg_spaghetti> .
-<https://alexmv12.github.io/FoodleMaps/Recipe13> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Octopus> .
-<https://alexmv12.github.io/FoodleMaps/Recipe13> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/White_wine> .
-<https://alexmv12.github.io/FoodleMaps/Recipe13> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Black_pepper> .
-<https://alexmv12.github.io/FoodleMaps/Recipe13> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Garlic> .
-<https://alexmv12.github.io/FoodleMaps/Recipe13> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Olive_oil> .
-<https://alexmv12.github.io/FoodleMaps/Recipe13> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce> .
-<https://alexmv12.github.io/FoodleMaps/Recipe13> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Salt> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Recipe14
-<https://alexmv12.github.io/FoodleMaps/Recipe14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Recipe14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
-<https://alexmv12.github.io/FoodleMaps/Recipe14> <http://schema.org/suitableForDiet> <https://schema.org/GlutenFreeDiet> .
-<https://alexmv12.github.io/FoodleMaps/Recipe14> <http://schema.org/suitableForDiet> <https://schema.org/LowLactoseDiet> .
-<https://alexmv12.github.io/FoodleMaps/Recipe14> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Carrot> .
-<https://alexmv12.github.io/FoodleMaps/Recipe14> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Tuna> .
-<https://alexmv12.github.io/FoodleMaps/Recipe14> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Veil> .
-<https://alexmv12.github.io/FoodleMaps/Recipe14> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Water> .
-<https://alexmv12.github.io/FoodleMaps/Recipe14> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/White_wine> .
-<https://alexmv12.github.io/FoodleMaps/Recipe14> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Black_pepper> .
-<https://alexmv12.github.io/FoodleMaps/Recipe14> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Egg> .
-<https://alexmv12.github.io/FoodleMaps/Recipe14> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Olive_oil> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Recipe15
-<https://alexmv12.github.io/FoodleMaps/Recipe15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Recipe15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
-<https://alexmv12.github.io/FoodleMaps/Recipe15> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Buffalo_mozzarella> .
-<https://alexmv12.github.io/FoodleMaps/Recipe15> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Basil> .
-<https://alexmv12.github.io/FoodleMaps/Recipe15> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Olive_oil> .
-<https://alexmv12.github.io/FoodleMaps/Recipe15> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Salt> .
-<https://alexmv12.github.io/FoodleMaps/Recipe15> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Tomato> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Recipe16
-<https://alexmv12.github.io/FoodleMaps/Recipe16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Recipe16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
-<https://alexmv12.github.io/FoodleMaps/Recipe16> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Clams> .
-<https://alexmv12.github.io/FoodleMaps/Recipe16> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Mussels> .
-<https://alexmv12.github.io/FoodleMaps/Recipe16> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Shrimps> .
-<https://alexmv12.github.io/FoodleMaps/Recipe16> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Squids> .
-<https://alexmv12.github.io/FoodleMaps/Recipe16> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Black_pepper> .
-<https://alexmv12.github.io/FoodleMaps/Recipe16> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Olive_oil> .
-<https://alexmv12.github.io/FoodleMaps/Recipe16> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce> .
-<https://alexmv12.github.io/FoodleMaps/Recipe16> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Salt> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Recipe17
-<https://alexmv12.github.io/FoodleMaps/Recipe17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Recipe17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
-<https://alexmv12.github.io/FoodleMaps/Recipe17> <http://schema.org/suitableForDiet> <https://schema.org/VegetarianDiet> .
-<https://alexmv12.github.io/FoodleMaps/Recipe17> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Rum> .
-<https://alexmv12.github.io/FoodleMaps/Recipe17> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Butter> .
-<https://alexmv12.github.io/FoodleMaps/Recipe17> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Egg> .
-<https://alexmv12.github.io/FoodleMaps/Recipe17> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Flour_type_00> .
-<https://alexmv12.github.io/FoodleMaps/Recipe17> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Salt> .
-<https://alexmv12.github.io/FoodleMaps/Recipe17> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Sugar> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Recipe18
-<https://alexmv12.github.io/FoodleMaps/Recipe18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Recipe18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
-<https://alexmv12.github.io/FoodleMaps/Recipe18> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Gorgonzola> .
-<https://alexmv12.github.io/FoodleMaps/Recipe18> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Honey> .
-<https://alexmv12.github.io/FoodleMaps/Recipe18> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Rum> .
-<https://alexmv12.github.io/FoodleMaps/Recipe18> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Bovin_filet> .
-<https://alexmv12.github.io/FoodleMaps/Recipe18> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Green_pepper> .
-<https://alexmv12.github.io/FoodleMaps/Recipe18> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Sugar> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Recipe6
-<https://alexmv12.github.io/FoodleMaps/Recipe6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Recipe6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
-<https://alexmv12.github.io/FoodleMaps/Recipe6> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Carrot> .
-<https://alexmv12.github.io/FoodleMaps/Recipe6> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Celery> .
-<https://alexmv12.github.io/FoodleMaps/Recipe6> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Ground_beef> .
-<https://alexmv12.github.io/FoodleMaps/Recipe6> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Ground_pork> .
-<https://alexmv12.github.io/FoodleMaps/Recipe6> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Red_wine> .
-<https://alexmv12.github.io/FoodleMaps/Recipe6> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Tagliatelle> .
-<https://alexmv12.github.io/FoodleMaps/Recipe6> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Black_pepper> .
-<https://alexmv12.github.io/FoodleMaps/Recipe6> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Butter> .
-<https://alexmv12.github.io/FoodleMaps/Recipe6> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce> .
-<https://alexmv12.github.io/FoodleMaps/Recipe6> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Salt> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Recipe7
-<https://alexmv12.github.io/FoodleMaps/Recipe7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Recipe7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
-<https://alexmv12.github.io/FoodleMaps/Recipe7> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Mortadella> .
-<https://alexmv12.github.io/FoodleMaps/Recipe7> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Nutmeg> .
-<https://alexmv12.github.io/FoodleMaps/Recipe7> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Parmigiano_reggiano> .
-<https://alexmv12.github.io/FoodleMaps/Recipe7> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Pork_loin> .
-<https://alexmv12.github.io/FoodleMaps/Recipe7> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Raw_ham> .
-<https://alexmv12.github.io/FoodleMaps/Recipe7> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Black_pepper> .
-<https://alexmv12.github.io/FoodleMaps/Recipe7> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Butter> .
-<https://alexmv12.github.io/FoodleMaps/Recipe7> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Egg> .
-<https://alexmv12.github.io/FoodleMaps/Recipe7> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Flour_type_00> .
-<https://alexmv12.github.io/FoodleMaps/Recipe7> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Salt> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Recipe8
-<https://alexmv12.github.io/FoodleMaps/Recipe8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Recipe8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
-<https://alexmv12.github.io/FoodleMaps/Recipe8> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Breadcrumbs> .
-<https://alexmv12.github.io/FoodleMaps/Recipe8> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Meat_broth> .
-<https://alexmv12.github.io/FoodleMaps/Recipe8> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Parmigiano_reggiano> .
-<https://alexmv12.github.io/FoodleMaps/Recipe8> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Raw_ham> .
-<https://alexmv12.github.io/FoodleMaps/Recipe8> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Veal> .
-<https://alexmv12.github.io/FoodleMaps/Recipe8> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Butter> .
-<https://alexmv12.github.io/FoodleMaps/Recipe8> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Egg> .
-<https://alexmv12.github.io/FoodleMaps/Recipe8> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Flour_type_00> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Recipe9
-<https://alexmv12.github.io/FoodleMaps/Recipe9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Recipe9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
-<https://alexmv12.github.io/FoodleMaps/Recipe9> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Bread> .
-<https://alexmv12.github.io/FoodleMaps/Recipe9> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Gorgonzola> .
-<https://alexmv12.github.io/FoodleMaps/Recipe9> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Salami> .
-<https://alexmv12.github.io/FoodleMaps/Recipe9> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/Walnuts> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Red_wine
-<https://alexmv12.github.io/FoodleMaps/Red_wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Red_wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Rosemary
-<https://alexmv12.github.io/FoodleMaps/Rosemary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Rosemary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Rum
-<https://alexmv12.github.io/FoodleMaps/Rum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Rum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Salad
-<https://alexmv12.github.io/FoodleMaps/Salad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Salad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Salami
-<https://alexmv12.github.io/FoodleMaps/Salami> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Salami> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Salty
-<https://alexmv12.github.io/FoodleMaps/Salty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Salty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Characteristic> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Shrimps
-<https://alexmv12.github.io/FoodleMaps/Shrimps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Shrimps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Spaghetti_al_polpo
-<https://alexmv12.github.io/FoodleMaps/Spaghetti_al_polpo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Spaghetti_al_polpo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
-<https://alexmv12.github.io/FoodleMaps/Spaghetti_al_polpo> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe13> .
-<https://alexmv12.github.io/FoodleMaps/Spaghetti_al_polpo> <http://www.w3.org/2000/01/rdf-schema#label> "Spaghetti al polpo" .
-# 
-# https://alexmv12.github.io/FoodleMaps/Squids
-<https://alexmv12.github.io/FoodleMaps/Squids> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Squids> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Stracciatella
-<https://alexmv12.github.io/FoodleMaps/Stracciatella> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Stracciatella> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Tagliatelle
-<https://alexmv12.github.io/FoodleMaps/Tagliatelle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Tagliatelle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Tagliatelle_alla_bolognese
-<https://alexmv12.github.io/FoodleMaps/Tagliatelle_alla_bolognese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Tagliatelle_alla_bolognese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
-<https://alexmv12.github.io/FoodleMaps/Tagliatelle_alla_bolognese> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/Tasty> .
-<https://alexmv12.github.io/FoodleMaps/Tagliatelle_alla_bolognese> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe6> .
-<https://alexmv12.github.io/FoodleMaps/Tagliatelle_alla_bolognese> <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "10"^^<http://www.w3.org/2001/XMLSchema#int> .
-<https://alexmv12.github.io/FoodleMaps/Tagliatelle_alla_bolognese> <http://www.w3.org/2000/01/rdf-schema#label> "Tagliatelle alla bolognese" .
-# 
-# https://alexmv12.github.io/FoodleMaps/Tasty
-<https://alexmv12.github.io/FoodleMaps/Tasty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Tasty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Characteristic> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Tavernacolo
-<https://alexmv12.github.io/FoodleMaps/Tavernacolo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Tavernacolo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment> .
-<https://alexmv12.github.io/FoodleMaps/Tavernacolo> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/Menu1> .
-<https://alexmv12.github.io/FoodleMaps/Tavernacolo> <http://schema.org/address> "Via Bassini, 45, Milano, Italy" .
-<https://alexmv12.github.io/FoodleMaps/Tavernacolo> <http://www.w3.org/2000/01/rdf-schema#label> "Tavernacolo Lambrate" .
-# 
-# https://alexmv12.github.io/FoodleMaps/Tortellini_in_brodo
-<https://alexmv12.github.io/FoodleMaps/Tortellini_in_brodo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Tortellini_in_brodo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
-<https://alexmv12.github.io/FoodleMaps/Tortellini_in_brodo> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/Warm> .
-<https://alexmv12.github.io/FoodleMaps/Tortellini_in_brodo> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe7> .
-<https://alexmv12.github.io/FoodleMaps/Tortellini_in_brodo> <http://www.w3.org/2000/01/rdf-schema#label> "Tortellini in brodo" .
-# 
-# https://alexmv12.github.io/FoodleMaps/Trattoria_Sole_Milano
-<https://alexmv12.github.io/FoodleMaps/Trattoria_Sole_Milano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Trattoria_Sole_Milano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment> .
-<https://alexmv12.github.io/FoodleMaps/Trattoria_Sole_Milano> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/Menu2> .
-<https://alexmv12.github.io/FoodleMaps/Trattoria_Sole_Milano> <http://schema.org/address> "Via Carlo Valvassori Peroni, 41, Milano, Italy" .
-<https://alexmv12.github.io/FoodleMaps/Trattoria_Sole_Milano> <http://schema.org/telephone> "02 236 4182" .
-<https://alexmv12.github.io/FoodleMaps/Trattoria_Sole_Milano> <http://www.w3.org/2000/01/rdf-schema#label> "Trattoria Sole Milano" .
-# 
-# https://alexmv12.github.io/FoodleMaps/Tuna
-<https://alexmv12.github.io/FoodleMaps/Tuna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Tuna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Veal
-<https://alexmv12.github.io/FoodleMaps/Veal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Veal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Veil
-<https://alexmv12.github.io/FoodleMaps/Veil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Veil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Vitello_tonnato
-<https://alexmv12.github.io/FoodleMaps/Vitello_tonnato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Vitello_tonnato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
-<https://alexmv12.github.io/FoodleMaps/Vitello_tonnato> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Fresh> .
-<https://alexmv12.github.io/FoodleMaps/Vitello_tonnato> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe14> .
-<https://alexmv12.github.io/FoodleMaps/Vitello_tonnato> <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "6"^^<http://www.w3.org/2001/XMLSchema#int> .
-<https://alexmv12.github.io/FoodleMaps/Vitello_tonnato> <http://www.w3.org/2000/01/rdf-schema#label> "Vitello tonnato" .
-# 
-# https://alexmv12.github.io/FoodleMaps/Walnuts
-<https://alexmv12.github.io/FoodleMaps/Walnuts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Walnuts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Warm
-<https://alexmv12.github.io/FoodleMaps/Warm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Warm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Characteristic> .
-# 
-# https://alexmv12.github.io/FoodleMaps/Water
-<https://alexmv12.github.io/FoodleMaps/Water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
-# 
-# https://alexmv12.github.io/FoodleMaps/White_wine
-<https://alexmv12.github.io/FoodleMaps/White_wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/White_wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# http://schema.org/DiabeticDiet
+<http://schema.org/DiabeticDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://schema.org/DiabeticDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
+# 
+# http://schema.org/GlutenFreeDiet
+<http://schema.org/GlutenFreeDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://schema.org/GlutenFreeDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
+# 
+# http://schema.org/HalalDiet
+<http://schema.org/HalalDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://schema.org/HalalDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
+# 
+# http://schema.org/HinduDiet
+<http://schema.org/HinduDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://schema.org/HinduDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
+# 
+# http://schema.org/KosherDiet
+<http://schema.org/KosherDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://schema.org/KosherDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
+# 
+# http://schema.org/LowCalorieDiet
+<http://schema.org/LowCalorieDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://schema.org/LowCalorieDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
+# 
+# http://schema.org/LowFatDiet
+<http://schema.org/LowFatDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://schema.org/LowFatDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
+# 
+# http://schema.org/LowLactoseDiet
+<http://schema.org/LowLactoseDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://schema.org/LowLactoseDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
+# 
+# http://schema.org/LowSaltDiet
+<http://schema.org/LowSaltDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://schema.org/LowSaltDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
+# 
+# http://schema.org/VeganDiet
+<http://schema.org/VeganDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://schema.org/VeganDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
+# 
+# http://schema.org/VegetarianDiet
+<http://schema.org/VegetarianDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://schema.org/VegetarianDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Alcoholic
+<https://alexmv12.github.io/FoodleMaps/#Alcoholic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Alcoholic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Characteristic> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Baba_al_rum
+<https://alexmv12.github.io/FoodleMaps/#Baba_al_rum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Baba_al_rum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
+<https://alexmv12.github.io/FoodleMaps/#Baba_al_rum> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Alcoholic> .
+<https://alexmv12.github.io/FoodleMaps/#Baba_al_rum> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Tasty> .
+<https://alexmv12.github.io/FoodleMaps/#Baba_al_rum> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe17> .
+<https://alexmv12.github.io/FoodleMaps/#Baba_al_rum> <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://alexmv12.github.io/FoodleMaps/#Baba_al_rum> <http://www.w3.org/2000/01/rdf-schema#label> "Baba al rum" .
 # 
 # https://alexmv12.github.io/FoodleMaps/#Bacon
 <https://alexmv12.github.io/FoodleMaps/#Bacon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Bacon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Balsamic_vinegar
+<https://alexmv12.github.io/FoodleMaps/#Balsamic_vinegar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Balsamic_vinegar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
 # https://alexmv12.github.io/FoodleMaps/#Basil
 <https://alexmv12.github.io/FoodleMaps/#Basil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -753,6 +366,28 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://alexmv12.github.io/FoodleMaps/#Brandy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Brandy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
+# https://alexmv12.github.io/FoodleMaps/#Bread
+<https://alexmv12.github.io/FoodleMaps/#Bread> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Bread> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Breadcrumbs
+<https://alexmv12.github.io/FoodleMaps/#Breadcrumbs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Breadcrumbs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Bruschettone_gorgonzola_noci_e_salame
+<https://alexmv12.github.io/FoodleMaps/#Bruschettone_gorgonzola_noci_e_salame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Bruschettone_gorgonzola_noci_e_salame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
+<https://alexmv12.github.io/FoodleMaps/#Bruschettone_gorgonzola_noci_e_salame> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Heavy> .
+<https://alexmv12.github.io/FoodleMaps/#Bruschettone_gorgonzola_noci_e_salame> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Tasty> .
+<https://alexmv12.github.io/FoodleMaps/#Bruschettone_gorgonzola_noci_e_salame> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe10> .
+<https://alexmv12.github.io/FoodleMaps/#Bruschettone_gorgonzola_noci_e_salame> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe9> .
+<https://alexmv12.github.io/FoodleMaps/#Bruschettone_gorgonzola_noci_e_salame> <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "4"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://alexmv12.github.io/FoodleMaps/#Bruschettone_gorgonzola_noci_e_salame> <http://www.w3.org/2000/01/rdf-schema#label> "Bruschetta" .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Buffalo_mozzarella
+<https://alexmv12.github.io/FoodleMaps/#Buffalo_mozzarella> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Buffalo_mozzarella> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
 # https://alexmv12.github.io/FoodleMaps/#Butter
 <https://alexmv12.github.io/FoodleMaps/#Butter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Butter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
@@ -760,6 +395,24 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # https://alexmv12.github.io/FoodleMaps/#Caper
 <https://alexmv12.github.io/FoodleMaps/#Caper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Caper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Caprese_di_bufala
+<https://alexmv12.github.io/FoodleMaps/#Caprese_di_bufala> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Caprese_di_bufala> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
+<https://alexmv12.github.io/FoodleMaps/#Caprese_di_bufala> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe15> .
+<https://alexmv12.github.io/FoodleMaps/#Caprese_di_bufala> <http://www.w3.org/2000/01/rdf-schema#label> "Caprese di bufala" .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Carrot
+<https://alexmv12.github.io/FoodleMaps/#Carrot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Carrot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Celery
+<https://alexmv12.github.io/FoodleMaps/#Celery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Celery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Clams
+<https://alexmv12.github.io/FoodleMaps/#Clams> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Clams> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
 # https://alexmv12.github.io/FoodleMaps/#Cocoa
 <https://alexmv12.github.io/FoodleMaps/#Cocoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -773,14 +426,40 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://alexmv12.github.io/FoodleMaps/#Coffee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Coffee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
+# https://alexmv12.github.io/FoodleMaps/#Cotoletta_alla_bolognese
+<https://alexmv12.github.io/FoodleMaps/#Cotoletta_alla_bolognese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Cotoletta_alla_bolognese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
+<https://alexmv12.github.io/FoodleMaps/#Cotoletta_alla_bolognese> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe8> .
+<https://alexmv12.github.io/FoodleMaps/#Cotoletta_alla_bolognese> <http://www.w3.org/2000/01/rdf-schema#label> "Cotoletta alla bolognese" .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Duck_breast
+<https://alexmv12.github.io/FoodleMaps/#Duck_breast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Duck_breast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
 # https://alexmv12.github.io/FoodleMaps/#Egg
 <https://alexmv12.github.io/FoodleMaps/#Egg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Egg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
+# https://alexmv12.github.io/FoodleMaps/#Egg_spaghetti
+<https://alexmv12.github.io/FoodleMaps/#Egg_spaghetti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Egg_spaghetti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Fatty
+<https://alexmv12.github.io/FoodleMaps/#Fatty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Fatty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Characteristic> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Feta
+<https://alexmv12.github.io/FoodleMaps/#Feta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Feta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Fig_jam
+<https://alexmv12.github.io/FoodleMaps/#Fig_jam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Fig_jam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
 # https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde
 <https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
-<https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe18> .
+<https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe18> .
 <https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe3> .
 <https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde> <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://alexmv12.github.io/FoodleMaps/#Filetto_al_pepe_verde> <http://www.w3.org/2000/01/rdf-schema#label> "Filetto al pepe verde" .
@@ -797,13 +476,47 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://alexmv12.github.io/FoodleMaps/#Garlic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Garlic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
+# https://alexmv12.github.io/FoodleMaps/#Gorgonzola
+<https://alexmv12.github.io/FoodleMaps/#Gorgonzola> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Gorgonzola> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
 # https://alexmv12.github.io/FoodleMaps/#Green_pepper
 <https://alexmv12.github.io/FoodleMaps/#Green_pepper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Green_pepper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
+# https://alexmv12.github.io/FoodleMaps/#Ground_beef
+<https://alexmv12.github.io/FoodleMaps/#Ground_beef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Ground_beef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Ground_pork
+<https://alexmv12.github.io/FoodleMaps/#Ground_pork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Ground_pork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
 # https://alexmv12.github.io/FoodleMaps/#Heavy
 <https://alexmv12.github.io/FoodleMaps/#Heavy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Heavy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Characteristic> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Honey
+<https://alexmv12.github.io/FoodleMaps/#Honey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Honey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Insalata_greca
+<https://alexmv12.github.io/FoodleMaps/#Insalata_greca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Insalata_greca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
+<https://alexmv12.github.io/FoodleMaps/#Insalata_greca> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Fresh> .
+<https://alexmv12.github.io/FoodleMaps/#Insalata_greca> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Light> .
+<https://alexmv12.github.io/FoodleMaps/#Insalata_greca> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe11> .
+<https://alexmv12.github.io/FoodleMaps/#Insalata_greca> <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://alexmv12.github.io/FoodleMaps/#Insalata_greca> <http://www.w3.org/2000/01/rdf-schema#label> "Insalata greca" .
+# 
+# https://alexmv12.github.io/FoodleMaps/#La_Cantinetta_caprese
+<https://alexmv12.github.io/FoodleMaps/#La_Cantinetta_caprese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#La_Cantinetta_caprese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment> .
+<https://alexmv12.github.io/FoodleMaps/#La_Cantinetta_caprese> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Menu3> .
+<https://alexmv12.github.io/FoodleMaps/#La_Cantinetta_caprese> <http://schema.org/address> "Via Maroggia 5, Bissone, Switzerland" .
+<https://alexmv12.github.io/FoodleMaps/#La_Cantinetta_caprese> <http://schema.org/email> "events@spaghettigastrogroup.com" .
+<https://alexmv12.github.io/FoodleMaps/#La_Cantinetta_caprese> <http://schema.org/telephone> "0041 (0)91 6497374" .
+<https://alexmv12.github.io/FoodleMaps/#La_Cantinetta_caprese> <http://www.w3.org/2000/01/rdf-schema#label> "Cantinetta caprese" .
 # 
 # https://alexmv12.github.io/FoodleMaps/#Light
 <https://alexmv12.github.io/FoodleMaps/#Light> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -813,17 +526,45 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://alexmv12.github.io/FoodleMaps/#Mascarpone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Mascarpone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
+# https://alexmv12.github.io/FoodleMaps/#Meat_broth
+<https://alexmv12.github.io/FoodleMaps/#Meat_broth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Meat_broth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
 # https://alexmv12.github.io/FoodleMaps/#Menu0
 <https://alexmv12.github.io/FoodleMaps/#Menu0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Menu0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu> .
-<https://alexmv12.github.io/FoodleMaps/#Menu0> <https://alexmv12.github.io/FoodleMaps/servesRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe13> .
-<https://alexmv12.github.io/FoodleMaps/#Menu0> <https://alexmv12.github.io/FoodleMaps/servesRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe18> .
-<https://alexmv12.github.io/FoodleMaps/#Menu0> <https://alexmv12.github.io/FoodleMaps/servesRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe6> .
-<https://alexmv12.github.io/FoodleMaps/#Menu0> <https://alexmv12.github.io/FoodleMaps/servesRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe7> .
-<https://alexmv12.github.io/FoodleMaps/#Menu0> <https://alexmv12.github.io/FoodleMaps/servesRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe8> .
-<https://alexmv12.github.io/FoodleMaps/#Menu0> <https://alexmv12.github.io/FoodleMaps/servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe1> .
-<https://alexmv12.github.io/FoodleMaps/#Menu0> <https://alexmv12.github.io/FoodleMaps/servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe2> .
+<https://alexmv12.github.io/FoodleMaps/#Menu0> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe1> .
+<https://alexmv12.github.io/FoodleMaps/#Menu0> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe13> .
+<https://alexmv12.github.io/FoodleMaps/#Menu0> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe18> .
+<https://alexmv12.github.io/FoodleMaps/#Menu0> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe2> .
+<https://alexmv12.github.io/FoodleMaps/#Menu0> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe6> .
+<https://alexmv12.github.io/FoodleMaps/#Menu0> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe7> .
+<https://alexmv12.github.io/FoodleMaps/#Menu0> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe8> .
 <https://alexmv12.github.io/FoodleMaps/#Menu0> <http://www.w3.org/2000/01/rdf-schema#label> "Menu0"@it .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Menu1
+<https://alexmv12.github.io/FoodleMaps/#Menu1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Menu1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu> .
+<https://alexmv12.github.io/FoodleMaps/#Menu1> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe10> .
+<https://alexmv12.github.io/FoodleMaps/#Menu1> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe11> .
+<https://alexmv12.github.io/FoodleMaps/#Menu1> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe12> .
+<https://alexmv12.github.io/FoodleMaps/#Menu1> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe9> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Menu2
+<https://alexmv12.github.io/FoodleMaps/#Menu2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Menu2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu> .
+<https://alexmv12.github.io/FoodleMaps/#Menu2> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe0> .
+<https://alexmv12.github.io/FoodleMaps/#Menu2> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe3> .
+<https://alexmv12.github.io/FoodleMaps/#Menu2> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe4> .
+<https://alexmv12.github.io/FoodleMaps/#Menu2> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe5> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Menu3
+<https://alexmv12.github.io/FoodleMaps/#Menu3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Menu3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu> .
+<https://alexmv12.github.io/FoodleMaps/#Menu3> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe14> .
+<https://alexmv12.github.io/FoodleMaps/#Menu3> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe15> .
+<https://alexmv12.github.io/FoodleMaps/#Menu3> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe16> .
+<https://alexmv12.github.io/FoodleMaps/#Menu3> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe17> .
 # 
 # https://alexmv12.github.io/FoodleMaps/#Merluzzo_alla_livornese
 <https://alexmv12.github.io/FoodleMaps/#Merluzzo_alla_livornese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -832,9 +573,25 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://alexmv12.github.io/FoodleMaps/#Merluzzo_alla_livornese> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe4> .
 <https://alexmv12.github.io/FoodleMaps/#Merluzzo_alla_livornese> <http://www.w3.org/2000/01/rdf-schema#label> "Merluzzo alla livornese" .
 # 
+# https://alexmv12.github.io/FoodleMaps/#Mortadella
+<https://alexmv12.github.io/FoodleMaps/#Mortadella> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Mortadella> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Mussels
+<https://alexmv12.github.io/FoodleMaps/#Mussels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Mussels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
 # https://alexmv12.github.io/FoodleMaps/#Mustard
 <https://alexmv12.github.io/FoodleMaps/#Mustard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Mustard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Nutmeg
+<https://alexmv12.github.io/FoodleMaps/#Nutmeg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Nutmeg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Octopus
+<https://alexmv12.github.io/FoodleMaps/#Octopus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Octopus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
 # https://alexmv12.github.io/FoodleMaps/#Olive
 <https://alexmv12.github.io/FoodleMaps/#Olive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -847,6 +604,14 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # https://alexmv12.github.io/FoodleMaps/#Onion
 <https://alexmv12.github.io/FoodleMaps/#Onion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Onion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Oregano
+<https://alexmv12.github.io/FoodleMaps/#Oregano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Oregano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Parmigiano_reggiano
+<https://alexmv12.github.io/FoodleMaps/#Parmigiano_reggiano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Parmigiano_reggiano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
 # https://alexmv12.github.io/FoodleMaps/#Parsley
 <https://alexmv12.github.io/FoodleMaps/#Parsley> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -871,9 +636,24 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://alexmv12.github.io/FoodleMaps/#Pecorino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Pecorino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
+# https://alexmv12.github.io/FoodleMaps/#Pignatella
+<https://alexmv12.github.io/FoodleMaps/#Pignatella> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Pignatella> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
+<https://alexmv12.github.io/FoodleMaps/#Pignatella> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Heavy> .
+<https://alexmv12.github.io/FoodleMaps/#Pignatella> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe16> .
+<https://alexmv12.github.io/FoodleMaps/#Pignatella> <http://www.w3.org/2000/01/rdf-schema#label> "Pignatella" .
+# 
 # https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce
 <https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Pork_loin
+<https://alexmv12.github.io/FoodleMaps/#Pork_loin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Pork_loin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Raw_ham
+<https://alexmv12.github.io/FoodleMaps/#Raw_ham> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Raw_ham> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
 # https://alexmv12.github.io/FoodleMaps/#Recipe0
 <https://alexmv12.github.io/FoodleMaps/#Recipe0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -895,10 +675,110 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://alexmv12.github.io/FoodleMaps/#Recipe1> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce> .
 <https://alexmv12.github.io/FoodleMaps/#Recipe1> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Salt> .
 # 
+# https://alexmv12.github.io/FoodleMaps/#Recipe10
+<https://alexmv12.github.io/FoodleMaps/#Recipe10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe10> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Bread> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe10> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Fig_jam> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe10> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Raw_ham> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe10> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Stracciatella> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Recipe11
+<https://alexmv12.github.io/FoodleMaps/#Recipe11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe11> <http://schema.org/suitableForDiet> <http://schema.org/LowCalorieDiet> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe11> <http://schema.org/suitableForDiet> <http://schema.org/VegetarianDiet> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe11> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Balsamic_vinegar> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe11> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Feta> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe11> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Onion> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe11> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Oregano> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe11> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Salad> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe11> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Tomato> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Recipe12
+<https://alexmv12.github.io/FoodleMaps/#Recipe12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe12> <http://schema.org/suitableForDiet> <http://schema.org/KosherDiet> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe12> <http://schema.org/suitableForDiet> <http://schema.org/LowLactoseDiet> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe12> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Duck_breast> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe12> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Garlic> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe12> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Honey> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe12> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Onion> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe12> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Rosemary> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Recipe13
+<https://alexmv12.github.io/FoodleMaps/#Recipe13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe13> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Black_pepper> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe13> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Carrot> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe13> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Egg_spaghetti> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe13> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Garlic> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe13> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Octopus> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe13> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Olive_oil> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe13> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe13> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Salt> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe13> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#White_wine> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Recipe14
+<https://alexmv12.github.io/FoodleMaps/#Recipe14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe14> <http://schema.org/suitableForDiet> <http://schema.org/GlutenFreeDiet> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe14> <http://schema.org/suitableForDiet> <http://schema.org/LowLactoseDiet> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe14> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Black_pepper> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe14> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Carrot> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe14> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Egg> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe14> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Olive_oil> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe14> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Tuna> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe14> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Veil> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe14> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Water> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe14> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#White_wine> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Recipe15
+<https://alexmv12.github.io/FoodleMaps/#Recipe15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe15> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Basil> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe15> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Buffalo_mozzarella> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe15> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Olive_oil> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe15> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Salt> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe15> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Tomato> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Recipe16
+<https://alexmv12.github.io/FoodleMaps/#Recipe16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe16> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Black_pepper> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe16> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Clams> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe16> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Mussels> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe16> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Olive_oil> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe16> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe16> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Salt> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe16> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Shrimps> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe16> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Squids> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Recipe17
+<https://alexmv12.github.io/FoodleMaps/#Recipe17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe17> <http://schema.org/suitableForDiet> <http://schema.org/VegetarianDiet> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe17> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Butter> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe17> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Egg> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe17> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Flour_type_00> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe17> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Rum> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe17> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Salt> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe17> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Sugar> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Recipe18
+<https://alexmv12.github.io/FoodleMaps/#Recipe18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe18> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Bovin_filet> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe18> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Gorgonzola> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe18> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Green_pepper> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe18> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Honey> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe18> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Rum> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe18> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Sugar> .
+# 
 # https://alexmv12.github.io/FoodleMaps/#Recipe2
 <https://alexmv12.github.io/FoodleMaps/#Recipe2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Recipe2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
-<https://alexmv12.github.io/FoodleMaps/#Recipe2> <http://schema.org/suitableForDiet> <https://schema.org/GlutenFreeDiet> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe2> <http://schema.org/suitableForDiet> <http://schema.org/GlutenFreeDiet> .
 <https://alexmv12.github.io/FoodleMaps/#Recipe2> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Basil> .
 <https://alexmv12.github.io/FoodleMaps/#Recipe2> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Garlic> .
 <https://alexmv12.github.io/FoodleMaps/#Recipe2> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Olive_oil> .
@@ -938,26 +818,140 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://alexmv12.github.io/FoodleMaps/#Recipe5> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Savoyard> .
 <https://alexmv12.github.io/FoodleMaps/#Recipe5> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Sugar> .
 # 
+# https://alexmv12.github.io/FoodleMaps/#Recipe6
+<https://alexmv12.github.io/FoodleMaps/#Recipe6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe6> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Black_pepper> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe6> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Butter> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe6> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Carrot> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe6> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Celery> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe6> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Ground_beef> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe6> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Ground_pork> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe6> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Pomodoro_sauce> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe6> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Red_wine> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe6> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Salt> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe6> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Tagliatelle> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Recipe7
+<https://alexmv12.github.io/FoodleMaps/#Recipe7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe7> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Black_pepper> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe7> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Butter> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe7> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Egg> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe7> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Flour_type_00> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe7> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Mortadella> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe7> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Nutmeg> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe7> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Parmigiano_reggiano> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe7> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Pork_loin> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe7> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Raw_ham> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe7> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Salt> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Recipe8
+<https://alexmv12.github.io/FoodleMaps/#Recipe8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe8> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Breadcrumbs> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe8> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Butter> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe8> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Egg> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe8> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Flour_type_00> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe8> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Meat_broth> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe8> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Parmigiano_reggiano> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe8> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Raw_ham> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe8> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Veal> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Recipe9
+<https://alexmv12.github.io/FoodleMaps/#Recipe9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe9> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Bread> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe9> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Gorgonzola> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe9> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Salami> .
+<https://alexmv12.github.io/FoodleMaps/#Recipe9> <https://alexmv12.github.io/FoodleMaps/#hasIngredient> <https://alexmv12.github.io/FoodleMaps/#Walnuts> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Red_wine
+<https://alexmv12.github.io/FoodleMaps/#Red_wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Red_wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Rosemary
+<https://alexmv12.github.io/FoodleMaps/#Rosemary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Rosemary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Rum
+<https://alexmv12.github.io/FoodleMaps/#Rum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Rum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Salad
+<https://alexmv12.github.io/FoodleMaps/#Salad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Salad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Salami
+<https://alexmv12.github.io/FoodleMaps/#Salami> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Salami> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
 # https://alexmv12.github.io/FoodleMaps/#Salt
 <https://alexmv12.github.io/FoodleMaps/#Salt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Salt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Salty
+<https://alexmv12.github.io/FoodleMaps/#Salty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Salty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Characteristic> .
 # 
 # https://alexmv12.github.io/FoodleMaps/#Savoyard
 <https://alexmv12.github.io/FoodleMaps/#Savoyard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Savoyard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
+# https://alexmv12.github.io/FoodleMaps/#Shrimps
+<https://alexmv12.github.io/FoodleMaps/#Shrimps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Shrimps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Spaghetti_al_polpo
+<https://alexmv12.github.io/FoodleMaps/#Spaghetti_al_polpo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Spaghetti_al_polpo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
+<https://alexmv12.github.io/FoodleMaps/#Spaghetti_al_polpo> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe13> .
+<https://alexmv12.github.io/FoodleMaps/#Spaghetti_al_polpo> <http://www.w3.org/2000/01/rdf-schema#label> "Spaghetti al polpo" .
+# 
 # https://alexmv12.github.io/FoodleMaps/#Spaghetti_gluten_free
 <https://alexmv12.github.io/FoodleMaps/#Spaghetti_gluten_free> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Spaghetti_gluten_free> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Squids
+<https://alexmv12.github.io/FoodleMaps/#Squids> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Squids> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Stracciatella
+<https://alexmv12.github.io/FoodleMaps/#Stracciatella> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Stracciatella> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
 # https://alexmv12.github.io/FoodleMaps/#Sugar
 <https://alexmv12.github.io/FoodleMaps/#Sugar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Sugar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
+# https://alexmv12.github.io/FoodleMaps/#Tagliatelle
+<https://alexmv12.github.io/FoodleMaps/#Tagliatelle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Tagliatelle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Tagliatelle_alla_bolognese
+<https://alexmv12.github.io/FoodleMaps/#Tagliatelle_alla_bolognese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Tagliatelle_alla_bolognese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
+<https://alexmv12.github.io/FoodleMaps/#Tagliatelle_alla_bolognese> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Tasty> .
+<https://alexmv12.github.io/FoodleMaps/#Tagliatelle_alla_bolognese> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe6> .
+<https://alexmv12.github.io/FoodleMaps/#Tagliatelle_alla_bolognese> <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://alexmv12.github.io/FoodleMaps/#Tagliatelle_alla_bolognese> <http://www.w3.org/2000/01/rdf-schema#label> "Tagliatelle alla bolognese" .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Tasty
+<https://alexmv12.github.io/FoodleMaps/#Tasty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Tasty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Characteristic> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Tavernacolo
+<https://alexmv12.github.io/FoodleMaps/#Tavernacolo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Tavernacolo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment> .
+<https://alexmv12.github.io/FoodleMaps/#Tavernacolo> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Menu1> .
+<https://alexmv12.github.io/FoodleMaps/#Tavernacolo> <http://schema.org/address> "Via Bassini, 45, Milano, Italy" .
+<https://alexmv12.github.io/FoodleMaps/#Tavernacolo> <http://schema.org/telephone> "02 1234 4321" .
+<https://alexmv12.github.io/FoodleMaps/#Tavernacolo> <http://www.w3.org/2000/01/rdf-schema#label> "Tavernacolo Lambrate" .
+# 
 # https://alexmv12.github.io/FoodleMaps/#Tiramisu
 <https://alexmv12.github.io/FoodleMaps/#Tiramisu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Tiramisu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
-<https://alexmv12.github.io/FoodleMaps/#Tiramisu> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/Fatty> .
+<https://alexmv12.github.io/FoodleMaps/#Tiramisu> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Fatty> .
 <https://alexmv12.github.io/FoodleMaps/#Tiramisu> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe5> .
 <https://alexmv12.github.io/FoodleMaps/#Tiramisu> <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://alexmv12.github.io/FoodleMaps/#Tiramisu> <http://www.w3.org/2000/01/rdf-schema#label> "Tiramisu" .
@@ -965,6 +959,21 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # https://alexmv12.github.io/FoodleMaps/#Tomato
 <https://alexmv12.github.io/FoodleMaps/#Tomato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://alexmv12.github.io/FoodleMaps/#Tomato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Tortellini_in_brodo
+<https://alexmv12.github.io/FoodleMaps/#Tortellini_in_brodo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Tortellini_in_brodo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
+<https://alexmv12.github.io/FoodleMaps/#Tortellini_in_brodo> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Warm> .
+<https://alexmv12.github.io/FoodleMaps/#Tortellini_in_brodo> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe7> .
+<https://alexmv12.github.io/FoodleMaps/#Tortellini_in_brodo> <http://www.w3.org/2000/01/rdf-schema#label> "Tortellini in brodo" .
+# 
+# https://alexmv12.github.io/FoodleMaps/#Trattoria_Sole_Milano
+<https://alexmv12.github.io/FoodleMaps/#Trattoria_Sole_Milano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Trattoria_Sole_Milano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment> .
+<https://alexmv12.github.io/FoodleMaps/#Trattoria_Sole_Milano> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Menu2> .
+<https://alexmv12.github.io/FoodleMaps/#Trattoria_Sole_Milano> <http://schema.org/address> "Via Carlo Valvassori Peroni, 41, Milano, Italy" .
+<https://alexmv12.github.io/FoodleMaps/#Trattoria_Sole_Milano> <http://schema.org/telephone> "02 236 4182" .
+<https://alexmv12.github.io/FoodleMaps/#Trattoria_Sole_Milano> <http://www.w3.org/2000/01/rdf-schema#label> "Trattoria Sole Milano" .
 # 
 # https://alexmv12.github.io/FoodleMaps/#Trattoria_dell_orsa
 <https://alexmv12.github.io/FoodleMaps/#Trattoria_dell_orsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -975,56 +984,48 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://alexmv12.github.io/FoodleMaps/#Trattoria_dell_orsa> <http://schema.org/telephone> "051 231576" .
 <https://alexmv12.github.io/FoodleMaps/#Trattoria_dell_orsa> <http://www.w3.org/2000/01/rdf-schema#label> "Osteria dell'orsa"@it .
 # 
-# https://alexmv12.github.io/FoodleMaps/Petto_d'anatra_affumicato
-<https://alexmv12.github.io/FoodleMaps/Petto_d'anatra_affumicato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://alexmv12.github.io/FoodleMaps/Petto_d'anatra_affumicato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
-<https://alexmv12.github.io/FoodleMaps/Petto_d'anatra_affumicato> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/Salty> .
-<https://alexmv12.github.io/FoodleMaps/Petto_d'anatra_affumicato> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/Recipe12> .
-<https://alexmv12.github.io/FoodleMaps/Petto_d'anatra_affumicato> <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "10"^^<http://www.w3.org/2001/XMLSchema#int> .
-<https://alexmv12.github.io/FoodleMaps/Petto_d'anatra_affumicato> <http://www.w3.org/2000/01/rdf-schema#label> "Petto d'anatra affumicato" .
+# https://alexmv12.github.io/FoodleMaps/#Tuna
+<https://alexmv12.github.io/FoodleMaps/#Tuna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Tuna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# https://schema.org/DiabeticDiet
-<https://schema.org/DiabeticDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://schema.org/DiabeticDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
+# https://alexmv12.github.io/FoodleMaps/#Veal
+<https://alexmv12.github.io/FoodleMaps/#Veal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Veal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# https://schema.org/GlutenFreeDiet
-<https://schema.org/GlutenFreeDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://schema.org/GlutenFreeDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
+# https://alexmv12.github.io/FoodleMaps/#Veil
+<https://alexmv12.github.io/FoodleMaps/#Veil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Veil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# https://schema.org/HalalDiet
-<https://schema.org/HalalDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://schema.org/HalalDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
+# https://alexmv12.github.io/FoodleMaps/#Vitello_tonnato
+<https://alexmv12.github.io/FoodleMaps/#Vitello_tonnato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Vitello_tonnato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
+<https://alexmv12.github.io/FoodleMaps/#Vitello_tonnato> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Fresh> .
+<https://alexmv12.github.io/FoodleMaps/#Vitello_tonnato> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe14> .
+<https://alexmv12.github.io/FoodleMaps/#Vitello_tonnato> <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://alexmv12.github.io/FoodleMaps/#Vitello_tonnato> <http://www.w3.org/2000/01/rdf-schema#label> "Vitello tonnato" .
 # 
-# https://schema.org/HinduDiet
-<https://schema.org/HinduDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://schema.org/HinduDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
+# https://alexmv12.github.io/FoodleMaps/#Walnuts
+<https://alexmv12.github.io/FoodleMaps/#Walnuts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Walnuts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# https://schema.org/KosherDiet
-<https://schema.org/KosherDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://schema.org/KosherDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
+# https://alexmv12.github.io/FoodleMaps/#Warm
+<https://alexmv12.github.io/FoodleMaps/#Warm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Warm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Characteristic> .
 # 
-# https://schema.org/LowCalorieDiet
-<https://schema.org/LowCalorieDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://schema.org/LowCalorieDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
+# https://alexmv12.github.io/FoodleMaps/#Water
+<https://alexmv12.github.io/FoodleMaps/#Water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# https://schema.org/LowFatDiet
-<https://schema.org/LowFatDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://schema.org/LowFatDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
+# https://alexmv12.github.io/FoodleMaps/#White_wine
+<https://alexmv12.github.io/FoodleMaps/#White_wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#White_wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://alexmv12.github.io/FoodleMaps/#Ingredient> .
 # 
-# https://schema.org/LowLactoseDiet
-<https://schema.org/LowLactoseDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://schema.org/LowLactoseDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
-# 
-# https://schema.org/LowSaltDiet
-<https://schema.org/LowSaltDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://schema.org/LowSaltDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
-# 
-# https://schema.org/VeganDiet
-<https://schema.org/VeganDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://schema.org/VeganDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
-# 
-# https://schema.org/VegetarianDiet
-<https://schema.org/VegetarianDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://schema.org/VegetarianDiet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/RestrictedDiet> .
+# https://alexmv12.github.io/FoodleMaps/#Petto_d'anatra_affumicato
+<https://alexmv12.github.io/FoodleMaps/#Petto_d'anatra_affumicato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://alexmv12.github.io/FoodleMaps/#Petto_d'anatra_affumicato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem> .
+<https://alexmv12.github.io/FoodleMaps/#Petto_d'anatra_affumicato> <https://alexmv12.github.io/FoodleMaps/#hasCharacteristic> <https://alexmv12.github.io/FoodleMaps/#Salty> .
+<https://alexmv12.github.io/FoodleMaps/#Petto_d'anatra_affumicato> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Recipe12> .
+<https://alexmv12.github.io/FoodleMaps/#Petto_d'anatra_affumicato> <https://alexmv12.github.io/FoodleMaps/#hasPreparationTime> "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://alexmv12.github.io/FoodleMaps/#Petto_d'anatra_affumicato> <http://www.w3.org/2000/01/rdf-schema#label> "Petto d'anatra affumicato" .
 # 
 # Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
