@@ -1,12 +1,12 @@
 prefixes:
-  ex: "http://example.com/"
+  ex: "https://alexmv12.github.io/FoodleMaps/"
   schema: "http://schema.org/"
 
 mappings:
   restaurant:
     sources:
       - [ 'restaurant.csv~csv' ]
-    s: http://example.com/restaurant/$(restaurant_name)
+    s: ex:#$(restaurant_name)
     po:
       - [ a, schema:FoodEstablishment ]
       - [ schema:name, $(restaurant_name) ]
@@ -22,21 +22,37 @@ mappings:
   menu:
     sources:
       - [ 'restaurant.csv~csv' ]
-    s: http://example.com/menu/$(restaurant_id)
+    s: ex:#$(restaurant_name)_menu
     po:
       - [ a, schema:Menu ]
-      - p: schema:hasMenuItem
+      - p: ex:#servesRecipe
         o:
-          - mapping: menuItems
+          - mapping: recipe
             condition:
               function: equal
               parameters:
                 - [ str1, $(restaurant_id), s]
                 - [ str2, $(restaurant_id), o]
+  recipe:
+    sources:
+      - [ 'menus.csv~csv' ]
+    s: ex:#$(menu_item_name)_recipe
+    po:
+      - [ a, schema:Recipe ]
+
   menuItems:
     sources:
       - [ 'menus.csv~csv' ]
-    s: http://example.com/menuItem/$(item_id)
+    s: ex:#$(menu_item_name)_item
     po:
       - [ a, schema:MenuItem ]
       - [ schema:name, $(menu_item_name) ]
+      - [ schema:description, $(menu_item_description) ]
+      - p: ex:#hasRecipe
+        o:
+          - mapping: recipe
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(menu_item_name), s]
+                - [str2, $(menu_item_name), o]

@@ -1,0 +1,400 @@
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi> <http://schema.org/name> "Nori Sushi".
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi> <http://schema.org/address> "{city:Chicago,formatted:1235 W Devon Ave Chicago, IL 60660,street:1235 W Devon Ave,state:IL,postal_code:60660}".
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Subway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Subway> <http://schema.org/name> "Subway".
+<https://alexmv12.github.io/FoodleMaps/#Subway> <http://schema.org/address> "{city:COLUMBIA FALLS,formatted:1187 Hodgson Rd COLUMBIA FALLS, MT 59912,street:1187 Hodgson Rd,state:MT,postal_code:59912}".
+<https://alexmv12.github.io/FoodleMaps/#Subway> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Subway_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Dairy%20Queen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Dairy%20Queen> <http://schema.org/name> "Dairy Queen".
+<https://alexmv12.github.io/FoodleMaps/#Dairy%20Queen> <http://schema.org/address> "{city:BAYTOWN,formatted:4309 W Baker Rd BAYTOWN, TX 77521,street:4309 W Baker Rd,state:TX,postal_code:77521}".
+<https://alexmv12.github.io/FoodleMaps/#Dairy%20Queen> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Dairy%20Queen_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Carmine%27s%20Express> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Carmine%27s%20Express> <http://schema.org/name> "Carmine's Express".
+<https://alexmv12.github.io/FoodleMaps/#Carmine%27s%20Express> <http://schema.org/address> "{city:ROCHESTER,formatted:3872 Lyell Rd ROCHESTER, NY 14606,street:3872 Lyell Rd,state:NY,postal_code:14606}".
+<https://alexmv12.github.io/FoodleMaps/#Carmine%27s%20Express> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Carmine%27s%20Express_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Post> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Post> <http://schema.org/name> "Post".
+<https://alexmv12.github.io/FoodleMaps/#Post> <http://schema.org/address> "{city:Seattle,formatted:1914 Post Alley Seattle, WA 98101,street:1914 Post Alley,state:WA,postal_code:98101}".
+<https://alexmv12.github.io/FoodleMaps/#Post> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Post_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Nadim%27s%20Mediterranean%20Grill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Nadim%27s%20Mediterranean%20Grill> <http://schema.org/name> "Nadim's Mediterranean Grill".
+<https://alexmv12.github.io/FoodleMaps/#Nadim%27s%20Mediterranean%20Grill> <http://schema.org/address> "{city:Springfield,formatted:1390 Main St Springfield, MA 01103,street:1390 Main St,state:MA,postal_code:01103}".
+<https://alexmv12.github.io/FoodleMaps/#Nadim%27s%20Mediterranean%20Grill> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Nadim%27s%20Mediterranean%20Grill_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Wendy%27s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Wendy%27s> <http://schema.org/name> "Wendy's".
+<https://alexmv12.github.io/FoodleMaps/#Wendy%27s> <http://schema.org/address> "{city:KENNEWICK,formatted:3115 W Clearwater Ave KENNEWICK, WA 99336,street:3115 W Clearwater Ave,state:WA,postal_code:99336}".
+<https://alexmv12.github.io/FoodleMaps/#Wendy%27s> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Wendy%27s_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://schema.org/name> "Taco Bell".
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://schema.org/address> "{city:Suwanee,formatted:455 Peachtree Industrial Blvd Suwanee, GA 30024,street:455 Peachtree Industrial Blvd,state:GA,postal_code:30024}".
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Taco%20Bell_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Mineo%27s%20Pizza%20House> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Mineo%27s%20Pizza%20House> <http://schema.org/name> "Mineo's Pizza House".
+<https://alexmv12.github.io/FoodleMaps/#Mineo%27s%20Pizza%20House> <http://schema.org/address> "{city:PITTSBURGH,formatted:2128 Murray Ave PITTSBURGH, PA 15217,street:2128 Murray Ave,state:PA,postal_code:15217}".
+<https://alexmv12.github.io/FoodleMaps/#Mineo%27s%20Pizza%20House> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Mineo%27s%20Pizza%20House_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Subway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Subway> <http://schema.org/name> "Subway".
+<https://alexmv12.github.io/FoodleMaps/#Subway> <http://schema.org/address> "{city:DALLAS,formatted:9531 C F Hawn Fwy DALLAS, TX 75217,street:9531 C F Hawn Fwy,state:TX,postal_code:75217}".
+<https://alexmv12.github.io/FoodleMaps/#Subway> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Subway_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://schema.org/name> "Taco Bell".
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://schema.org/address> "{city:Coalinga,formatted:451 E. Elm Avenue Coalinga, CA 93210,street:451 E. Elm Avenue,state:CA,postal_code:93210}".
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Taco%20Bell_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Heathman%20Restaurant%20%26%20Bar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Heathman%20Restaurant%20%26%20Bar> <http://schema.org/name> "Heathman Restaurant & Bar".
+<https://alexmv12.github.io/FoodleMaps/#Heathman%20Restaurant%20%26%20Bar> <http://schema.org/address> "{city:PORTLAND,formatted:1001 SW Broadway PORTLAND, OR 97205,street:1001 SW Broadway,state:OR,postal_code:97205}".
+<https://alexmv12.github.io/FoodleMaps/#Heathman%20Restaurant%20%26%20Bar> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Heathman%20Restaurant%20%26%20Bar_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Rosa%20Mexicano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Rosa%20Mexicano> <http://schema.org/name> "Rosa Mexicano".
+<https://alexmv12.github.io/FoodleMaps/#Rosa%20Mexicano> <http://schema.org/address> "{city:ATLANTA,formatted:245 18th St NW ATLANTA, GA 30363,street:245 18th St NW,state:GA,postal_code:30363}".
+<https://alexmv12.github.io/FoodleMaps/#Rosa%20Mexicano> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Rosa%20Mexicano_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Quiznos%20Sub> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Quiznos%20Sub> <http://schema.org/name> "Quiznos Sub".
+<https://alexmv12.github.io/FoodleMaps/#Quiznos%20Sub> <http://schema.org/address> "{city:FREDERICK,formatted:5253 Buckeystown Pike FREDERICK, MD 21704,street:5253 Buckeystown Pike,state:MD,postal_code:21704}".
+<https://alexmv12.github.io/FoodleMaps/#Quiznos%20Sub> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Quiznos%20Sub_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Atlanta%20Bread%20Company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Atlanta%20Bread%20Company> <http://schema.org/name> "Atlanta Bread Company".
+<https://alexmv12.github.io/FoodleMaps/#Atlanta%20Bread%20Company> <http://schema.org/address> "{city:BRADENTON,formatted:6401 Manatee Ave W BRADENTON, FL 34209,street:6401 Manatee Ave W,state:FL,postal_code:34209}".
+<https://alexmv12.github.io/FoodleMaps/#Atlanta%20Bread%20Company> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Atlanta%20Bread%20Company_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Ocean%20Wealth%20Restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Ocean%20Wealth%20Restaurant> <http://schema.org/name> "Ocean Wealth Restaurant".
+<https://alexmv12.github.io/FoodleMaps/#Ocean%20Wealth%20Restaurant> <http://schema.org/address> "{city:BOSTON,formatted:8 Tyler St BOSTON, MA 02111,street:8 Tyler St,state:MA,postal_code:02111}".
+<https://alexmv12.github.io/FoodleMaps/#Ocean%20Wealth%20Restaurant> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Ocean%20Wealth%20Restaurant_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Thai%20Hut> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Thai%20Hut> <http://schema.org/name> "Thai Hut".
+<https://alexmv12.github.io/FoodleMaps/#Thai%20Hut> <http://schema.org/address> "{city:LAKEWOOD,formatted:13359 Madison Ave LAKEWOOD, OH 44107,street:13359 Madison Ave,state:OH,postal_code:44107}".
+<https://alexmv12.github.io/FoodleMaps/#Thai%20Hut> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Thai%20Hut_menu>.
+<https://alexmv12.github.io/FoodleMaps/#So%20Long%2C%20Hi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#So%20Long%2C%20Hi> <http://schema.org/name> "So Long, Hi".
+<https://alexmv12.github.io/FoodleMaps/#So%20Long%2C%20Hi> <http://schema.org/address> "{city:Los Angeles,formatted:518 W 7th St Los Angeles, CA 90014,street:518 W 7th St,state:CA,postal_code:90014}".
+<https://alexmv12.github.io/FoodleMaps/#So%20Long%2C%20Hi> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#So%20Long%2C%20Hi_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Tubby%27s%20Grilled%20Submarines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Tubby%27s%20Grilled%20Submarines> <http://schema.org/name> "Tubby's Grilled Submarines".
+<https://alexmv12.github.io/FoodleMaps/#Tubby%27s%20Grilled%20Submarines> <http://schema.org/address> "{city:INKSTER,formatted:29403 Michigan Ave INKSTER, MI 48141,street:29403 Michigan Ave,state:MI,postal_code:48141}".
+<https://alexmv12.github.io/FoodleMaps/#Tubby%27s%20Grilled%20Submarines> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Tubby%27s%20Grilled%20Submarines_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://schema.org/name> "Taco Bell".
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://schema.org/address> "{city:Elmwood Park,formatted:622 Market Street Elmwood Park, NJ 07407,street:622 Market Street,state:NJ,postal_code:07407}".
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Taco%20Bell_menu>.
+<https://alexmv12.github.io/FoodleMaps/#JP%27s%20Pub> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#JP%27s%20Pub> <http://schema.org/name> "JP's Pub".
+<https://alexmv12.github.io/FoodleMaps/#JP%27s%20Pub> <http://schema.org/address> "{city:Lake View,formatted:1986 Lakeview Rd Lake View, NY 14085,street:1986 Lakeview Rd,state:NY,postal_code:14085}".
+<https://alexmv12.github.io/FoodleMaps/#JP%27s%20Pub> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#JP%27s%20Pub_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Tubby%27s%20Grilled%20Submarines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Tubby%27s%20Grilled%20Submarines> <http://schema.org/name> "Tubby's Grilled Submarines".
+<https://alexmv12.github.io/FoodleMaps/#Tubby%27s%20Grilled%20Submarines> <http://schema.org/address> "{city:MACOMB,formatted:48836 Romeo Plank Rd MACOMB, MI 48044,street:48836 Romeo Plank Rd,state:MI,postal_code:48044}".
+<https://alexmv12.github.io/FoodleMaps/#Tubby%27s%20Grilled%20Submarines> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Tubby%27s%20Grilled%20Submarines_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Venezia%20Pizzeria%20%26%20Restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Venezia%20Pizzeria%20%26%20Restaurant> <http://schema.org/name> "Venezia Pizzeria & Restaurant".
+<https://alexmv12.github.io/FoodleMaps/#Venezia%20Pizzeria%20%26%20Restaurant> <http://schema.org/address> "{city:Totowa,formatted:79 Union Blvd Totowa, NJ 07512,street:79 Union Blvd,state:NJ,postal_code:07512}".
+<https://alexmv12.github.io/FoodleMaps/#Venezia%20Pizzeria%20%26%20Restaurant> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Venezia%20Pizzeria%20%26%20Restaurant_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Asia%20Moon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Asia%20Moon> <http://schema.org/name> "Asia Moon".
+<https://alexmv12.github.io/FoodleMaps/#Asia%20Moon> <http://schema.org/address> "{city:GARDEN CITY,formatted:825 Franklin Ave GARDEN CITY, NY 11530,street:825 Franklin Ave,state:NY,postal_code:11530}".
+<https://alexmv12.github.io/FoodleMaps/#Asia%20Moon> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Asia%20Moon_menu>.
+<https://alexmv12.github.io/FoodleMaps/#The%20Avenue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#The%20Avenue> <http://schema.org/name> "The Avenue".
+<https://alexmv12.github.io/FoodleMaps/#The%20Avenue> <http://schema.org/address> "{city:ROYAL OAK,formatted:31253 Woodward Ave ROYAL OAK, MI 48073,street:31253 Woodward Ave,state:MI,postal_code:48073}".
+<https://alexmv12.github.io/FoodleMaps/#The%20Avenue> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#The%20Avenue_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Pan%20Thai> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Pan%20Thai> <http://schema.org/name> "Pan Thai".
+<https://alexmv12.github.io/FoodleMaps/#Pan%20Thai> <http://schema.org/address> "{city:BOSTON,formatted:14a Westland Ave BOSTON, MA 02115,street:14a Westland Ave,state:MA,postal_code:02115}".
+<https://alexmv12.github.io/FoodleMaps/#Pan%20Thai> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Pan%20Thai_menu>.
+<https://alexmv12.github.io/FoodleMaps/#IHOP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#IHOP> <http://schema.org/name> "IHOP".
+<https://alexmv12.github.io/FoodleMaps/#IHOP> <http://schema.org/address> "{city:MECHANICSVILLE,formatted:7401 Sandy Ln MECHANICSVILLE, VA 23111,street:7401 Sandy Ln,state:VA,postal_code:23111}".
+<https://alexmv12.github.io/FoodleMaps/#IHOP> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#IHOP_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Texas%20Taco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Texas%20Taco> <http://schema.org/name> "Texas Taco".
+<https://alexmv12.github.io/FoodleMaps/#Texas%20Taco> <http://schema.org/address> "{city:Hicksville,formatted:14 W Village Grn Hicksville, NY 11801,street:14 W Village Grn,state:NY,postal_code:11801}".
+<https://alexmv12.github.io/FoodleMaps/#Texas%20Taco> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Texas%20Taco_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Mule%20Bar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Mule%20Bar> <http://schema.org/name> "Mule Bar".
+<https://alexmv12.github.io/FoodleMaps/#Mule%20Bar> <http://schema.org/address> "{city:Winooski,formatted:38 Main St Winooski, VT 05404,street:38 Main St,state:VT,postal_code:05404}".
+<https://alexmv12.github.io/FoodleMaps/#Mule%20Bar> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Mule%20Bar_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Panificio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Panificio> <http://schema.org/name> "Panificio".
+<https://alexmv12.github.io/FoodleMaps/#Panificio> <http://schema.org/address> "{city:BOSTON,formatted:144 Charles St BOSTON, MA 02114,street:144 Charles St,state:MA,postal_code:02114}".
+<https://alexmv12.github.io/FoodleMaps/#Panificio> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Panificio_menu>.
+<https://alexmv12.github.io/FoodleMaps/#The%20Hungry%20I> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#The%20Hungry%20I> <http://schema.org/name> "The Hungry I".
+<https://alexmv12.github.io/FoodleMaps/#The%20Hungry%20I> <http://schema.org/address> "{city:BOSTON,formatted:71 Charles St BOSTON, MA 02114,street:71 Charles St,state:MA,postal_code:02114}".
+<https://alexmv12.github.io/FoodleMaps/#The%20Hungry%20I> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#The%20Hungry%20I_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Shogun%2018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Shogun%2018> <http://schema.org/name> "Shogun 18".
+<https://alexmv12.github.io/FoodleMaps/#Shogun%2018> <http://schema.org/address> "{city:EAST BRUNSWICK,formatted:1020 State Route 18 EAST BRUNSWICK, NJ 08816,street:1020 State Route 18,state:NJ,postal_code:08816}".
+<https://alexmv12.github.io/FoodleMaps/#Shogun%2018> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Shogun%2018_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Thai%20Rama> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Thai%20Rama> <http://schema.org/name> "Thai Rama".
+<https://alexmv12.github.io/FoodleMaps/#Thai%20Rama> <http://schema.org/address> "{city:Glendale,formatted:1100 N Pacific Ave Glendale, CA 91202,street:1100 N Pacific Ave,state:CA,postal_code:91202}".
+<https://alexmv12.github.io/FoodleMaps/#Thai%20Rama> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Thai%20Rama_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Wendy%27s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Wendy%27s> <http://schema.org/name> "Wendy's".
+<https://alexmv12.github.io/FoodleMaps/#Wendy%27s> <http://schema.org/address> "{city:MILWAUKEE,formatted:3050 S Chase Ave MILWAUKEE, WI 53207,street:3050 S Chase Ave,state:WI,postal_code:53207}".
+<https://alexmv12.github.io/FoodleMaps/#Wendy%27s> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Wendy%27s_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Tott%20Asian%20Grill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Tott%20Asian%20Grill> <http://schema.org/name> "Tott Asian Grill".
+<https://alexmv12.github.io/FoodleMaps/#Tott%20Asian%20Grill> <http://schema.org/address> "{city:DENVER,formatted:9208 W Alameda Ave DENVER, CO 80226,street:9208 W Alameda Ave,state:CO,postal_code:80226}".
+<https://alexmv12.github.io/FoodleMaps/#Tott%20Asian%20Grill> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Tott%20Asian%20Grill_menu>.
+<https://alexmv12.github.io/FoodleMaps/#IHOP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#IHOP> <http://schema.org/name> "IHOP".
+<https://alexmv12.github.io/FoodleMaps/#IHOP> <http://schema.org/address> "{city:NEWPORT NEWS,formatted:15447 Warwick Blvd NEWPORT NEWS, VA 23608,street:15447 Warwick Blvd,state:VA,postal_code:23608}".
+<https://alexmv12.github.io/FoodleMaps/#IHOP> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#IHOP_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Bibigo%20-%20UTC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Bibigo%20-%20UTC> <http://schema.org/name> "Bibigo - UTC".
+<https://alexmv12.github.io/FoodleMaps/#Bibigo%20-%20UTC> <http://schema.org/address> "{city:San Diego,formatted:4545 La Jolla Village Dr San Diego, CA 92122,street:4545 La Jolla Village Dr,state:CA,postal_code:92122}".
+<https://alexmv12.github.io/FoodleMaps/#Bibigo%20-%20UTC> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Bibigo%20-%20UTC_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Lone%20Star%20Steakhouse%20%26%20Saloon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Lone%20Star%20Steakhouse%20%26%20Saloon> <http://schema.org/name> "Lone Star Steakhouse & Saloon".
+<https://alexmv12.github.io/FoodleMaps/#Lone%20Star%20Steakhouse%20%26%20Saloon> <http://schema.org/address> "{city:AUGUSTA,formatted:2744 Washington Rd AUGUSTA, GA 30909,street:2744 Washington Rd,state:GA,postal_code:30909}".
+<https://alexmv12.github.io/FoodleMaps/#Lone%20Star%20Steakhouse%20%26%20Saloon> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Lone%20Star%20Steakhouse%20%26%20Saloon_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Bella%20Mia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Bella%20Mia> <http://schema.org/name> "Bella Mia".
+<https://alexmv12.github.io/FoodleMaps/#Bella%20Mia> <http://schema.org/address> "{city:Carbondale,formatted:60 El Jebel Rd Carbondale, CO 81623,street:60 El Jebel Rd,state:CO,postal_code:81623}".
+<https://alexmv12.github.io/FoodleMaps/#Bella%20Mia> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Bella%20Mia_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://schema.org/name> "Taco Bell".
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://schema.org/address> "{city:Hagerstown,formatted:450 Dual Hwy Hagerstown, MD 21740,street:450 Dual Hwy,state:MD,postal_code:21740}".
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Taco%20Bell_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Bread%20Basket%20Cafe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Bread%20Basket%20Cafe> <http://schema.org/name> "Bread Basket Cafe".
+<https://alexmv12.github.io/FoodleMaps/#Bread%20Basket%20Cafe> <http://schema.org/address> "{city:Columbia,formatted:220 S 8th St Columbia, MO 65201,street:220 S 8th St,state:MO,postal_code:65201}".
+<https://alexmv12.github.io/FoodleMaps/#Bread%20Basket%20Cafe> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Bread%20Basket%20Cafe_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Checkers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Checkers> <http://schema.org/name> "Checkers".
+<https://alexmv12.github.io/FoodleMaps/#Checkers> <http://schema.org/address> "{city:Englewood,formatted:1725 McCall Rd Englewood, FL 34223,street:1725 McCall Rd,state:FL,postal_code:34223}".
+<https://alexmv12.github.io/FoodleMaps/#Checkers> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Checkers_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Gotta%20Eats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Gotta%20Eats> <http://schema.org/name> "Gotta Eats".
+<https://alexmv12.github.io/FoodleMaps/#Gotta%20Eats> <http://schema.org/address> "{city:Brooklyn,formatted:690 Metropolitan Ave Brooklyn, NY 11211,street:690 Metropolitan Ave,state:NY,postal_code:11211}".
+<https://alexmv12.github.io/FoodleMaps/#Gotta%20Eats> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Gotta%20Eats_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://schema.org/name> "Taco Bell".
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://schema.org/address> "{city:Forest Park,formatted:4465 Jonesboro Forest Park, GA 30297,street:4465 Jonesboro,state:GA,postal_code:30297}".
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Taco%20Bell_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://schema.org/name> "Taco Bell".
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://schema.org/address> "{city:Livingston,formatted:339 Joseph Gallo Drive Livingston, CA 95334,street:339 Joseph Gallo Drive,state:CA,postal_code:95334}".
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Taco%20Bell_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Subway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Subway> <http://schema.org/name> "Subway".
+<https://alexmv12.github.io/FoodleMaps/#Subway> <http://schema.org/address> "{city:PEORIA,formatted:8345 W Thunderbird Rd PEORIA, AZ 85381,street:8345 W Thunderbird Rd,state:AZ,postal_code:85381}".
+<https://alexmv12.github.io/FoodleMaps/#Subway> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Subway_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Mighty%20Taco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Mighty%20Taco> <http://schema.org/name> "Mighty Taco".
+<https://alexmv12.github.io/FoodleMaps/#Mighty%20Taco> <http://schema.org/address> "{city:Buffalo,formatted:2884 Ridge Rd Buffalo, NY 14224,street:2884 Ridge Rd,state:NY,postal_code:14224}".
+<https://alexmv12.github.io/FoodleMaps/#Mighty%20Taco> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Mighty%20Taco_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://schema.org/name> "Taco Bell".
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://schema.org/address> "{city:Helena,formatted:4804 Highway 52 W Helena, AL 35080,street:4804 Highway 52 W,state:AL,postal_code:35080}".
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Taco%20Bell_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Subway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Subway> <http://schema.org/name> "Subway".
+<https://alexmv12.github.io/FoodleMaps/#Subway> <http://schema.org/address> "{city:OMAHA,formatted:210 S 16th St OMAHA, NE 68102,street:210 S 16th St,state:NE,postal_code:68102}".
+<https://alexmv12.github.io/FoodleMaps/#Subway> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Subway_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Mustang> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FoodEstablishment>.
+<https://alexmv12.github.io/FoodleMaps/#Mustang> <http://schema.org/name> "Mustang".
+<https://alexmv12.github.io/FoodleMaps/#Mustang> <http://schema.org/address> "{city:Park City,formatted:890 Main St Park City, UT 84060,street:890 Main St,state:UT,postal_code:84060}".
+<https://alexmv12.github.io/FoodleMaps/#Mustang> <http://schema.org/hasMenu> <https://alexmv12.github.io/FoodleMaps/#Mustang_menu>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Nori%20Tempura_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Spicy%20Crispy%20Noodles_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi%20Ume_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Ika_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Crunchy%20Spicy%20Tuna%20Maki_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Banana%20Maki_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Boston%20Maki_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Garlic%20Fried%20Rice%20Bento%20Box_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Sashimi%20Bento%20Box%20Lunch_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Garlic%20Fried%20Rice%20Bento%20Box%20Lunch_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Rib%20Eye%20Steak%20Teriyaki%20Bento%20Box%20Lunch_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Chirashi%20Don%20Lunch_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Hamachi%20Don%20Lunch_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Ginger_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Edamame%20Tray_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Soft%20Drinks_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#%20Joe%20Tea%20Iced%20Tea_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Soft%20Shell%20Crab_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Miso%20Soup_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Tonkotsu%20Ramen%20Noodle%20Soup_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Chicken%20Katsu%20Ramen%20Noodle%20Soup_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Unagi%20Don%20Dinner_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi%20Matsu_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Botan%20Ebi_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi_menu> <https://alexmv12.github.io/FoodleMaps/#servesRecipe> <https://alexmv12.github.io/FoodleMaps/#Kani_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Subway_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Dairy%20Queen_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Carmine%27s%20Express_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Post_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Nadim%27s%20Mediterranean%20Grill_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Wendy%27s_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Mineo%27s%20Pizza%20House_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Subway_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Heathman%20Restaurant%20%26%20Bar_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Rosa%20Mexicano_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Quiznos%20Sub_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Atlanta%20Bread%20Company_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Ocean%20Wealth%20Restaurant_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Thai%20Hut_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#So%20Long%2C%20Hi_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Tubby%27s%20Grilled%20Submarines_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#JP%27s%20Pub_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Tubby%27s%20Grilled%20Submarines_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Venezia%20Pizzeria%20%26%20Restaurant_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Asia%20Moon_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#The%20Avenue_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Pan%20Thai_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#IHOP_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Texas%20Taco_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Mule%20Bar_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Panificio_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#The%20Hungry%20I_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Shogun%2018_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Thai%20Rama_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Wendy%27s_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Tott%20Asian%20Grill_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#IHOP_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Bibigo%20-%20UTC_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Lone%20Star%20Steakhouse%20%26%20Saloon_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Bella%20Mia_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Bread%20Basket%20Cafe_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Checkers_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Gotta%20Eats_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Subway_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Mighty%20Taco_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Taco%20Bell_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Subway_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Mustang_menu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Menu>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Tempura_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Spicy%20Crispy%20Noodles_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi%20Ume_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Ika_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Crunchy%20Spicy%20Tuna%20Maki_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Banana%20Maki_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Boston%20Maki_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Garlic%20Fried%20Rice%20Bento%20Box_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Sashimi%20Bento%20Box%20Lunch_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Garlic%20Fried%20Rice%20Bento%20Box%20Lunch_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Rib%20Eye%20Steak%20Teriyaki%20Bento%20Box%20Lunch_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Chirashi%20Don%20Lunch_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Hamachi%20Don%20Lunch_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Ginger_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Edamame%20Tray_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Soft%20Drinks_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#%20Joe%20Tea%20Iced%20Tea_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Soft%20Shell%20Crab_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Miso%20Soup_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Tonkotsu%20Ramen%20Noodle%20Soup_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Chicken%20Katsu%20Ramen%20Noodle%20Soup_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Unagi%20Don%20Dinner_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi%20Matsu_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Botan%20Ebi_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Kani_recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Tempura_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Tempura_item> <http://schema.org/name> "Nori Tempura".
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Tempura_item> <http://schema.org/description> "Two shrimp and six vegetables. Deep fried shrimp and assorted vegetables.".
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Tempura_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Nori%20Tempura_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Spicy%20Crispy%20Noodles_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Spicy%20Crispy%20Noodles_item> <http://schema.org/name> "Spicy Crispy Noodles".
+<https://alexmv12.github.io/FoodleMaps/#Spicy%20Crispy%20Noodles_item> <http://schema.org/description> "Stir fried carrots, green onion, basil leaf and fresh ginger in homemade chili sauce and served over crispy ramen noodles.".
+<https://alexmv12.github.io/FoodleMaps/#Spicy%20Crispy%20Noodles_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Spicy%20Crispy%20Noodles_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi%20Ume_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi%20Ume_item> <http://schema.org/name> "Nori Sushi Ume".
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi%20Ume_item> <http://schema.org/description> "Chef's selection: five pieces sushi and one California maki. Served with miso soup.".
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi%20Ume_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi%20Ume_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Ika_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Ika_item> <http://schema.org/name> "Ika".
+<https://alexmv12.github.io/FoodleMaps/#Ika_item> <http://schema.org/description> "Squid.".
+<https://alexmv12.github.io/FoodleMaps/#Ika_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Ika_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Crunchy%20Spicy%20Tuna%20Maki_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Crunchy%20Spicy%20Tuna%20Maki_item> <http://schema.org/name> "Crunchy Spicy Tuna Maki".
+<https://alexmv12.github.io/FoodleMaps/#Crunchy%20Spicy%20Tuna%20Maki_item> <http://schema.org/description> "Tuna, masago, spicy mayo, chili oil, avocado, green onion and tempura crumbs.".
+<https://alexmv12.github.io/FoodleMaps/#Crunchy%20Spicy%20Tuna%20Maki_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Crunchy%20Spicy%20Tuna%20Maki_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Banana%20Maki_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Banana%20Maki_item> <http://schema.org/name> "Banana Maki".
+<https://alexmv12.github.io/FoodleMaps/#Banana%20Maki_item> <http://schema.org/description> "Deep fried banana topped with unagi sauce and honey wasabi mayo.".
+<https://alexmv12.github.io/FoodleMaps/#Banana%20Maki_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Banana%20Maki_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Boston%20Maki_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Boston%20Maki_item> <http://schema.org/name> "Boston Maki".
+<https://alexmv12.github.io/FoodleMaps/#Boston%20Maki_item> <http://schema.org/description> "Fresh big eye tuna and fresh avocado".
+<https://alexmv12.github.io/FoodleMaps/#Boston%20Maki_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Boston%20Maki_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Garlic%20Fried%20Rice%20Bento%20Box_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Garlic%20Fried%20Rice%20Bento%20Box_item> <http://schema.org/name> "Garlic Fried Rice Bento Box".
+<https://alexmv12.github.io/FoodleMaps/#Garlic%20Fried%20Rice%20Bento%20Box_item> <http://schema.org/description> "Served with miso soup, rice, salad, deep fried gyoza and California maki roll.".
+<https://alexmv12.github.io/FoodleMaps/#Garlic%20Fried%20Rice%20Bento%20Box_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Garlic%20Fried%20Rice%20Bento%20Box_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Sashimi%20Bento%20Box%20Lunch_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Sashimi%20Bento%20Box%20Lunch_item> <http://schema.org/name> "Sashimi Bento Box Lunch".
+<https://alexmv12.github.io/FoodleMaps/#Sashimi%20Bento%20Box%20Lunch_item> <http://schema.org/description> "Served with miso soup and salad. . No substitution.".
+<https://alexmv12.github.io/FoodleMaps/#Sashimi%20Bento%20Box%20Lunch_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Sashimi%20Bento%20Box%20Lunch_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Garlic%20Fried%20Rice%20Bento%20Box%20Lunch_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Garlic%20Fried%20Rice%20Bento%20Box%20Lunch_item> <http://schema.org/name> "Garlic Fried Rice Bento Box Lunch".
+<https://alexmv12.github.io/FoodleMaps/#Garlic%20Fried%20Rice%20Bento%20Box%20Lunch_item> <http://schema.org/description> "Served with miso soup, rice, salad, deep fried gyoza and California maki roll. No substitution.".
+<https://alexmv12.github.io/FoodleMaps/#Garlic%20Fried%20Rice%20Bento%20Box%20Lunch_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Garlic%20Fried%20Rice%20Bento%20Box%20Lunch_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Rib%20Eye%20Steak%20Teriyaki%20Bento%20Box%20Lunch_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Rib%20Eye%20Steak%20Teriyaki%20Bento%20Box%20Lunch_item> <http://schema.org/name> "Rib Eye Steak Teriyaki Bento Box Lunch".
+<https://alexmv12.github.io/FoodleMaps/#Rib%20Eye%20Steak%20Teriyaki%20Bento%20Box%20Lunch_item> <http://schema.org/description> "Served with miso soup, rice, salad, deep fried gyoza and California maki roll. No substitution.".
+<https://alexmv12.github.io/FoodleMaps/#Rib%20Eye%20Steak%20Teriyaki%20Bento%20Box%20Lunch_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Rib%20Eye%20Steak%20Teriyaki%20Bento%20Box%20Lunch_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Chirashi%20Don%20Lunch_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Chirashi%20Don%20Lunch_item> <http://schema.org/name> "Chirashi Don Lunch".
+<https://alexmv12.github.io/FoodleMaps/#Chirashi%20Don%20Lunch_item> <http://schema.org/description> "Served with miso soup, seaweed salad and edamame.".
+<https://alexmv12.github.io/FoodleMaps/#Chirashi%20Don%20Lunch_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Chirashi%20Don%20Lunch_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Hamachi%20Don%20Lunch_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Hamachi%20Don%20Lunch_item> <http://schema.org/name> "Hamachi Don Lunch".
+<https://alexmv12.github.io/FoodleMaps/#Hamachi%20Don%20Lunch_item> <http://schema.org/description> "Served with miso soup, seaweed salad and edamame.".
+<https://alexmv12.github.io/FoodleMaps/#Hamachi%20Don%20Lunch_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Hamachi%20Don%20Lunch_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Ginger_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Ginger_item> <http://schema.org/name> "Ginger".
+<https://alexmv12.github.io/FoodleMaps/#Ginger_item> <http://schema.org/description> "".
+<https://alexmv12.github.io/FoodleMaps/#Ginger_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Ginger_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Edamame%20Tray_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Edamame%20Tray_item> <http://schema.org/name> "Edamame Tray".
+<https://alexmv12.github.io/FoodleMaps/#Edamame%20Tray_item> <http://schema.org/description> "".
+<https://alexmv12.github.io/FoodleMaps/#Edamame%20Tray_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Edamame%20Tray_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Soft%20Drinks_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Soft%20Drinks_item> <http://schema.org/name> "Soft Drinks".
+<https://alexmv12.github.io/FoodleMaps/#Soft%20Drinks_item> <http://schema.org/description> "".
+<https://alexmv12.github.io/FoodleMaps/#Soft%20Drinks_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Soft%20Drinks_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#%20Joe%20Tea%20Iced%20Tea_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#%20Joe%20Tea%20Iced%20Tea_item> <http://schema.org/name> " Joe Tea Iced Tea".
+<https://alexmv12.github.io/FoodleMaps/#%20Joe%20Tea%20Iced%20Tea_item> <http://schema.org/description> "".
+<https://alexmv12.github.io/FoodleMaps/#%20Joe%20Tea%20Iced%20Tea_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#%20Joe%20Tea%20Iced%20Tea_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Soft%20Shell%20Crab_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Soft%20Shell%20Crab_item> <http://schema.org/name> "Soft Shell Crab".
+<https://alexmv12.github.io/FoodleMaps/#Soft%20Shell%20Crab_item> <http://schema.org/description> "Whole fresh soft shell crab deep fried to sushi crispness and served with a special ponzu sauce.".
+<https://alexmv12.github.io/FoodleMaps/#Soft%20Shell%20Crab_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Soft%20Shell%20Crab_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Miso%20Soup_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Miso%20Soup_item> <http://schema.org/name> "Miso Soup".
+<https://alexmv12.github.io/FoodleMaps/#Miso%20Soup_item> <http://schema.org/description> "Soy bean broth. Soft tofu, seaweed and green onion.".
+<https://alexmv12.github.io/FoodleMaps/#Miso%20Soup_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Miso%20Soup_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Tonkotsu%20Ramen%20Noodle%20Soup_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Tonkotsu%20Ramen%20Noodle%20Soup_item> <http://schema.org/name> "Tonkotsu Ramen Noodle Soup".
+<https://alexmv12.github.io/FoodleMaps/#Tonkotsu%20Ramen%20Noodle%20Soup_item> <http://schema.org/description> "Japanese egg noodles, rice pork broth, pork chashu, marinated bamboo shoots, quail eggs, scallion, spinach and sesame see topped with green onion, fish cake and a seaweed sheet.".
+<https://alexmv12.github.io/FoodleMaps/#Tonkotsu%20Ramen%20Noodle%20Soup_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Tonkotsu%20Ramen%20Noodle%20Soup_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Chicken%20Katsu%20Ramen%20Noodle%20Soup_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Chicken%20Katsu%20Ramen%20Noodle%20Soup_item> <http://schema.org/name> "Chicken Katsu Ramen Noodle Soup".
+<https://alexmv12.github.io/FoodleMaps/#Chicken%20Katsu%20Ramen%20Noodle%20Soup_item> <http://schema.org/description> "Japanese egg noodles, marinated bamboo shoots, quail eggs, spinach, Japanese prepared vegetables and sesame seeds. Topped with deep-fried breaded chicken, green onions, fish cake and a seaweed sheet in a special miso based broth.".
+<https://alexmv12.github.io/FoodleMaps/#Chicken%20Katsu%20Ramen%20Noodle%20Soup_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Chicken%20Katsu%20Ramen%20Noodle%20Soup_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Unagi%20Don%20Dinner_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Unagi%20Don%20Dinner_item> <http://schema.org/name> "Unagi Don Dinner".
+<https://alexmv12.github.io/FoodleMaps/#Unagi%20Don%20Dinner_item> <http://schema.org/description> "Served with miso soup, seaweed salad and edamame.".
+<https://alexmv12.github.io/FoodleMaps/#Unagi%20Don%20Dinner_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Unagi%20Don%20Dinner_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi%20Matsu_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi%20Matsu_item> <http://schema.org/name> "Nori Sushi Matsu".
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi%20Matsu_item> <http://schema.org/description> "Chef's selection: nine pieces sushi and one spicy tuna maki. Served with miso soup.".
+<https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi%20Matsu_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Nori%20Sushi%20Matsu_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Botan%20Ebi_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Botan%20Ebi_item> <http://schema.org/name> "Botan Ebi".
+<https://alexmv12.github.io/FoodleMaps/#Botan%20Ebi_item> <http://schema.org/description> "Sweet shrimp.".
+<https://alexmv12.github.io/FoodleMaps/#Botan%20Ebi_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Botan%20Ebi_recipe>.
+<https://alexmv12.github.io/FoodleMaps/#Kani_item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MenuItem>.
+<https://alexmv12.github.io/FoodleMaps/#Kani_item> <http://schema.org/name> "Kani".
+<https://alexmv12.github.io/FoodleMaps/#Kani_item> <http://schema.org/description> "Crab meat.".
+<https://alexmv12.github.io/FoodleMaps/#Kani_item> <https://alexmv12.github.io/FoodleMaps/#hasRecipe> <https://alexmv12.github.io/FoodleMaps/#Kani_recipe>.
