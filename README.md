@@ -47,28 +47,28 @@ Moreover, a restriction on the diet and on some dishes’ characteristics can be
 
 # Data linking
 
-To get restaurants information and their menus, we used RakutenAPI, this provides access to a database of over 350 000 restaurants.
-To explain how we got these informations and how we exploit them an example is served.
+To get restaurants information and their menus, we used RakutenAPI, this provides access to a database of over 350.000 restaurants.
+To explain how we got these informations and how we exploit them an example is served.<br />
 50 restaurants and menus for one of them, because of limited API get requests.
 
 API REQUEST: a json file is retrieved with a get call, then it is formatted to simplify other tools utilization and converted to csv.
 
-YARRRML (https://github.com/rmlio/yarrrml-parser ): we wrote a set of rules to fit, to the best, our ontology model. these rules are parsed with yarrrml-parser to get RML rules.
-    yarrrml-parser -i rules.yml -o rules.rml.ttl 
+YARRRML (https://github.com/rmlio/yarrrml-parser ): we wrote a set of rules to fit, to the best, our ontology model. these rules are parsed with yarrrml-parser to get RML rules.<br />
+yarrrml-parser -i rules.yml -o rules.rml.ttl 
 
-RMLMAPPER (https://github.com/RMLio/rmlmapper-java ): we used RmlMapper to convert rml rules to RDF triples.
-    java -jar rmlmapper.jar -m rules.yml.ttl -o output.rdf   
+RMLMAPPER (https://github.com/RMLio/rmlmapper-java ): we used RmlMapper to convert rml rules to RDF triples.<br />
+java -jar rmlmapper.jar -m rules.yml.ttl -o output.rdf   
 
 ‘output.rdf’ contains triples in N-triple format about restaurants, their menus, recipe and menuItems.
 
 JENA MODEL: a jena Model is built starting from ‘output.rdf’ triples and a Dataset (collection of graphs which can be queried) is generated for this Model.
 
-Note that rdf model is not a perfectly fitting model with our ontology;
+Note that rdf model is not a perfectly fitting model with our ontology;<br />
 ‘menu_item_description’ is a string that contains every ingredient, instead a list of ingredients is necessary.
 
 SPARQL GET QUERY : get every ‘menu_item_description’ for MenuItems and iterate them.
 
-VOCABULARY MATCHING: match descriptions words with a set of foods and dishes name.
+VOCABULARY MATCHING: match descriptions words with a set of foods and dishes name.<br />
 This is an approximation of how a better vocabulary should work, some words are not food or ingredients. 
 Vocabulary is got by querying dbpedia.org to return every dbo:Food
 ( http://dbpedia.org/snorql/?query=SELECT+distinct+%3Fb%0D%0AWHERE+%7B+%3Fb+a+dbo%3AFood+%7D )
@@ -77,7 +77,7 @@ SPARQL UPDATE QUERY: every ingredient is added as FoodleMaps:Ingredient and link
 
 Demonstrative queries are executed on the generated model, to show that every information taken from a json file is now correctly linked.
 
-1.“Which restaurants serve dish whose recipe has ingredient ‘salad’ ?“
+1.“Which restaurants serve dish whose recipe has ingredient ‘salad’ ?“<br />
 2.“Which dish served by ‘Nori Sushi’ has the ingredient ‘salad’ ?”
 
 ### Disclaimer
